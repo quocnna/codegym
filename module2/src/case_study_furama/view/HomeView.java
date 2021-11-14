@@ -10,7 +10,7 @@ public class HomeView {
     }
 
     public static void displayHomeMenu(){
-/*        String tmp= "";
+        String tmp= "";
         int choice= 0;
         do {
             System.out.println("Welcome to Furama Resort.\n" +
@@ -43,7 +43,7 @@ public class HomeView {
             case 5:
 
                 break;
-        }*/
+        }
 
         backToHomeMenu();
     }
