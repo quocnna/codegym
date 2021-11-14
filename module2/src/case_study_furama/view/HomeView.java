@@ -1,6 +1,5 @@
 package case_study_furama.view;
 
-import case_study_furama.model.Booking;
 import case_study_furama.util.CommomUtil;
 import case_study_furama.util.ValidationUtil;
 
