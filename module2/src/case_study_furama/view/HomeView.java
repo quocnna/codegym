@@ -10,7 +10,6 @@ public class HomeView {
     }
 
     public static void displayHomeMenu(){
-        BookingView.bookingManager();
 /*        String tmp= "";
         int choice= 0;
         do {
