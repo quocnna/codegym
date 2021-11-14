@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../../../database-migration-master 2" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/C0320G1-HoThao2-master/Casestudy_module2_ThaoHo_JavaWeb" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/Checkout-Java-SDK-develop" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/aop" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/cms" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/cms 2" value="PREVIEW" />
+        <entry key="$USER_HOME$/Downloads/database-migration-master" value="PREVIEW" />
+        <entry key="$USER_HOME$/flyway-fastnate-spring" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.HomeView">
+    <configuration name="HomeView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="case_study_furama.view.HomeView" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="case_study_furama.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SystemTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_introduction_java.practice.p1.SystemTime" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_introduction_java.practice.p1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HomeView" />
+        <item itemvalue="Application.SystemTime" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
