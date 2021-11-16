@@ -58,14 +58,27 @@ public class CustomArrayList<E> implements Cloneable {
         return elements[index];
     }
 
-//    // the way 2
-//    public Object clone() throws CloneNotSupportedException {
-//        return super.clone();
-//    }
+    boolean cointains(E e){
+        for (int i = 0; i < size; i++) {
+            if(elements[i].equals(e))   return true;
+        }
+        return false;
+    }
 
-    public Object clone(){
-        Object o= Arrays.copyOf(elements, size);
-        return o;
+    int indexOf(E e){
+        for (int i = 0; i < size; i++) {
+            if(elements[i].equals(e))   return i;
+        }
+        return -1;
+    }
+
+    void clear(){
+        size= 0;
+        elements= (E[])new Object[DEFAULT_CAPACITY];
+    }
+
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
     private void ensureCapacity() {

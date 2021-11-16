@@ -1,6 +1,7 @@
 package test;
 
-import org.omg.CORBA.Object;
+import java.lang.Object;
+import java.util.Arrays;
 
 public class MyArrayList<T> {
     private final int DEAULT_CAPACITY= 10;
@@ -34,7 +35,14 @@ public class MyArrayList<T> {
         size++;
     }
 
+    public void add(T t){
+        data[size]= t;
+        size++;
+    }
+
     public void addLast(T t){
+        data[size]=t;
+
 //        ensureCapacity();
         data[0]= t;
 //        Integer[] data1= new Integer[DEAULT_CAPACITY];
@@ -66,5 +74,15 @@ public class MyArrayList<T> {
             for (int i = 0; i < size; i++) tmp[i]= data[i];
             data= tmp;
         }
+    }
+
+    public T[] clone(){
+        T[] res= (T[])new Object[size];
+
+        for (int i = 0; i < size; i++) {
+            res[i]= data[i];
+        }
+
+        return res;
     }
 }
