@@ -20,57 +20,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00038e82-3748-43fc-90f1-b406b9edc184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/csv/CSVFileHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/csv/CsvWriterSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/csv/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/csv/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/s1/ReserveUsingStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/s1/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/s2/CountCharInString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/s2/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/s3/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/s3/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/s3/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/so4/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/so4/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/so5/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/so5/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/exercise/so6/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/practice/s1/GenericStackClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/practice/s1/MyGenericStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/practice/s1/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/practice/s2/MyLinkedListQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/practice/s2/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/m2_11_stack_queue/practice/s2/note.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/AlgorithmSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/BinaryTreeImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/ComplexMath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/CustomBTS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/LoopSharp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/Prime100.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/Student1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/NewTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e1/CustomArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e1/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_10_dsa_list/practice/p1/SimpleArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_10_dsa_list/practice/p1/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_10_dsa_list/practice/p2/SimpleLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_10_dsa_list/practice/p2/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="20wcXlgsGgPO5sQcjSpggSLH45F" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Application.Test (2)">
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_10_dsa_list.practice.p2.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_10_dsa_list.practice.p2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_10_dsa_list.exercise.e1.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_10_dsa_list.exercise.e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_10_dsa_list.practice.p1.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_10_dsa_list.practice.p1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test (2)" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -82,7 +117,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636959132646</updated>
-      <workItem from="1636959133826" duration="2269000" />
+      <workItem from="1636959133826" duration="2604000" />
+      <workItem from="1637025503211" duration="13129000" />
     </task>
     <servers />
   </component>
@@ -99,5 +135,60 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1637043332185">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1637043332185" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1637057968760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637057968760" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1637057968760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637057968760" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1637057968759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637057968759" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1637057968760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637057968760" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1637057968760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637057968760" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1637057968760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637057968760" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1637057968760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637057968760" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1637057968760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637057968760" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_10_dsa_list/exercise/e1/Test.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_10_dsa_list/exercise/e1/Test.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
