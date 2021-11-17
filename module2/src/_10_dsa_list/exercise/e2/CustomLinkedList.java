@@ -128,14 +128,27 @@ public class CustomLinkedList<E> implements Cloneable {
     }
 
     void removeLast() {
-        Node tmp= head;
-        if(tmp.next != null){
-            while (tmp.next.next!= null){
-                tmp= tmp.next;
+        Node tmp = head;
+        if (tmp.next != null) {
+            while (tmp.next.next != null) {
+                tmp = tmp.next;
             }
-            tmp.next= null;
+            tmp.next = null;
+        } else removeFirst();
+        numNodes--;
+    }
+
+    public void remove(int index) {
+        Node tmp = head;
+        if (index == 0)
+            removeFirst();
+        else {
+            for (int i = 0; i < index - 1; i++) {
+                tmp = tmp.next;
+            }
+            tmp.next = tmp.next.next;
         }
-        else removeFirst();
+
         numNodes--;
     }
 

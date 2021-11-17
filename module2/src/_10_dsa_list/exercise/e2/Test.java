@@ -12,6 +12,8 @@ public class Test {
         System.out.println(customLinkedList.get(1));
         System.out.println(customLinkedList.contains("2"));
         System.out.println(customLinkedList.indexOf("3"));
+
+        customLinkedList.remove(1);
         try {
             CustomLinkedList<String> tmp= (CustomLinkedList<String>)customLinkedList.clone();
             int size= tmp.size();

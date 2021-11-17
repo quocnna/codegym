@@ -3,7 +3,7 @@ package _10_dsa_list.exercise.e1;
 import java.util.Arrays;
 
 public class CustomArrayList<E> implements Cloneable {
-    private static final int DEFAULT_CAPACITY = 3;
+    private static final int DEFAULT_CAPACITY = 10;
     private E[] elements;
     private int size;
 
@@ -16,6 +16,9 @@ public class CustomArrayList<E> implements Cloneable {
     }
 
     void add(int index, E element) {
+        if(index< 0 || index> size)
+            throw new IndexOutOfBoundsException();
+
         ensureCapacity();
         for (int i = size; i > index; i--) elements[i] = elements[i - 1];
         elements[index] = element;
@@ -23,9 +26,10 @@ public class CustomArrayList<E> implements Cloneable {
     }
 
     boolean add(E e) {
-        ensureCapacity();
-        elements[size] = e;
-        size++;
+        add(size, e);
+//        ensureCapacity();
+//        elements[size] = e;
+//        size++;
         return true;
     }
 
