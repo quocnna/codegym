@@ -1,6 +1,5 @@
 package case_study_furama.view;
 
-import case_study_furama.model.Booking;
 import case_study_furama.util.CommomUtil;
 import case_study_furama.util.ValidationUtil;
 
@@ -53,22 +52,4 @@ public class HomeView {
         if(CommomUtil.getScanner().nextLine().equalsIgnoreCase("y")) displayHomeMenu();
         else System.exit(0);
     }
-
-//
-//    private static void promotionManager(){
-//        String tmp= "";
-//        int choice= 0;
-//        do {
-//            System.out.println("1. Display list customers use service");
-//            System.out.println("2. Display list customers get voucher");
-//            System.out.println("3. Return main menu");
-//
-//            System.out.print(tmp.isEmpty() ? "Input your choice: ": "Please just input number from 1 to 3: ");
-//            tmp = scanner.nextLine();
-//            if(ValidationUtil.isNumber(tmp)) choice= Integer.parseInt(tmp);
-//        }
-//        while (choice <= 0 || choice > 3);
-//    }
-//
-
 }

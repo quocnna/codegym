@@ -1,8 +1,5 @@
 package case_study_furama.util;
 
-import case_study_furama.service.BaseService;
-import case_study_furama.view.HomeView;
-
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 

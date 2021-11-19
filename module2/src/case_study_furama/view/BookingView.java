@@ -10,6 +10,7 @@ import case_study_furama.util.ValidationUtil;
 
 import java.time.LocalDate;
 import java.util.Stack;
+import java.util.TreeSet;
 
 public class BookingView {
     private static BookingController bookingController = new BookingController();
@@ -38,7 +39,7 @@ public class BookingView {
                 creatBooking();
                 break;
             case 2:
-                display();
+                display(bookingController.getAll());
                 break;
             case 3:
                 createContract();
@@ -94,8 +95,8 @@ public class BookingView {
         return Integer.parseInt(CommomUtil.getScanner().nextLine());
     }
 
-    private static void display() {
-        bookingController.getAll().forEach(e->{
+    static void display(TreeSet<Booking> bookingTreeSet) {
+        bookingTreeSet.forEach(e->{
             Customer customer= customerController.getById(e.getCustomerId());
             Facility facility= facilityController.getById(e.getFacilityId());
             String typeService= facility instanceof Villa? "Villa": facility instanceof House ? "House": "Room";
