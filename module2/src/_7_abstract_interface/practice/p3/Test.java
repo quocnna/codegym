@@ -25,7 +25,7 @@ public class Test {
 
 //        sort by lamda, note for double cast to int
 /*
-        Arrays.sort(circles, (o1, o2)-> (int)(o1.getRadius()- o2.getRadius()));
+        Arrays.sort(circles, (o, o2)-> (int)(o.getRadius()- o2.getRadius()));
 */
 
 //        sort by built in Comparator.comparing

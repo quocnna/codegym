@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class ReadFileCSV {
-    private static final String path="src\\_16_io_text_file\\exercise\\e2\\test.csv";
+    private static final String path="src\\_16_io_text_file\\exercise\\o\\test.csv";
     public static void main(String[] args) {
         try {
             readCSV(path);

@@ -1,3 +1,4 @@
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -6,5 +7,7 @@ public class Main {
         Stack<String> stack= new Stack<>();
         stack.clear();
         stack.pop();
+
+        Queue a= new PriorityQueue();
     }
 }
