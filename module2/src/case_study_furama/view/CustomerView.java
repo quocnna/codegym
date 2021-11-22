@@ -13,7 +13,8 @@ public class CustomerView {
         String tmp = "";
         int choice = 0;
         do {
-            System.out.println("1. Display list manager\n" +
+            System.out.println("----- Customer View: -----" +
+                    "1. Display list manager\n" +
                     "2. Add new manager\n" +
                     "3. Edit manager\n" +
                     "4. Return main menu");

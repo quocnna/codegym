@@ -13,7 +13,8 @@ public class EmployeeView {
         String tmp= "";
         int choice= 0;
         do {
-            System.out.println("1. Display list employees\n"+
+            System.out.println("----- Employee View: ------\n"+
+                    "1. Display list employees\n"+
             "2. Add new employee\n"+
             "3. Edit employee\n"+
             "4. Return main menu");

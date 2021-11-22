@@ -12,7 +12,7 @@ public class HomeView {
         String tmp= "";
         int choice= 0;
         do {
-            System.out.println("Welcome to Furama Resort.\n" +
+            System.out.println("----- Welcome to Furama Resort -----\n" +
                     "1. Employee Management\n" +
                     "2. Customer Management\n" +
                     "3. Facility Management\n" +
@@ -40,8 +40,9 @@ public class HomeView {
                 BookingView.bookingManager();
                 break;
             case 5:
-
                 break;
+            case 6:
+                System.exit(0);
         }
 
         backToHomeMenu();
