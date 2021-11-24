@@ -20,83 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00038e82-3748-43fc-90f1-b406b9edc184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/CircularQueueByLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/o1/ConvertDecimalToBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/o2/PalindromeByStackQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/o3/CheckBracketUseStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/o4/DemergingByQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/o4/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/o1/MyQueueByArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/o1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/o2/MyStackByArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/o2/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/AppConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o/CustomBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p1/TestMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2/TestHashMapAndHashSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/AgeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/AbstractTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_13_search_algorithm/exercise/e1/StringIncreaseMaxLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_13_search_algorithm/exercise/o1/SearchBinaryWithRecursive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_13_search_algorithm/exercise/o2/StringSequenceMaxLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/ComplexityAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_13_search_algorithm/practice/p1/SearchBinaryWithoutRecursive.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/CircularQueueUsingLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/CircularQueueUsingLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/so4/MyQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/so4/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/so5/MyStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/so5/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/so6/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/GenericStackClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/MyGenericStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/MyStackByLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/LinkedListQueueClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/MyLinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2/ReadFileCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2/ReadFileCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/o1/CopyBinaryFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/o1/CopyBinaryFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_7_abstract_interface/practice/p3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_7_abstract_interface/practice/p3/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/s1/ReserveUsingStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/s1/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/s2/CountCharInString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/s2/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/s3/CircularQueueUsingLinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/s3/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/s3/Queue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/s3/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/so4/MyQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/so4/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/so5/MyStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/so5/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/exercise/so6/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/practice/s1/GenericStackClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/practice/s1/MyGenericStack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/practice/s1/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/practice/s2/LinkedListQueueClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/practice/s2/MyLinkedListQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/practice/s2/Node.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/m2_11_stack_queue/practice/s2/note.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/orther/BinaryTreeImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/orther/Student1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study_furama/data/employee.csv" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,115 +30,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o/CustomBST.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
-              <caret line="89" column="39" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="39" />
-              <folding>
-                <element signature="method#containRecursive#0;class#CustomBST#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/practice/p1/SearchBinaryWithoutRecursive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/ComplexityAlgorithm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="119" selection-start-line="30" selection-start-column="119" selection-end-line="30" selection-end-column="119" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/e1/StringIncreaseMaxLength.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e1/ReserveUsingStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/o2/StringSequenceMaxLength.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/o1/SearchBinaryWithRecursive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="71" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1122">
-                <caret line="66" selection-start-line="66" selection-end-line="66" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -224,58 +41,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/StackImplByLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/CustomStackByLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/Test.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/CustomQueue.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/MyStackByLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/o1/MyQueueByArray.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/o2/MyStackByArray.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/o2/Test.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/o1/ConvertDecimalToBinary.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/o2/PalindromeByStackQueue.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/o3/CheckBracketUseStack.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/o4/Person.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/o4/DemergingUseQueue.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/o4/DemergingByQueue.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/practice/o1/Test.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/CircularQueueUsingLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/CircularQueueByLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/Test.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p1/TestMap.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2/Student.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2/TestHashMapAndHashSet.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/Student.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/AgeComparator.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/Test.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/TreeNode.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/Tree.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/AbstractTree.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/BST.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/Test.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/Product.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/AppConstants.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/AppConstant.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/Test.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o1/Test.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o1/CustomBST.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o/CustomBST.java" />
-        <option value="$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o/Test.java" />
-        <option value="$PROJECT_DIR$/src/_13_search_algorithm/practice/p1/SearchBinaryWithoutRecursive.java" />
-        <option value="$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/ComplexityAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/readme.md" />
-        <option value="$PROJECT_DIR$/src/_13_search_algorithm/exercise/e1/StringMaxLength.java" />
-        <option value="$PROJECT_DIR$/src/_13_search_algorithm/exercise/e2/SearchBinaryWithRecursive.java" />
-        <option value="$PROJECT_DIR$/src/_13_search_algorithm/exercise/e2/StringIncreaseMaxLength.java" />
-        <option value="$PROJECT_DIR$/src/_13_search_algorithm/exercise/e1/StringIncreaseMaxLength.java" />
-        <option value="$PROJECT_DIR$/src/_13_search_algorithm/exercise/o2/StringSequenceMaxLength.java" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
@@ -283,31 +48,6 @@
   <component name="ProjectId" id="20wcXlgsGgPO5sQcjSpggSLH45F" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="module2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="module2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -329,19 +69,7 @@
       <recent name="D:\save\code\github\codegym\module2\src\_11_stack_queue\practice" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.ReserveUsingStack">
+  <component name="RunManager" selected="Application.ValidationClassName">
     <configuration name="ComplexityAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_13_search_algorithm.practice.o1.ComplexityAlgorithm" />
       <module name="module2" />
@@ -394,32 +122,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_12_java_collection_framework.practice.p1.TestMap" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_12_java_collection_framework.practice.p1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_11_stack_queue.exercise.e3.Test" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_11_stack_queue.exercise.e3.old.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_12_java_collection_framework.exercise.o.Test" />
       <module name="module2" />
@@ -433,8 +135,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidationClassName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_19_string_regex.exercise.e1.ValidationClassName" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_19_string_regex.exercise.e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ValidationClassName" />
         <item itemvalue="Application.ReserveUsingStack" />
         <item itemvalue="Application.SearchBinaryWithRecursive" />
         <item itemvalue="Application.StringIncreaseMaxLength" />
@@ -460,65 +176,19 @@
       <workItem from="1637304995380" duration="2445000" />
       <workItem from="1637407884892" duration="25803000" />
       <workItem from="1637504089201" duration="811000" />
+      <workItem from="1637741557628" duration="35000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26614000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30615166" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -537,6 +207,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1637222994491">
@@ -547,22 +218,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1637311564255" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1637315928805">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom" timestamp="1637741593309">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1637315928805" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1637315928805">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1637741593309" />
+    <state width="1877" height="294" key="GridCell.Tab.0.center" timestamp="1637741593309">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1637315928805" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1637315928805">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="294" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1637741593309" />
+    <state width="1877" height="294" key="GridCell.Tab.0.left" timestamp="1637741593308">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1637315928805" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1637315928805">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="294" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1637741593308" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right" timestamp="1637741593309">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1637315928805" />
+    <state width="1877" height="294" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1637741593309" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1637231381863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -586,477 +261,34 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/_10_dsa_list/exercise/e2/CustomLinkedList.java</url>
           <line>148</line>
-          <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/case_study_furama/service/impl/EmployeeServiceImpl.java</url>
           <line>55</line>
-          <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/_11_stack_queue/exercise/o3/CheckBracketUseStack.java</url>
           <line>44</line>
-          <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/_11_stack_queue/exercise/o3/CheckBracketUseStack.java</url>
           <line>26</line>
-          <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/Test.java</url>
           <line>11</line>
-          <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/ProductService.java</url>
           <line>45</line>
-          <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/o1/ConvertDecimalToBinary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/o2/PalindromeByStackQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/o3/CheckBracketUseStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/o4/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/so6/note.txt" />
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/note.txt" />
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/o4/DemergingByQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/practice/o1/MyQueueByArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1337#1338#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/practice/o1/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/practice/p2/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/practice/p2/MyQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/CircularQueueUsingLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/CircularQueueByLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="68" column="45" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="45" />
-          <folding>
-            <element signature="class#Node#0;class#CircularQueueByLinkedList#0" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="method#addNode#0;class#CircularQueueByLinkedList#0" />
-            <element signature="method#contains#0;class#CircularQueueByLinkedList#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p1/TestMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding>
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2/TestHashMapAndHashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/AgeComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/AbstractTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/BST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
-          <folding>
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1463#1464#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p4/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="315" column="15" selection-start-line="315" selection-start-column="15" selection-end-line="315" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/ConstantUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/EmployeeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/controller/FacilityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/controller/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/CommomUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/view/EmployeeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/AppConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/e2/StringIncreaseMaxLength.java" />
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o/CustomBST.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="89" column="39" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="39" />
-          <folding>
-            <element signature="method#containRecursive#0;class#CustomBST#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/practice/p1/SearchBinaryWithoutRecursive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/ComplexityAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="119" selection-start-line="30" selection-start-column="119" selection-end-line="30" selection-end-column="119" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/o2/StringSequenceMaxLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/o1/SearchBinaryWithRecursive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="71" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1122">
-            <caret line="66" selection-start-line="66" selection-end-line="66" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/o/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/e1/StringIncreaseMaxLength.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/e1/ReserveUsingStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="25" column="54" lean-forward="true" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
