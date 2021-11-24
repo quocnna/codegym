@@ -59,7 +59,7 @@ public class EmployeeView {
         }while (!CommomUtil.enumContains(ConstantUtil.Degree.class, degree));
 
 
-        System.out.println("Input employee salary to edit");
+        System.out.print("Input employee salary: ");
         double salary= Double.parseDouble(CommomUtil.getScanner().nextLine());
 
         return new Employee(0, "EMP06", name, "23/09/1984", ConstantUtil.Gender.MALE, "0708230984",

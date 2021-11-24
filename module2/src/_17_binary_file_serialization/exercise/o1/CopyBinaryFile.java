@@ -3,8 +3,8 @@ package _17_binary_file_serialization.exercise.o1;
 import java.io.*;
 
 public class CopyBinaryFile {
-    private static final String source = "src\\_17_binary_file_serialization\\exercise\\o1\\Beautiful_in_White.mp3";
-    private static final String des = "src\\_17_binary_file_serialization\\exercise\\o1\\Beautiful_in_White_copy.mp3";
+    private static final String source = "src\\_17_binary_file_serialization\\exercise\\o\\Beautiful_in_White.mp3";
+    private static final String des = "src\\_17_binary_file_serialization\\exercise\\o\\Beautiful_in_White_copy.mp3";
 
     public static void main(String[] args) {
         try {
