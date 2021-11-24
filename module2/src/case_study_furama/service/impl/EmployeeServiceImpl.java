@@ -35,12 +35,14 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (employee.getId() > 0) {
             int index = employees.indexOf(employee);
             employees.set(index, employee);
+            csvHelper.write(employees, PATH.EMPLOYEE, false);
         } else {
             employee.setId(employees.size() + 1);
             employees.add(employee);
+            List<Employee> tmp= new ArrayList();
+            tmp.add(employee);
+            csvHelper.write(tmp, PATH.EMPLOYEE, true);
         }
-
-        csvHelper.write(employees, PATH.EMPLOYEE);
     }
 
     @Override

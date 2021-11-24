@@ -11,6 +11,7 @@ public interface FacilityService {
     void addVilla(Villa villa);
     void addHouse(House house);
     void addRoom(Room room);
+    void add(Facility f);
     Map<Facility, Integer> getFacilitys();
     Facility getById(int id);
 }

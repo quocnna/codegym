@@ -74,11 +74,11 @@ public class FacilityView {
         switch (choice) {
             case 1:
                 Villa villa= new Villa("VIL01", "Aston Villa", 12, 123, 10, RentType.MONTH, RoomType.DELUXE,  234, 3);
-                facilityController.saveVilla(villa);
+                facilityController.save(villa);
                 break;
             case 2:
                 House house= new House( "HOU02", "Country House", 12, 123, 10, RentType.MONTH, RoomType.STANDARD, 3);
-                facilityController.saveHouse(house);
+                facilityController.save(house);
                 break;
             case 3:
                 break;

@@ -19,6 +19,10 @@ public class FacilityController {
         facilityService.addVilla(villa);
     }
 
+    public void save(Facility facility){
+        facilityService.add(facility);
+    }
+
     public void saveHouse(House house){
         facilityService.addHouse(house);
     }
