@@ -2,7 +2,7 @@ package furama_resort.model;
 
 import furama_resort.util.ConstantUtil.*;
 
-public class Employee extends Person {
+public class Employee extends Person implements Comparable<Employee> {
     private Degree degree;
     private Position position;
     private double salary;
@@ -36,5 +36,32 @@ public class Employee extends Person {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+        return getFullName().compareTo(o.getFullName());
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + getId() +
+                ", code='" + getCode() + '\'' +
+                ", fullName='" + getFullName() + '\'' +
+                ", birthday='" + getBirthday() + '\'' +
+                ", gender=" +  getGender() +
+                ", phone='" + getPhone() + '\'' +
+                ", email='" + getEmail() + '\'' +
+                ", address='" + getAddress() + '\'' +
+                "degree=" + degree +
+                ", position=" + position +
+                ", salary=" + salary +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return getId()== ((Employee)obj).getId();
     }
 }

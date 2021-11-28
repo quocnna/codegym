@@ -1,4 +1,4 @@
-package test.product_demo;
+package test.product_object_file;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ProductService {
-    private static final String path= "src/test.product_demo/product.bin";
+    private static final String path= "src/test.product_object_file/product.bin";
 
     private static List<Product> products= new ArrayList<>();
 

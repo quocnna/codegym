@@ -1,4 +1,4 @@
-package test.product_demo;
+package test.product_object_file;
 
 import java.io.Serializable;
 import java.util.Objects;

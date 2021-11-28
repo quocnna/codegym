@@ -27,8 +27,8 @@ public class CSVHelper<T> {
         return res;
     }
 
-    void write(List<T> tList, String path) {
-        try(BufferedWriter bufferedWriter= new BufferedWriter(new FileWriter(path));) {
+    void write(List<T> tList, String path, boolean isAppend) {
+        try(BufferedWriter bufferedWriter= new BufferedWriter(new FileWriter(path, isAppend))) {
             for (T t: tList){
                 bufferedWriter.write(t.toString());
                 bufferedWriter.newLine();

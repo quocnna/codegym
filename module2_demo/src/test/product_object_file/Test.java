@@ -1,4 +1,4 @@
-package test.product_demo;
+package test.product_object_file;
 
 import java.util.List;
 import java.util.Scanner;

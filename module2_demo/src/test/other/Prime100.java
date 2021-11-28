@@ -1,4 +1,4 @@
-package test.orther;
+package test.other;
 
 import java.util.Scanner;
 

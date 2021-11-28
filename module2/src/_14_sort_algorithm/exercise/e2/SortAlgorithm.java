@@ -1,14 +1,12 @@
 package _14_sort_algorithm.exercise.e2;
 
-import java.util.Arrays;
-
 public class SortAlgorithm {
     public static void main(String[] args) {
         int[] arr = {32, 1, 59, 18, 12};
 
 //        selectionSort(arr);
-        bubbleSort(arr);
-//        insertionSort(arr);
+//        bubbleSort(arr);
+        insertionSort(arr);
 //        display(arr);
     }
 

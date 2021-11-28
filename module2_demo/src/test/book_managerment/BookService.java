@@ -35,13 +35,15 @@ public class BookService {
         if(book.getId()> 0){
             int index= books.indexOf(book);
             books.set(index, book);
+            csvHelper.write(books, path, false);
         }
         else {
             book.setId(books.size() + 1);
             books.add(book);
+            List<Book> tmp= new ArrayList<>();
+            tmp.add(book);
+            csvHelper.write(tmp, path, true);
         }
-
-        csvHelper.write(books, path);
     }
 
     void delete(int id){
@@ -51,7 +53,7 @@ public class BookService {
                 books.remove(i);
         }
 
-        csvHelper.write(books, path);
+        csvHelper.write(books, path, false);
     }
 
     void show(List<Book> books){

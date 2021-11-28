@@ -4,8 +4,10 @@ import furama_resort.model.Customer;
 import furama_resort.service.CustomerService;
 
 import java.util.List;
+import java.util.Optional;
 
 public class CustomerServiceImpl implements CustomerService {
+
     @Override
     public void save(Customer customer) {
 
@@ -17,7 +19,12 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public int delete() {
-        return 0;
+    public void delete(int id) {
+
+    }
+
+    @Override
+    public Optional<Customer> get(int id) {
+        return Optional.empty();
     }
 }

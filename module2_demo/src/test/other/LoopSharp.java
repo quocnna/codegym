@@ -1,4 +1,4 @@
-package test.orther;
+package test.other;
 
 public class LoopSharp {
     public static void main(String[] args){

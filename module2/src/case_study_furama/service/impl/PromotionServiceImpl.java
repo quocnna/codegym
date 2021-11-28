@@ -34,6 +34,9 @@ public class PromotionServiceImpl implements PromotionService {
                 else if(res.size() <= amountOf50){
                     res.put(customerService.getById(e.getCustomerId()), amountOf50);
                 }
+                else{
+                    return;
+                }
             }
         });
 
