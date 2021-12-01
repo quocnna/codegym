@@ -7,8 +7,8 @@ public class AlgorithmSort {
 
     public static void main(String[] args) {
 //        selectionSort();
-//        bubbleSort();
-        insetionSort();
+        bubbleSort();
+//        insetionSort();
     }
 
     private static void selectionSort() {

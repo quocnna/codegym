@@ -8,7 +8,8 @@ public class HomeView {
     }
 
     static void displayMainMenu(){
-        EmployeeView.employeeManger();
+//        EmployeeView.employeeManger();
+        CustomerView.customerManager();
 
 //        System.out.println("Welcome to Furama Resort.\n" +
 //                "1. Employee Management\n" +
