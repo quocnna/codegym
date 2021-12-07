@@ -57,26 +57,18 @@ INNER JOIN class c on s.class_id= c.id;
 insert into `subject` (name, credit, `status`) VALUE('java', 10, 1);
 insert into mark(sub_id, student_id, mark, exam_times) VALUE(1, 1, 8.5, 2);
 
--- 1
-select * from student
-where `name` like 'h%';
+-- 1 or SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+select any_value(s.name) as 'subject name',max(s.credit) as credit from subject s;
+-- select s.name as 'subject name',max(s.credit) as credit from subject s group by s.credit, s.name; 
 
 -- 2
-select * from class
-where month(start_date) = 12;
+select any_value(s.name) as 'subject name', max(m.mark) from subject s
+inner join mark m on m.sub_id= s.id;
 
 -- 3
-select * from subject
-where credit between 3 and 5;
-
--- 4
-update student set id= 2 where `name`= 'Hung';
-
--- 5
-select s.name as 'Student Name', u.name as 'Subject Name', m.mark from mark m
-inner join student s on s.id= m.student_id
-inner join subject u on u.id= m.sub_id
-order by m.mark desc, s.name asc;
+select s.name, s.phone, s.address, avg(mark) from student s
+inner join mark m on m.student_id= s.id
+group by s.id;
 
 
 

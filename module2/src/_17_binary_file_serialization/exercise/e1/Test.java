@@ -13,8 +13,7 @@ public class Test {
     }
 
     private static void displayMenu() {
-        int choice;
-        do {
+        do{
             System.out.println("1. Add New Product");
             System.out.println("2. Edit Product");
             System.out.println("3. Delete Product");
@@ -23,42 +22,46 @@ public class Test {
             System.out.println("6. Search From Price");
             System.out.println("7. Sort By Price");
             System.out.println("8. Exit");
-            System.out.print("Please input your choice: ");
-            choice = Integer.parseInt(scanner.nextLine());
-        } while (choice <= 0 || choice > 8);
 
-        try {
-            switch (choice) {
-                case 1:
-                    add();
-                    break;
-                case 2:
-                    update();
-                    break;
-                case 3:
-                    delete();
-                    break;
-                case 4:
-                    show();
-                    break;
-                case 5:
-                    searchByName();
-                    break;
-                case 6:
-                    searchFromPrice();
-                    break;
-                case 7:
-                    sort();
-                    break;
-                case 8:
-                    System.exit(0);
-                    break;
+            int choice;
+            do {
+                System.out.print("Please input your choice: ");
+                choice = Integer.parseInt(scanner.nextLine());
+            } while (choice <= 0 || choice > 8);
+
+            try {
+                switch (choice) {
+                    case 1:
+                        add();
+                        break;
+                    case 2:
+                        update();
+                        break;
+                    case 3:
+                        delete();
+                        break;
+                    case 4:
+                        show();
+                        break;
+                    case 5:
+                        searchByName();
+                        break;
+                    case 6:
+                        searchFromPrice();
+                        break;
+                    case 7:
+                        sort();
+                        break;
+                    case 8:
+                        System.exit(0);
+                        break;
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        }while (true);
 
-        backMainMenu();
+//        backMainMenu();
     }
 
     private static void backMainMenu() {
@@ -79,7 +82,8 @@ public class Test {
         String des = scanner.nextLine();
 
         Product product = new Product(0, name, brand, price, des);
-        productService.add(product);
+//        productService.add(product);
+        productService.save(product);
         System.out.printf("Add new product %s successful\n", name);
     }
 
