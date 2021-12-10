@@ -20,39 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00038e82-3748-43fc-90f1-b406b9edc184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/book_managerment/BookPriceSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/common/AppConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/common/CSVHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/data/manufacture.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/exception/NotFoundVehicleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/model/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/model/Motor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/model/Truck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/model/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/service/CarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/service/MotorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/service/TruckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/service/VehicleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/view/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/e2/SortAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/e2/SortAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study_furama/service/impl/PromotionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study_furama/service/impl/PromotionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/contact_demo/CSVHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/contact_demo/Contact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/contact_demo/ContactService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/contact_demo/ContactSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/contact_demo/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/contact_demo/Validation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/contact_demo/contact.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/furama_resort/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/model/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/furama_resort/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/furama_resort/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/service/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/furama_resort/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/furama_resort/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/furama_resort/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/furama_resort/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/view/EmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/furama_resort/view/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/furama_resort/view/HomeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/book_managerment/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/book_managerment/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/book_managerment/CSVHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/book_managerment/CSVHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/orther/AlgorithmSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/other/AlgorithmSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/orther/ComplexMath.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/orther/CustomBTS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/orther/LoopSharp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/other/LoopSharp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/orther/Prime100.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/other/Prime100.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/orther/RegexTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/product_demo/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/product_object_file/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/product_demo/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/product_object_file/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/product_demo/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/product_object_file/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2_demo/src/test/product_demo/product.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../module2_demo/src/test/product_object_file/product.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,86 +50,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/e1/StringIncreaseMaxLength.java">
+        <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/CommomUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/o2/StringSequenceMaxLength.java">
+        <entry file="file://$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_14_sort_algorithm/exercise/e2/SortAlgorithm.java">
+        <entry file="file://$PROJECT_DIR$/src/case_study_furama/view/EmployeeView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="36" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/AgeComparator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/AppConstant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            <state relative-caret-position="935">
+              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/ProductService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/ContractServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/ConstantUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/case_study_furama/controller/BookingController.java">
+        <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/CSVHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding>
-                <element signature="e#552#553#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-              </folding>
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/ValidationUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/EmployeeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p1/CopyFilesBigSize.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -156,6 +126,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="595">
               <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/PromotionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -182,6 +161,8 @@
         <option value="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Triangle.java" />
         <option value="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/e2/SortAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/case_study_furama/service/impl/PromotionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java" />
+        <option value="$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java" />
       </list>
     </option>
   </component>
@@ -198,7 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,10 +186,29 @@
               <item name="module2" type="b2602c69:ProjectViewProjectNode" />
               <item name="module2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="module2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="module2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="case_study_furama" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="module2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="case_study_furama" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -246,13 +245,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SortAlgorithm">
-    <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_15_exception_debug.practice.p2.ArrayExample" />
+  <component name="RunManager" selected="Application.CrawNews">
+    <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_15_exception_debug.practice.p3.CalculationExample" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_15_exception_debug.practice.p2.*" />
+          <option name="PATTERN" value="_15_exception_debug.practice.p3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,12 +259,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_15_exception_debug.practice.p3.CalculationExample" />
+    <configuration name="CrawNews" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_19_string_regex.exercise.o1.CrawNews" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_15_exception_debug.practice.p3.*" />
+          <option name="PATTERN" value="_19_string_regex.exercise.o1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -314,11 +313,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CrawNews" />
+        <item itemvalue="Application.ValidationClassName" />
         <item itemvalue="Application.SortAlgorithm" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.CalculationExample" />
-        <item itemvalue="Application.ArrayExample" />
-        <item itemvalue="Application.ValidationClassName" />
       </list>
     </recent_temporary>
   </component>
@@ -344,16 +343,23 @@
       <workItem from="1637750102641" duration="4657000" />
       <workItem from="1637929789906" duration="459000" />
       <workItem from="1638103802199" duration="1466000" />
+      <workItem from="1638953763508" duration="1393000" />
+      <workItem from="1639023443618" duration="1218000" />
+      <workItem from="1639033857325" duration="4521000" />
+      <workItem from="1639067283968" duration="1353000" />
+      <workItem from="1639098352286" duration="473000" />
+      <workItem from="1639111234859" duration="705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6582000" />
+    <option name="totallyTimeSpent" value="16249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3104435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34120172" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -507,6 +513,12 @@
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -535,31 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/IllegalTriangleException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#189#190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_13_search_algorithm/practice/o1/ComplexityAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-289">
@@ -578,34 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/view/EmployeeView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="66" column="68" lean-forward="true" selection-start-line="66" selection-start-column="68" selection-end-line="66" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/ConstantUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/CSVHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/FacilityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -630,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/PromotionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_11_stack_queue/exercise/o2/PalindromeByStackQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -655,31 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/ContractServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/controller/BookingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/BookingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -721,7 +648,169 @@
     <entry file="file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/ProductService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
-          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/IllegalTriangleException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="91" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_19_string_regex/exercise/e2/ValidationPhone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/ContractServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/controller/BookingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/FacilityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/o1/CopyBinaryFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/CommomUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/view/EmployeeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/CSVHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/ValidationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/EmployeeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p1/CopyFilesBigSize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/BookingServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/PromotionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/ConstantUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>

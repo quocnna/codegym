@@ -11,6 +11,8 @@ public class CrawNews {
         try {
             URL url= new URL("https://tuoitre.vn/the-gioi.htm");
             Scanner scanner = new Scanner(new InputStreamReader(url.openStream()));
+            // ignore break line
+            // https://www.javatpoint.com/post/java-scanner-usedelimiter-method
             scanner.useDelimiter("\\Z");
             String content = scanner.next();
             scanner.close();
