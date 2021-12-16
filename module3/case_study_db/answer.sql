@@ -1,4 +1,5 @@
--- 2
+-- 2.	Hiển thị thông tin của tất cả nhân viên có trong hệ thống có tên bắt đầu là một trong các ký tự “H”, “T” hoặc “K” và có tối đa 15 kí tự.
+
 SELECT
 	*
 FROM
@@ -8,7 +9,8 @@ WHERE
 	REGEXP '^[HTK]'
 	AND LENGTH(fullname) <= 15;
 
--- 3
+-- 3.	Hiển thị thông tin của tất cả khách hàng có độ tuổi từ 18 đến 50 tuổi và có địa chỉ ở “Đà Nẵng” hoặc “Quảng Trị”.
+
 SELECT
 	*
 FROM
@@ -18,7 +20,8 @@ WHERE
 	and(address = 'Quang Tri'
 		OR address = 'Quang Nam');
 
--- 4
+-- 4.	Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. Kết quả hiển thị được sắp xếp tăng dần theo số lần đặt phòng của khách hàng. Chỉ đếm những khách hàng nào có Tên loại khách hàng là “Diamond”.
+
 SELECT
 	cu.fullname,
 	count(co.customer_id) number_booking
@@ -33,10 +36,9 @@ GROUP BY
 ORDER BY
 	number_booking;
 
--- 5
-SET GLOBAL sql_mode = (
-SELECT
-	REPLACE(@@ sql_mode, 'ONLY_FULL_GROUP_BY', ''));
+-- 5.	Hiển thị ma_khach_hang, ho_ten, ten_loai_khach, ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, tong_tien (Với tổng tiền được tính theo công thức như sau: Chi Phí Thuê + Số Lượng * Giá, với Số Lượng và Giá là từ bảng dich_vu_di_kem, hop_dong_chi_tiet) cho tất cả các khách hàng đã từng đặt phòng. (những khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
+
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 
 SELECT
 	cu.id,
@@ -57,7 +59,8 @@ FROM
 GROUP BY
 	co.customer_id;
 
--- 6
+-- 6.	Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ chưa từng được khách hàng thực hiện đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
+
 SELECT
 	se.id,
 	se. `name`,
@@ -78,7 +81,8 @@ WHERE
 			AND start_date BETWEEN '2021-01-01'
 			AND '2021-03-31');
 
--- 7
+-- 7.	Hiển thị thông tin ma_dich_vu, ten_dich_vu, dien_tich, so_nguoi_toi_da, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ đã từng được khách hàng đặt phòng trong năm 2020 nhưng chưa từng được khách hàng đặt phòng trong năm 2021.
+
 SELECT
 	se.id,
 	se. `name`,
@@ -109,7 +113,9 @@ WHERE
 				AND YEAR(start_date) = '2021'
 				AND YEAR(start_date));
 
--- 8
+-- 8.	Hiển thị thông tin ho_ten khách hàng có trong hệ thống, với yêu cầu ho_ten không trùng nhau.
+-- Học viên sử dụng theo 3 cách khác nhau để thực hiện yêu cầu trên.
+ 
 SELECT DISTINCT
 	fullname
 FROM
@@ -132,7 +138,8 @@ SELECT
 FROM
 	customer;
 
--- 9
+-- 9.	Thực hiện thống kê doanh thu theo tháng, nghĩa là tương ứng với mỗi tháng trong năm 2021 thì sẽ có bao nhiêu khách hàng thực hiện đặt phòng.
+
 SELECT
 	tmp.month,
 	co.NoOfCustomers
@@ -183,7 +190,8 @@ FROM (
 		GROUP BY
 			month) AS co ON co.month = tmp.month;
 
--- 10
+-- 10.	Hiển thị thông tin tương ứng với từng hợp đồng thì đã sử dụng bao nhiêu dịch vụ đi kèm. Kết quả hiển thị bao gồm ma_hop_dong, ngay_lam_hop_dong, ngay_ket_thuc, tien_dat_coc, so_luong_dich_vu_di_kem (được tính dựa trên việc sum so_luong ở dich_vu_di_kem).
+
 SELECT
 	co.id,
 	co.start_date,
@@ -196,7 +204,8 @@ FROM
 GROUP BY
 	co.id;
 
--- 11
+-- 11.	Hiển thị thông tin các dịch vụ đi kèm đã được sử dụng bởi những khách hàng có ten_loai_khach là “Diamond” và có dia_chi ở “Vinh” hoặc “Quảng Ngãi”.
+
 SELECT
 	cu.fullname,
 	a. `name`,
@@ -214,7 +223,8 @@ WHERE
 	ct. `name` = 'Diamond'
 	AND cu.address in('Vinh', 'Quang Ngai');
 
--- 12
+-- 12.	Hiển thị thông tin ma_hop_dong, ho_ten (nhân viên), ho_ten (khách hàng), so_dien_thoai (khách hàng), ten_dich_vu, so_luong_dich_vu_di_kem (được tính dựa trên việc sum so_luong ở dich_vu_di_kem), tien_dat_coc của tất cả các dịch vụ đã từng được khách hàng đặt vào 3 tháng cuối năm 2020 nhưng chưa từng được khách hàng đặt vào 6 tháng đầu năm 2021.
+
 SELECT
 	co.id,
 	ep.fullname,
@@ -236,7 +246,8 @@ and(co.start_date NOT BETWEEN '2021-01-01'
 	AND '2021-06-30')
 GROUP BY
 	co.id
-	-- 13.  Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng. (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
+-- 13.  Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng. (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
+
 	-- CREATE TEMPORARY TABLE if not EXISTS tmp
 	-- SELECT  a.`name`, count(cd.attach_service_id) numOfAttachServer FROM attach_service a
 	-- JOIN contract_detail cd on cd.attach_service_id= a.id
@@ -354,3 +365,44 @@ WHERE
 					co.id
 				HAVING
 					total_pay > 100) AS tmp);
+
+-- 18.	Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc giữa các bảng).
+
+DELETE
+FROM
+	customer WHERE NOT EXISTS (
+		SELECT
+			*
+		FROM
+			contract
+		WHERE
+			YEAR(start_date) >= 2021
+			AND contract.customer_id = customer.id);
+
+ SELECT DISTINCT customer_id FROM contract WHERE YEAR(start_date) >= 2021;
+
+-- 19.	Cập nhật giá cho các dịch vụ đi kèm được sử dụng trên 10 lần trong năm 2020 lên gấp đôi.
+
+UPDATE
+	attach_service
+SET
+	price = price * 2
+WHERE
+	id in(
+		SELECT
+			tmp.id FROM ( SELECT DISTINCT
+					a.id AS id FROM attach_service a
+					JOIN contract_detail cd ON cd.attach_service_id = a.id
+					JOIN contract co ON co.id = cd.contract_id
+				WHERE
+					YEAR(co.start_date) = 2021
+				GROUP BY
+					cd.attach_service_id
+				HAVING
+					COUNT(cd.attach_service_id) >= 5) AS tmp);
+
+-- 20.	Hiển thị thông tin của tất cả các nhân viên và khách hàng có trong hệ thống, thông tin hiển thị bao gồm id (ma_nhan_vien, ma_khach_hang), ho_ten, email, so_dien_thoai, ngay_sinh, dia_chi.
+
+SELECT id, fullname, email, phone, birthday, address, 'employee' as fromTable FROM employee
+UNION ALL
+SELECT id, fullname, email, phone, birthday, address, 'customer' as fromTable FROM customer
