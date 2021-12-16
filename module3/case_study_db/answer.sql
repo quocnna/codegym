@@ -40,24 +40,31 @@ ORDER BY
 
 SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 
-SELECT
-	cu.id,
-	cu.fullname,
-	ct. `name`,
-	co.id,
-	se. `name`,
-	co.start_date,
-	co.end_date,
-	sum(se.price + cd.quantity * a.price) AS total
-FROM
-	customer cu
-	LEFT JOIN customer_type ct ON ct.id = cu.customer_type_id
-	LEFT JOIN contract co ON co.customer_id = cu.id
-	LEFT JOIN service se ON se.id = co.service_id
-	LEFT JOIN contract_detail cd ON cd.contract_id = co.id
-	LEFT JOIN attach_service a ON a.id = cd.attach_service_id
-GROUP BY
-	co.customer_id;
+-- select tmp.ht, (tmp.g + tmp2.c) total from (SELECT kh.ho_ten ht, kh.ma_khach_hang mk, sum(ct.so_luong * dk.gia) g FROM khach_hang kh
+-- left JOIN hop_dong hd on hd.ma_khach_hang= kh.ma_khach_hang
+-- left JOIN dich_vu dv on dv.ma_dich_vu= hd.ma_dich_vu
+-- left JOIN hop_dong_chi_tiet ct on ct.ma_hop_dong= hd.ma_hop_dong
+-- left JOIN dich_vu_di_kem dk on dk.ma_dich_vu_di_kem= ct.ma_dich_vu_di_kem
+-- group by kh.ma_khach_hang) tmp
+-- left join (SELECT kh.ho_ten ht, kh.ma_khach_hang mk, sum(dv.chi_phi_thue) c FROM khach_hang kh
+-- JOIN hop_dong hd on hd.ma_khach_hang= kh.ma_khach_hang
+-- JOIN dich_vu dv on dv.ma_dich_vu= hd.ma_dich_vu
+-- group by hd.ma_khach_hang) tmp2 on tmp2.mk= tmp.mk;
+
+SELECT cu.id, cu.fullname, sum(cd.quantity * a.price)+ tmp.pri FROM customer cu
+LEFT JOIN contract co on co.customer_id= cu.id
+LEFT JOIN service se on se.id= co.service_id
+LEFT JOIN contract_detail cd on cd.contract_id= co.id
+LEFT JOIN attach_service a on a.id= cd.attach_service_id
+LEFT JOIN 
+(SELECT
+	cu1.id as id,
+	cu1.fullname, sum(se1.price) as pri
+	FROM customer cu1
+	JOIN contract co1 on co1.customer_id= cu1.id
+	JOIN service se1 on se1.id= co1.service_id
+	GROUP BY cu1.id) tmp on tmp.id = cu.id
+	GROUP BY co.customer_id;
 
 -- 6.	Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ chưa từng được khách hàng thực hiện đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
 
@@ -406,3 +413,168 @@ WHERE
 SELECT id, fullname, email, phone, birthday, address, 'employee' as fromTable FROM employee
 UNION ALL
 SELECT id, fullname, email, phone, birthday, address, 'customer' as fromTable FROM customer
+
+-- 21.	Tạo khung nhìn có tên là v_nhan_vien để lấy được thông tin của tất cả các nhân viên có địa chỉ là “Hải Châu” và đã từng lập hợp đồng cho một hoặc nhiều khách hàng bất kì với ngày lập hợp đồng là “12/12/2019”
+
+CREATE VIEW v_nhan_vien AS
+SELECT
+	em.id, em.fullname, em.address
+FROM
+	employee em
+	JOIN contract co ON co.empployee_id = em.id
+WHERE
+year(co.start_date) = 2020
+-- 	co.start_date = '2019-12-12' and em.address= 'Hai Chau'
+GROUP BY
+	co.empployee_id
+HAVING
+	count(co.empployee_id) >= 1;
+
+-- 22.	Thông qua khung nhìn v_nhan_vien thực hiện cập nhật địa chỉ thành “Liên Chiểu” đối với tất cả các nhân viên được nhìn thấy bởi khung nhìn này.
+
+-- Not all views are updateable. The rules around updates change between various mysql versions and perhaps even the sql mode setting influences the behaviour. Pls share the exact mysql version of both servers and the select statement of the view as well.
+
+UPDATE v_nhan_vien a set a.address= 'Lien Chieu';
+
+-- 23.	Tạo Stored Procedure sp_xoa_khach_hang dùng để xóa thông tin của một khách hàng nào đó với ma_khach_hang được truyền vào như là 1 tham số của sp_xoa_khach_hang.
+
+DELIMITER //
+CREATE PROCEDURE sp_xoa_khach_hang(customerId int)
+BEGIN
+DELETE FROM customer WHERE id= customerId;
+END
+// DELIMITER ;
+
+-- 24.	Tạo Stored Procedure sp_them_moi_hop_dong dùng để thêm mới vào bảng hop_dong với yêu cầu sp_them_moi_hop_dong phải thực hiện kiểm tra tính hợp lệ của dữ liệu bổ sung, với nguyên tắc không được trùng khóa chính và đảm bảo toàn vẹn tham chiếu đến các bảng liên quan.
+
+DELIMITER / / CREATE PROCEDURE sp_them_moi_hop_dong(
+    pid int,
+    pstart_date date,
+    pend_date date,
+    pdown_payment double,
+    pempployee_id int,
+    pcustomer_id int,
+    pservice_id int
+) BEGIN DECLARE lastid int;
+select
+    max(id) into lastid
+from
+    contract;
+if pid = lastid + 1 THEN if pstart_date is null then SIGNAL SQLSTATE '02000'
+SET
+    MESSAGE_TEXT = 'start date is not null';
+    else
+INSERT INTO
+    contract (
+        id,
+        start_date,
+        end_date,
+        down_payment,
+        empployee_id,
+        customer_id,
+        service_id
+    ) VALUE(
+        pid,
+        pstart_date,
+        pend_date,
+        pdown_payment,
+        pempployee_id,
+        pcustomer_id,
+        pservice_id
+    );
+end if;
+else SIGNAL SQLSTATE '45000'
+SET
+    MESSAGE_TEXT = 'Invalid id';
+end if;
+END / / DELIMITER;
+call sp_them_moi_hop_dong(31, '2020-10-10', null, null, 1, 2, 1);
+
+-- 25.	Tạo Trigger có tên tr_xoa_hop_dong khi xóa bản ghi trong bảng hop_dong thì hiển thị tổng số lượng bản ghi còn lại có trong bảng hop_dong ra giao diện console của database.
+
+DELIMITER //
+CREATE TRIGGER tr_xoa_hop_dong
+AFTER DELETE on hop_dong FOR EACH ROW
+BEGIN
+set @c= (select * from khach_hang);
+signal SQLSTATE '01000' set MESSAGE_TEXT = @c;
+END
+// DELIMITER ;
+
+drop TRIGGER tr_xoa_hop_dong;
+DELETE FROM hop_dong WHERE ma_hop_dong= 10;
+select * from hop_dong;
+
+
+-- 26.	Tạo Trigger có tên tr_cap_nhat_hop_dong khi cập nhật ngày kết thúc hợp đồng, cần kiểm tra xem thời gian cập nhật có phù hợp hay không, với quy tắc sau: Ngày kết thúc hợp đồng phải lớn hơn ngày làm hợp đồng ít nhất là 2 ngày. Nếu dữ liệu hợp lệ thì cho phép cập nhật, nếu dữ liệu không hợp lệ thì in ra thông báo “Ngày kết thúc hợp đồng phải lớn hơn ngày làm hợp đồng ít nhất là 2 ngày” trên console của database.
+
+DELIMITER //
+CREATE trigger tr_cap_nhat_hop_dong
+after UPDATE on contract FOR EACH ROW
+BEGIN
+if new.start_date> new.end_date then signal SQLSTATE '02000' set MESSAGE_TEXT = 'Invaild start date';
+end if;
+END
+// DELIMITER ;
+
+UPDATE `cs_m3`.`contract` SET `end_date` = '2021-12-20' WHERE (`id` = '1');
+drop trigger tr_cap_nhat_hop_dong;
+
+-- 27.	Tạo Function thực hiện yêu cầu sau:
+-- a.	Tạo Function func_dem_dich_vu: Đếm các dịch vụ đã được sử dụng với tổng tiền là > 2.000.000 VNĐ.
+-- b.	Tạo Function func_tinh_thoi_gian_hop_dong: Tính khoảng thời gian dài nhất tính từ lúc bắt đầu làm hợp đồng đến lúc kết thúc hợp đồng mà khách hàng đã thực hiện thuê dịch vụ (lưu ý chỉ xét các khoảng thời gian dựa vào từng lần làm hợp đồng thuê dịch vụ, không xét trên toàn bộ các lần làm hợp đồng). Mã của khách hàng được truyền vào như là 1 tham số của function này.
+
+
+SET GLOBAL log_bin_trust_function_creators = 1;
+
+DELIMITER //
+create FUNCTION func_dem_dich_vu()
+RETURNS  int
+BEGIN
+DECLARE res int;
+select count(*) INTO res from (select se.`name`, sum(se.price)  as total from contract co
+JOIN service se on se.id= co.service_id
+GROUP by co.service_id
+HAVING total> 500) as t;
+return res;
+END
+// DELIMITER ;
+
+select func_dem_dich_vu();
+
+
+DELIMITER //
+CREATE FUNCTION func_tinh_thoi_gian_hop_dong(pcustomer_id int)
+RETURNS int
+begin
+DECLARE res int;
+select max(tmp.t) into res from (select datediff(end_date, start_date) t from contract
+WHERE customer_id= pcustomer_id) as tmp;
+RETURN res;
+end
+// DELIMITER ;
+
+select func_tinh_thoi_gian_hop_dong(5);
+
+-- 28.	Tạo Stored Procedure sp_xoa_dich_vu_va_hd_room để tìm các dịch vụ được thuê bởi khách hàng với loại dịch vụ là “Room” từ đầu năm 2015 đến hết năm 2019 để xóa thông tin của các dịch vụ đó (tức là xóa các bảng ghi trong bảng dich_vu) và xóa những hop_dong sử dụng dịch vụ liên quan (tức là phải xóa những bản gi trong bảng hop_dong) và những bản liên quan khác.
+
+DELIMITER //
+CREATE PROCEDURE sp_xoa_dich_vu_va_hd_room()
+BEGIN
+SET @myvar := (SELECT GROUP_CONCAT(co.id SEPARATOR ',') AS myval from service se
+JOIN service_type st on st.id= se.service_type_id
+JOIN contract co on co.service_id= se.id
+WHERE st.`name`= 'Room' and  year(co.start_date) BETWEEN 2015 and 2020);
+DELETE FROM contract_detail  WHERE FIND_IN_SET(contract_id,@myvar);
+DELETE FROM contract  WHERE FIND_IN_SET(id,@myvar);
+DELETE from service
+WHERE id in ( SELECT DISTINCT
+			co.service_id
+		FROM
+			contract co
+		WHERE
+			 FIND_IN_SET(co.id,@myvar));
+END
+// DELIMITER ;
+
+call sp_xoa_dich_vu_va_hd_room();
