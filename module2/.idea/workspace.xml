@@ -20,22 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00038e82-3748-43fc-90f1-b406b9edc184" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/common/AppConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/common/CSVHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/data/manufacture.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/exception/NotFoundVehicleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/model/Motor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/model/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/service/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/service/MotorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/service/TruckService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/service/VehicleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2_demo/src/test/vehicle_management_demo/view/MainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/10_jsp_jstl/e2/src/main/java/CalculateServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/10_jsp_jstl/e2/src/main/webapp/result.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,33 +36,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/CommomUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/case_study_furama/view/EmployeeView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/ConstantUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -86,28 +45,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/CSVHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/case_study_furama/util/ValidationUtil.java">
+        <entry file="file://$PROJECT_DIR$/src/_1_introduction_java/exercise/e1/HelloGreeting.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/case_study_furama/service/impl/EmployeeServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/_1_introduction_java/exercise/e2/NumberToWord.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="61" column="35" selection-start-line="61" selection-start-column="35" selection-end-line="61" selection-end-column="35" />
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_1_introduction_java/exercise/e3/ConvertCurrency.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_2_loop_in_java/exercise/e1/DisplaySharp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_2_loop_in_java/exercise/e2/PrimeNumberInput.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/_2_loop_in_java/exercise/e3/PrimeLessHundres.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -179,6 +165,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,21 +183,49 @@
               <item name="module2" type="b2602c69:ProjectViewProjectNode" />
               <item name="module2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="case_study_furama" type="462c0819:PsiDirectoryNode" />
+              <item name="_1_introduction_java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="module2" type="b2602c69:ProjectViewProjectNode" />
               <item name="module2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="case_study_furama" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="_2_loop_in_java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="module2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_2_loop_in_java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="module2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_2_loop_in_java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="e1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="module2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_2_loop_in_java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="e2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="module2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="module2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="_2_loop_in_java" type="462c0819:PsiDirectoryNode" />
+              <item name="exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="e3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -221,7 +237,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/apj-tennis-game-develop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -245,20 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CrawNews">
-    <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_15_exception_debug.practice.p3.CalculationExample" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_15_exception_debug.practice.p3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.PrimeNumberInput">
     <configuration name="CrawNews" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_19_string_regex.exercise.o1.CrawNews" />
       <module name="module2" />
@@ -272,12 +275,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_14_sort_algorithm.exercise.e2.SortAlgorithm" />
+    <configuration name="PrimeLessHundres" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_loop_in_java.exercise.e3.PrimeLessHundres" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_14_sort_algorithm.exercise.e2.*" />
+          <option name="PATTERN" value="_2_loop_in_java.exercise.e3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -285,12 +288,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_15_exception_debug.exercise.e1.Test" />
+    <configuration name="PrimeNumberInput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_loop_in_java.exercise.e2.PrimeNumberInput" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_15_exception_debug.exercise.e1.*" />
+          <option name="PATTERN" value="_2_loop_in_java.exercise.e2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_14_sort_algorithm.exercise.e2.SortAlgorithm" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_14_sort_algorithm.exercise.e2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -313,11 +329,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrimeNumberInput" />
+        <item itemvalue="Application.PrimeLessHundres" />
         <item itemvalue="Application.CrawNews" />
         <item itemvalue="Application.ValidationClassName" />
         <item itemvalue="Application.SortAlgorithm" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.CalculationExample" />
       </list>
     </recent_temporary>
   </component>
@@ -349,17 +365,18 @@
       <workItem from="1639067283968" duration="1353000" />
       <workItem from="1639098352286" duration="473000" />
       <workItem from="1639111234859" duration="705000" />
+      <workItem from="1640766811586" duration="681000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16249000" />
+    <option name="totallyTimeSpent" value="16930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34120172" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34620887" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -811,6 +828,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_introduction_java/exercise/e1/HelloGreeting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_introduction_java/exercise/e2/NumberToWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1_introduction_java/exercise/e3/ConvertCurrency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_2_loop_in_java/exercise/e1/DisplaySharp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_2_loop_in_java/exercise/e3/PrimeLessHundres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_2_loop_in_java/exercise/e2/PrimeNumberInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
