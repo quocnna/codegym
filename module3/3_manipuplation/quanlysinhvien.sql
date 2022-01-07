@@ -70,7 +70,7 @@ select * from subject
 where credit between 3 and 5;
 
 -- 4
-update student set id= 2 where `name`= 'Hung';
+update student set class_id= 2 where `name`= 'Hung';
 
 -- 5
 select s.name as 'Student Name', u.name as 'Subject Name', m.mark from mark m
