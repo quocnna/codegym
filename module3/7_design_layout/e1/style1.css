@@ -1,0 +1,48 @@
+html{
+    font-family: Helvetica;
+    font-size: 15px;
+}
+body{
+    margin: 0 auto;
+    width: 80%;
+    background: darkgrey;
+}
+
+header{
+    height: 50px;
+    background: yellow;
+}
+
+nav{
+    height: 30px;
+    background: green;
+}
+
+main{
+    display: flex;
+    height: 800px;
+    background: black;
+}
+
+#main{
+    flex: 8;
+}
+article{
+    height: 50%;
+    background: blue;
+}
+
+section{
+    height: 50%;
+    background: aqua;
+}
+
+aside{
+    flex: 2;
+    background: cadetblue;
+}
+
+footer{
+    height: 50px;
+    background: red;
+}
