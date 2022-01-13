@@ -63,6 +63,15 @@ public class UserServlet extends HttpServlet {
                 case "delete":
                     deleteUser(request, response);
                     break;
+                case "sort":
+                    String sortField= request.getParameter("sortField");
+                    String sortDir= request.getParameter("sortDir");
+                    List<User> users= userDAO.selectAllUsers(sortField, sortDir);
+                    request.setAttribute("listUser", users);
+                    String tmp= sortDir.isEmpty() || sortDir.equals("asc")? "desc": "asc";
+                    request.setAttribute("sortDir", tmp);
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
+                    dispatcher.forward(request, response);
                 default:
                     listUser(request, response);
                     break;
@@ -71,6 +80,7 @@ public class UserServlet extends HttpServlet {
             throw new ServletException(ex);
         }
     }
+
 
     private void searchByCountry(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         List<User> listUser = userDAO.search(request.getParameter("search"));
@@ -81,7 +91,7 @@ public class UserServlet extends HttpServlet {
 
     private void listUser(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        List<User> listUser = userDAO.selectAllUsers();
+        List<User> listUser = userDAO.selectAllUsers("id","desc");
         request.setAttribute("listUser", listUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         dispatcher.forward(request, response);
@@ -132,7 +142,7 @@ public class UserServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         userDAO.deleteUser(id);
 
-        List<User> listUser = userDAO.selectAllUsers();
+        List<User> listUser = userDAO.selectAllUsers("id", "desc");
         request.setAttribute("listUser", listUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         dispatcher.forward(request, response);

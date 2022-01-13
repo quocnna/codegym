@@ -18,8 +18,9 @@ public class UserDAO implements IUserDAO{
     private static final String SELECT_ALL_USERS = "select * from users";
     private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
     private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
-    private static final String SEARCH_COUNTRY_SQL= "select * from users where country regexp ?";
-    private static final String SORT_SQL= "select * from users order by name ";
+//    private static final String SEARCH_COUNTRY_SQL= "select * from users where country regexp ?";
+    private static final String SEARCH_COUNTRY_SQL= "select * from users where country like '%?%'";
+    private static final String SORT_SQL= "select * from users order by %s %s";
 
     public UserDAO() {
     }
@@ -77,15 +78,12 @@ public class UserDAO implements IUserDAO{
         return user;
     }
 
-    public List<User> selectAllUsers() {
-
+    public List<User> selectAllUsers(String sortField, String sortDir) {
         // using try-with-resources to avoid closing resources (boiler plate code)
         List<User> users = new ArrayList<>();
         // Step 1: Establishing a Connection
-        try (Connection connection = getConnection();
-
-             // Step 2:Create a statement using connection object
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
+        try (Connection connection = getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement(String.format(SORT_SQL, sortField, sortDir));
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
             users= getUsers(preparedStatement.executeQuery());
@@ -120,20 +118,34 @@ public class UserDAO implements IUserDAO{
     @Override
     public List<User> search(String country) {
         List<User> res= new ArrayList<>();
-        try(Connection connection= getConnection(); PreparedStatement statement= connection.prepareStatement(SEARCH_COUNTRY_SQL)) {
-            statement.setString(1, country);
+        try(Connection connection= getConnection()) {
+//            PreparedStatement statement= connection.prepareStatement(SEARCH_COUNTRY_SQL);
+            String st= SEARCH_COUNTRY_SQL.replace("?", country);
+            PreparedStatement statement= connection.prepareStatement(st);
+//            statement.setString(1, country);
             res= getUsers(statement.executeQuery());
         }
         catch (SQLException e){
             e.printStackTrace();
         }
+
         return res;
     }
 
-    @Override
-    public void sortByName(boolean isASC) {
-
-    }
+//    @Override
+//    public List<User> sortByName(boolean isASC) {
+//        List<User> res= new ArrayList<>();
+//        try(Connection connection= getConnection()){
+//            PreparedStatement preparedStatement= connection.prepareStatement(SORT_SQL.replace("?", "DESC"));
+//            ResultSet resultSet= preparedStatement.executeQuery();
+//            res= getUsers(resultSet);
+//        }
+//        catch (SQLException e){
+//            e.printStackTrace();
+//        }
+//
+//        return res;
+//    }
 
     private List<User> getUsers(ResultSet rs) throws SQLException{
         List<User> res= new ArrayList<>();

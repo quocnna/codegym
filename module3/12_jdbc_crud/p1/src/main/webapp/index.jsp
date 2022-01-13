@@ -13,4 +13,9 @@
   <body>
   $END$
   </body>
+<script>
+  window.onload= function () {
+    window.location.href= "/users"
+  }
+</script>
 </html>

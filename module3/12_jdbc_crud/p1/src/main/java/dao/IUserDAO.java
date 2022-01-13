@@ -10,13 +10,11 @@ public interface IUserDAO {
 
     public User selectUser(int id);
 
-    public List<User> selectAllUsers();
+    public List<User> selectAllUsers(String sortField, String sortDir);
 
     public boolean deleteUser(int id) throws SQLException;
 
     public boolean updateUser(User user) throws SQLException;
 
     List<User> search(String country);
-
-    void sortByName(boolean isASC);
 }
