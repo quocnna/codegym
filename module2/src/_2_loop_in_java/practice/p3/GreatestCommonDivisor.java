@@ -14,17 +14,22 @@ public class GreatestCommonDivisor {
         a = Math.abs(a);
         b = Math.abs(b);
         System.out.println(gcd(a, b) > 0 ? "Greatest common divisor is: " + gcd(a, b) : "Nothing");
-
     }
 
     private static int gcd(int a, int b) {
-        int min = Math.min(a,b);
-
-        for (int i = min; i > 0; i--) {
+        for (int i = a; i > 0; i--) {
             if(a%i==0 && b%i==0)
                 return i;
         }
         return -1;
+
+//        int min = Math.min(a,b);
+//
+//        for (int i = min; i > 0; i--) {
+//            if(a%i==0 && b%i==0)
+//                return i;
+//        }
+//        return -1;
 
         // improvement
 

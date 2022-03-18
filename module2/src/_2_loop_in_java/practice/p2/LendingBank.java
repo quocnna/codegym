@@ -16,7 +16,7 @@ public class LendingBank {
         interest_rate = input.nextDouble();
         double interest_total= 0;
         for(int i = 0; i < month; i++){
-            interest_total = money * (interest_rate/100)/12 * 3;
+            interest_total = money * (interest_rate/100)/12 * month;
         }
 
         System.out.println("Total of interset: " + interest_total);

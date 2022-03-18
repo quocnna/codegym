@@ -18,7 +18,5 @@ public class PrimeLessHundres {
                 System.out.println(i);
             }
         }while (i<100);
-
-
     }
 }
