@@ -1,6 +1,8 @@
+package demo.numberToLetter;
+
 import java.util.Scanner;
 
-public class Main {
+public class English {
     public static void main(String[] args) {
         while (true){
             System.out.print("Input your number: ");
