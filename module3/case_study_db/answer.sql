@@ -108,8 +108,7 @@ WHERE
 			contract
 		WHERE
 			service_id = se.id
-			AND YEAR(start_date) = '2020'
-			AND YEAR(start_date))
+			AND YEAR(start_date) = '2020')
 		AND NOT EXISTS (
 			SELECT
 				*
@@ -117,8 +116,7 @@ WHERE
 				contract
 			WHERE
 				service_id = se.id
-				AND YEAR(start_date) = '2021'
-				AND YEAR(start_date));
+				AND YEAR(start_date) = '2021');
 
 -- 8.	Hiển thị thông tin ho_ten khách hàng có trong hệ thống, với yêu cầu ho_ten không trùng nhau.
 -- Học viên sử dụng theo 3 cách khác nhau để thực hiện yêu cầu trên.
