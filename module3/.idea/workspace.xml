@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1570396b-8681-45bb-8257-5117bcf96dfd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../module4/_10_session_cookie/exercise/e1/cart_shop/src/main/java/com/example/cart_shop/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module4/_10_session_cookie/exercise/e1/cart_shop/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_design_layout/e2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/07_design_layout/e2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07_design_layout/e2/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/07_design_layout/e2/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study_db/answer.sql" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_db/answer.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e1/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e1/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e1/style1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e2/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e2/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e3/LayoutWithRWD.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e3/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e4/cn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e4/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e4/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/e4/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/other/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/other/index1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/other/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/07_design_layout/other/style1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/08_bootstrap/e2/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/08_bootstrap/e2/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +231,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -236,6 +255,9 @@
       <workItem from="1642073561718" duration="2872000" />
       <workItem from="1649068203768" duration="230000" />
       <workItem from="1649069168211" duration="200000" />
+      <workItem from="1649591472890" duration="24000" />
+      <workItem from="1649591712108" duration="19000" />
+      <workItem from="1649846612379" duration="1413000" />
     </task>
     <servers />
   </component>
