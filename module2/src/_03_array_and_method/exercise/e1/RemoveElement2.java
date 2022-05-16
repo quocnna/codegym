@@ -2,9 +2,9 @@ package _03_array_and_method.exercise.e1;
 
 import java.util.Scanner;
 
-public class RemoveElement {
+public class RemoveElement2 {
     public static void main(String[] args) {
-        int[] a = {1,2,3,4,5,3,7};
+        int[] a = {1,2,3,4,5,6,7};
 
         System.out.print("Input value to remove: ");
         Scanner scanner= new Scanner(System.in);
@@ -14,26 +14,6 @@ public class RemoveElement {
         for (int i = 0; i < tmp.length; i++) {
             System.out.println(tmp[i]);
         }
-
-//        int length= a.length;
-//        int index_del=-1;
-//        for (int i = 0; i < length; i++) {
-//            if(val== a[i]){
-//                index_del= i;
-//                break;
-//            }
-//        }
-//
-//        if(index_del>=0){
-//            for (int i = index_del; i < length-1; i++) {
-//                a[i]= a[i+1];
-//            }
-//        }
-
-
-//        for (int i = 0; i < length-1; i++) {
-//            System.out.println(a[i]);
-//        }
     }
 
     private static int[] remove(int[] arr, int val){

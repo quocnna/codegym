@@ -6,8 +6,8 @@ public class FindMinValue {
         System.out.println("The smallest element in the array is: " + minValue(arr));
     }
     public static int minValue(int[] array){
-        int res=4;
-        for (int i = 0; i < array.length; i++) {
+        int res= array[0];
+        for (int i = 1; i < array.length; i++) {
             if(res>array[i]){
                 res= array[i];
             }
