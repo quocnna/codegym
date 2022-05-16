@@ -2,7 +2,7 @@ package _02_loop_in_java.practice.p4;
 
 import java.util.Scanner;
 
-public class DesignMenu {
+public class DesignMenu1 {
     public static void main(String[] args) {
         int choice=1;
         Scanner input = new Scanner(System.in);
