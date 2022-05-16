@@ -1,6 +1,6 @@
 package _02_loop_in_java.practice.p1;
 
-public class PrimeNumber {
+public class PrimeNumber1 {
     public static void main(String[] args) {
         System.out.println(checkPrimeNumber(97));
     }
