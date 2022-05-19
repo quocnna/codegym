@@ -1,4 +1,4 @@
-CREATE DATABASE product_management;
+CREATE DATABASE product_manager;
 
 use product_management;
 
@@ -57,27 +57,28 @@ INSERT INTO order_detail (order_id, product_id, quantity) VALUE(3,1,8);
 INSERT INTO order_detail (order_id, product_id, quantity) VALUE(2,5,4);
 INSERT INTO order_detail (order_id, product_id, quantity) VALUE(2,3,3);
 
--- 1
+-----------------
+
+-- 1 Hiển thị các thông tin  gồm oID, oDate, oPrice của tất cả các hóa đơn trong bảng Order
 SELECT * from `order`;
 
+-- 2 Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
+select c.name, p.name from customer c 
+join `order` o on c.id = o.customer_id 
+join order_detail od on c.id = od.order_id
+join product p on od.product_id = p.id
 
--- 2
-SELECT c.name, p.name FROM customer c
-INNER JOIN `order` o on o.customer_id= c.id
-INNER JOIN order_detail d on d.order_id= o.id
-INNER JOIN product p on p.id= d.product_id;
+-- 3 Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào (use explain to test performence)
+select * from customer c where not exists (select 1 from `order` o where o.customer_id = c.id);
 
-
--- 3
-SELECT * from customer
-WHERE id not in (SELECT customer_id FROM `order`);
+SELECT * from customer WHERE id not in (SELECT customer_id FROM `order`);
 
 SELECT * FROM customer c
 LEFT JOIN `order` o on o.customer_id= c.id
 WHERE o.id is NULL
 
 
--- 4
+-- 4 Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn (giá một hóa đơn được tính bằng tổng giá bán của từng loại mặt hàng xuất hiện trong hóa đơn. Giá bán của từng loại được tính = odQTY*pPrice)
 SELECT o.id as `code`, o.date as `date`, sum(p.price* d.quantity) as total from `order` o
 INNER JOIN order_detail d on d.order_id= o.id
 INNER JOIN product p on p.id= d.product_id

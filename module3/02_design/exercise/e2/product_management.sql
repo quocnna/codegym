@@ -12,20 +12,22 @@ CREATE TABLE
 `order` (
 	id int PRIMARY KEY AUTO_INCREMENT,
 	customer_id int,
-	`date` datetime,
-	total_price float,
+	orderDate datetime,
+	total_price double,
 	FOREIGN KEY (customer_id) REFERENCES customer (id)
 );
 
 CREATE TABLE product (
 	id int PRIMARY KEY AUTO_INCREMENT,
 	`name` VARCHAR(50),
-	price FLOAT
+	price double
 );
 
 CREATE TABLE order_detail (
 	order_id int,
 	product_id int,
 	quantity SMALLINT,
-	PRIMARY KEY (order_id, product_id)
+	PRIMARY KEY (order_id, product_id),
+	FOREIGN KEY (order_id) REFERENCES `order` (id),
+	FOREIGN KEY (product_id) REFERENCES `product` (id)
 );

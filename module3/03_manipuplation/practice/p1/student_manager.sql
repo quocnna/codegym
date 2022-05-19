@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS quanlysinhvien;
+CREATE DATABASE IF NOT EXISTS student_manager;
 
-use quanlysinhvien;
+use student_manager;
 
-CREATE TABLE IF NOT EXISTS class (
+CREATE TABLE IF NOT EXISTS `class` (
 	id INT PRIMARY KEY,
 	`name` VARCHAR(50) NOT NULL,
 	start_date DATETIME NOT NULL,
@@ -41,42 +41,17 @@ FOREIGN KEY (sub_id) REFERENCES `subject` (id),
 FOREIGN KEY (student_id) REFERENCES student (id)
 );
 
--- insert classs
+-------------
+
 INSERT INTO class (`name`, start_date, `status`) value ('C0420G1', '2020-12-15', 1);
 INSERT INTO class value (2, 'C0420G1', '2020-12-15', 1);
-UPDATE CLASS set `name`= 'C03' WHERE id=1;
 
 insert into student (`name`, address, phone, `status`, class_id) VALUE('quoc', '19 le do', '0708', 1, 1);
 insert into student (`name`, address, phone, `status`, class_id) VALUE('dung', '19 le do', '0708', 1, 2);
-SELECT * from student;
-SELECT `name` from student;
-
-SELECT * from student s
-INNER JOIN class c on s.class_id= c.id;
 
 insert into `subject` (name, credit, `status`) VALUE('java', 10, 1);
+
 insert into mark(sub_id, student_id, mark, exam_times) VALUE(1, 1, 8.5, 2);
-
--- 1
-select * from student
-where `name` like 'h%';
-
--- 2
-select * from class
-where month(start_date) = 12;
-
--- 3
-select * from subject
-where credit between 3 and 5;
-
--- 4
-update student set class_id= 2 where `name`= 'Hung';
-
--- 5
-select s.name as 'Student Name', u.name as 'Subject Name', m.mark from mark m
-inner join student s on s.id= m.student_id
-inner join subject u on u.id= m.sub_id
-order by m.mark desc, s.name asc;
 
 
 

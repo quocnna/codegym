@@ -41,3 +41,29 @@ FOREIGN KEY (sub_id) REFERENCES `subject` (id),
 FOREIGN KEY (student_id) REFERENCES student (id)
 );
 
+-------------
+
+-- 1 Hiển thị danh sách tất cả các học viên
+select * from student;
+
+-- 2 Hiển thị danh sách các học viên đang theo học
+select * from student where `status` <> 0;
+
+-- 3 Hiển thị danh sách các môn học có thời gian học nhỏ hơn 10 giờ
+select * from subject where credit < 10;
+
+-- 4 Hiển thị danh sách học viên lớp A1
+select * from student s join `class` c on s.class_id = c.id where c.name = 'A1';
+
+-- 5 Hiển thị điểm môn CF của các học viên
+select * from student s 
+join mark m on s.id = m.student_id 
+join subject s on m.sub_id = s.id
+where s.name = 'CF'
+group by s.id 
+-- group by isn't necessary because of UNIQUE (sub_id, student_id)
+
+
+
+
+
