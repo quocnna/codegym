@@ -56,8 +56,8 @@ public class Fan {
         f2.setMediumSpeed();
         f2.setRadius(5);
 
-        System.out.println("Fan1: "+ f1.toString());
-        System.out.println("Fan2 "+ f2.toString());
+        System.out.println("Fan1: "+ f1);
+        System.out.println("Fan2 "+ f2);
     }
 }
 

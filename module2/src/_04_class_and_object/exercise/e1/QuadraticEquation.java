@@ -3,16 +3,13 @@ package _04_class_and_object.exercise.e1;
 import java.util.Scanner;
 
 public class QuadraticEquation {
-    private double a;
-    private double b;
-    private double c;
-    private double delta;
+    private final double a, b;
+    private final double delta;
 
-    QuadraticEquation(double a, double b, double c){
+    QuadraticEquation(final double a, final double b, final double c){
         this.a = a;
         this.b = b;
-        this.c = c;
-        this.delta = Math.pow(b,2) - (4*a*c);
+        delta = Math.pow(b,2) - (4*a*c);
     }
 
     double getDiscriminant(){
@@ -22,6 +19,7 @@ public class QuadraticEquation {
     double getRoot1() {
         return (-b + Math.sqrt(delta))/2* a;
     }
+
     double getRoot2() {
         return (-b - Math.sqrt(delta))/2* a;
     }
@@ -38,11 +36,14 @@ public class QuadraticEquation {
         QuadraticEquation q = new QuadraticEquation(a,b,c);
         double delta= q.getDiscriminant();
 
-        if(delta>0)
+        if(delta>0){
             System.out.printf("x1 = %.2f, x2 = %.2f", q.getRoot1(), q.getRoot2());
-        else if(delta==0)
+        }
+        else if(delta==0){
             System.out.printf("x= "+q.getRoot1());
-        else
+        }
+        else{
             System.out.println("The equation has no roots");
+        }
     }
 }

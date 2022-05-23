@@ -37,8 +37,7 @@ public class RemoveElement2 {
         int[] tmp= new int[length-1];
         for (int i=0 ,j = 0; i < length ; i++) {
             if(i!=index){
-                tmp[j]= arr[i];
-                j++;
+                tmp[j++]= arr[i];
             }
         }
         return tmp;
