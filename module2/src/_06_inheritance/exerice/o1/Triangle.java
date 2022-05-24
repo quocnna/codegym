@@ -1,4 +1,4 @@
-package _06_inheritance.exerice.e4;
+package _06_inheritance.exerice.o1;
 
 import _06_inheritance.practice.p1.Shape;
 

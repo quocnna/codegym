@@ -1,4 +1,4 @@
-package _06_inheritance.exerice.e4;
+package _06_inheritance.exerice.o1;
 
 public class Test {
     public static void main(String[] args) {
