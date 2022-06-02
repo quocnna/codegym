@@ -1,6 +1,6 @@
 package _07_abstract_interface.exercise.e2;
 
-public class Shape {
+public abstract class Shape {
     private String color;
     private boolean filled;
 
@@ -29,6 +29,8 @@ public class Shape {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
+
+    public abstract double getPerimeter();
 
     @Override
     public String toString() {

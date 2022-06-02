@@ -50,7 +50,7 @@ public class MoveablePoint extends Point2D {
 
     @Override
     public String toString() {
-        String res= String.format("(x= %f, y= %f), speed= (xSpeed= %f, xSpeed= %f)", getX(), getY(), getxSpeed(), getySpeed());
+        String res= String.format("(x= %f, y= %f), speed= (xSpeed= %f, xSpeed= %f)", getX(), getY(), xSpeed, ySpeed);
         return res;
     }
 }

@@ -1,6 +1,6 @@
 package _07_abstract_interface.exercise.e1;
 
-public class Rectangle extends Shape implements Resizeable {
+public class Rectangle extends Shape {
     private double width;
     private double height;
 
@@ -51,8 +51,8 @@ public class Rectangle extends Shape implements Resizeable {
     }
 
     @Override
-    public void resize(double percent) {
-        width*=percent/100;
-        height *=percent/100;
+    public void resize(double increasePercent) {
+        width += width * increasePercent/100;
+        height += height * increasePercent/100;
     }
 }

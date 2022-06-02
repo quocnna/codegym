@@ -1,6 +1,9 @@
 package _07_abstract_interface.practice.p3;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.stream.Collectors;
 
 public class Test {
     public static void main(String[] args) {
@@ -15,28 +18,21 @@ public class Test {
         System.out.println("Pre-sorted:");
         Arrays.stream(circles).forEach(System.out::println);
 
-//        sort normal by comparator
-        Arrays.sort(circles, new CircleComparator());
-        //Collections.sort(tmp, new CircleComparator());
 
-//        sort by lamda, note for double cast to int
-/*
-        Arrays.sort(circles, (o, o2)-> (int)(o.getRadius()- o2.getRadius()));
-*/
+        //sort normal by comparator
+/*        Arrays.sort(circles, new CircleComparator());
+        Collections.sort(Arrays.asList(circles), new CircleComparator());*/
 
-//        sort by built in Comparator.comparing
-/*
+        //sort by lamda, note for double cast to int; with built in Comparator.comparing
+        Arrays.sort(circles, (o1, o2)-> (int)(o1.getRadius()- o2.getRadius()));
         Arrays.sort(circles, Comparator.comparing(Circle::getRadius));
-*/
-
-//         sort by stream, note: list string or int have default sort comparable so just use sort without param,
-//         else sort object need use sort with param comparator interface
-//         stream need return to a variable for foreach
-/*
-        Arrays.stream(circles).sorted(new CircleComparator()).forEach(System.out::println);
-*/
 
         System.out.println("After-sorted:");
         Arrays.stream(circles).forEach(System.out::println);
+
+         //sort by stream, note: list string or int have default sort comparable so just use sort without param,
+         //else sort object need use sort with param comparator interface
+         //stream need return to a variable for foreach
+/*        Arrays.stream(circles).sorted(new CircleComparator()).forEach(System.out::println);*/
     }
 }

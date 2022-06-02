@@ -3,11 +3,11 @@ package _07_abstract_interface.practice.p1;
 public class Chicken extends Animal implements Edible {
     @Override
     public String makeSound() {
-        return "Chicken: cluck-cluck!";
+        return "Chicken make sound: cluck-cluck!";
     }
 
     @Override
     public String howToEat() {
-        return "could be fried";
+        return "Chicken how to eat: could be fried";
     }
 }

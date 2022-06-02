@@ -1,6 +1,6 @@
 package _07_abstract_interface.exercise.e1;
 
-public class Square extends Rectangle implements Resizeable {
+public class Square extends Rectangle {
     public Square(){
         super(1,1);
     }

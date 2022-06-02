@@ -1,6 +1,6 @@
 package _07_abstract_interface.exercise.e1;
 
-public class Shape {
+public abstract class Shape implements Resizeable {
     private String color;
     private boolean filled;
 

@@ -1,6 +1,6 @@
 package _07_abstract_interface.exercise.e1;
 
-public class Circle extends Shape implements Resizeable {
+public class Circle extends Shape {
     private double radius;
 
     public Circle(){
@@ -41,7 +41,8 @@ public class Circle extends Shape implements Resizeable {
     }
 
     @Override
-    public void resize(double percent) {
-        radius*= percent/100;
+    public void resize(double increasePercent) {
+        double tmp= radius * increasePercent/100;
+        radius += tmp;
     }
 }
