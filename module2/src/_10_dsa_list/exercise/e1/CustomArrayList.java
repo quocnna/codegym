@@ -3,89 +3,107 @@ package _10_dsa_list.exercise.e1;
 import java.util.Arrays;
 
 public class CustomArrayList<E> implements Cloneable {
-    private static final int DEFAULT_CAPACITY = 10;
-    private E[] elements;
-    private int size;
+  private static final int DEFAULT_CAPACITY = 10;
+  private E[] elements;
+  private int size;
 
-    CustomArrayList() {
-        elements = (E[]) new Object[DEFAULT_CAPACITY];
+  CustomArrayList() {
+    elements = (E[]) new Object[DEFAULT_CAPACITY];
+  }
+
+  CustomArrayList(int initCapacity) {
+    elements = (E[]) new Object[initCapacity];
+  }
+
+  void add(int index, E element) {
+    if (index < 0 || index > size) {
+      throw new IndexOutOfBoundsException();
     }
 
-    CustomArrayList(int initCapacity) {
-        elements = (E[]) new Object[initCapacity];
+    ensureCapacity();
+
+    for (int i = size; i > index; i--) {
+      elements[i] = elements[i - 1];
     }
 
-    void add(int index, E element) {
-        if(index< 0 || index> size)
-            throw new IndexOutOfBoundsException();
+    elements[index] = element;
+    size++;
+  }
 
-        ensureCapacity();
-        for (int i = size; i > index; i--) elements[i] = elements[i - 1];
-        elements[index] = element;
-        size++;
+  boolean add(E e) {
+    add(size, e);
+    //        ensureCapacity();
+    //        elements[size] = e;
+    //        size++;
+    return true;
+  }
+
+  E remove(int index) {
+    E[] tmp = (E[]) new Object[size - 1];
+    E res = elements[index];
+
+    for (int i = 0, j = 0; i < size; i++) {
+      if (i != index) {
+        tmp[j++] = elements[i];
+      }
     }
 
-    boolean add(E e) {
-        add(size, e);
-//        ensureCapacity();
-//        elements[size] = e;
-//        size++;
+    elements = tmp;
+    size--;
+    return res;
+
+    /*        // the way two
+    for (int j = 0, k = 0; j < size; j++) {
+        if (j == i)
+            continue;
+        tmp[k++] = data[j];
+    }*/
+  }
+
+  int size() {
+    return size;
+  }
+
+  E get(int index) {
+    if (index < 0 || index > size){
+      throw new IndexOutOfBoundsException();
+    }
+
+    return elements[index];
+  }
+
+  boolean contains(E e) {
+    for (int i = 0; i < size; i++) {
+      if (elements[i].equals(e)){
         return true;
+      }
     }
 
-    E remove(int index) {
-        E[] tmp = (E[]) new Object[size - 1];
-        E res= elements[index];
-        for (int i = 0, j = 0; i < size; i++) {
-            if (i != index) tmp[j++] = elements[i];
-        }
-        elements= tmp;
-        size--;
-        return res;
+    return false;
+  }
 
-/*        // the way two
-        for (int j = 0, k = 0; j < size; j++) {
-            if (j == i)
-                continue;
-            tmp[k++] = data[j];
-        }*/
+  int indexOf(E e) {
+    for (int i = 0; i < size; i++) {
+      if (elements[i].equals(e)){
+        return i;
+      }
     }
 
-    int size() {
-        return size;
-    }
+    return -1;
+  }
 
-    E get(int index) {
-        if (index < 0 || index > size)
-            throw new IndexOutOfBoundsException();
+  void clear() {
+    size = 0;
+    elements = (E[]) new Object[DEFAULT_CAPACITY];
+  }
 
-        return elements[index];
-    }
+  public Object clone() throws CloneNotSupportedException {
+    return super.clone();
+  }
 
-    boolean cointains(E e){
-        for (int i = 0; i < size; i++) {
-            if(elements[i].equals(e))   return true;
-        }
-        return false;
+  private void ensureCapacity() {
+    if (size >= elements.length) {
+      elements = Arrays.copyOf(elements, elements.length * 3 / 2);
     }
-
-    int indexOf(E e){
-        for (int i = 0; i < size; i++) {
-            if(elements[i].equals(e))   return i;
-        }
-        return -1;
-    }
-
-    void clear(){
-        size= 0;
-        elements= (E[])new Object[DEFAULT_CAPACITY];
-    }
-
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-
-    private void ensureCapacity() {
-        if (size >= elements.length) elements = Arrays.copyOf(elements, elements.length * 3 / 2);
-    }
+  }
 }

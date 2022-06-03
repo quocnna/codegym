@@ -9,7 +9,7 @@ public class Test {
         arrayList.add(6);
         arrayList.add(2, 23);
         arrayList.remove(2);
-        System.out.println(arrayList.cointains(6));
+        System.out.println(arrayList.contains(6));
         System.out.println(arrayList.indexOf(3));
         arrayList.clear();
 
