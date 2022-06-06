@@ -1,0 +1,3 @@
+[submodule "module2/src/case_study"]
+	path = module2/src/case_study
+	url = https://github.com/quocnna/case_study_m2.git
