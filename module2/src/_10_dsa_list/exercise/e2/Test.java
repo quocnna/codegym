@@ -7,6 +7,7 @@ public class Test {
         customLinkedList.addFirst("1");
         customLinkedList.addLast("3");
         customLinkedList.add(1, "CodeGym");
+
         System.out.println(customLinkedList.getFirst());
         System.out.println(customLinkedList.getLast());
         System.out.println(customLinkedList.get(1));
@@ -14,6 +15,7 @@ public class Test {
         System.out.println(customLinkedList.indexOf("3"));
 
         customLinkedList.remove(1);
+
         try {
             CustomLinkedList<String> tmp= (CustomLinkedList<String>)customLinkedList.clone();
             int size= tmp.size();

@@ -18,6 +18,7 @@ public class MyStackByLinkedList<T> {
         if (isEmpty()) {
             throw new EmptyStackException();
         }
+
         return stack.removeFirst();
     }
 
@@ -29,6 +30,7 @@ public class MyStackByLinkedList<T> {
         if (stack.size() == 0) {
             return true;
         }
+
         return false;
     }
 }

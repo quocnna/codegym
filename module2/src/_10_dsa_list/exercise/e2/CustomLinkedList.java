@@ -23,21 +23,13 @@ public class CustomLinkedList<E> implements Cloneable {
     }
   }
 
-  boolean add(E e) {
-    Node tmp = head;
-    for (int i = 0; i < numNodes; i++) {
-      tmp = tmp.next;
-    }
-    Node node = new Node(e);
-    tmp.next = node;
-    numNodes++;
-    return true;
-  }
-
   void addFirst(E e) {
     Node tmp = head;
-    head = new Node(e);
-    head.next = tmp;
+
+    head = new Node(e, tmp);
+
+    //    head = new Node(e);
+    //    head.next = tmp;
 
     numNodes++;
   }
@@ -45,10 +37,9 @@ public class CustomLinkedList<E> implements Cloneable {
   void addLast(E e) {
     Node tmp = head;
 
-    if (tmp == null){
+    if (tmp == null) {
       addFirst(e);
-    }
-    else {
+    } else {
       while (tmp.next != null) {
         tmp = tmp.next;
       }
@@ -80,12 +71,12 @@ public class CustomLinkedList<E> implements Cloneable {
   }
 
   E get(int index) {
-    if (index < 0 || numNodes > numNodes){
+    if (index < 0 || numNodes > numNodes) {
       throw new IndexOutOfBoundsException();
     }
 
     Node<E> tmp = head;
-    if (tmp.next == null){
+    if (tmp.next == null) {
       return getFirst();
     }
 
@@ -102,11 +93,12 @@ public class CustomLinkedList<E> implements Cloneable {
 
   E getLast() {
     Node<E> tmp = head;
+
     if (tmp.next == null) {
       return getFirst();
     }
 
-    while (tmp.next != null){
+    while (tmp.next != null) {
       tmp = tmp.next;
     }
 
@@ -120,6 +112,7 @@ public class CustomLinkedList<E> implements Cloneable {
 
   boolean contains(E e) {
     Node tmp = head;
+
     if (tmp != null) {
       do {
         if (tmp.data.equals(e)) {
@@ -135,9 +128,10 @@ public class CustomLinkedList<E> implements Cloneable {
 
   int indexOf(E e) {
     Node tmp = head;
+
     if (tmp != null) {
       for (int i = 0; i < numNodes; i++) {
-        if (tmp.data.equals(e)){
+        if (tmp.data.equals(e)) {
           return i;
         }
 
@@ -148,18 +142,21 @@ public class CustomLinkedList<E> implements Cloneable {
     return -1;
   }
 
-  void removeFirst() {
+  E removeFirst() {
+    E result = head.data;
+
     if (head.next != null) {
       head = head.next;
-    }
-    else{
+    } else {
       head = null;
     }
 
     numNodes--;
+    return result;
   }
 
-  void removeLast() {
+  E removeLast() {
+    E result = null;
     Node tmp = head;
 
     if (tmp.next != null) {
@@ -167,29 +164,33 @@ public class CustomLinkedList<E> implements Cloneable {
         tmp = tmp.next;
       }
 
+      result = (E) tmp.data;
       tmp.next = null;
-    } else{
-      removeFirst();
+    } else {
+      result = removeFirst();
     }
 
     numNodes--;
+    return result;
   }
 
-  public void remove(int index) {
+  public E remove(int index) {
+    E result = null;
     Node tmp = head;
 
     if (index == 0) {
       removeFirst();
-    }
-    else {
+    } else {
       for (int i = 0; i < index - 1; i++) {
         tmp = tmp.next;
       }
 
+      result = (E) tmp.next.data;
       tmp.next = tmp.next.next;
     }
 
     numNodes--;
+    return result;
   }
 
   int size() {
