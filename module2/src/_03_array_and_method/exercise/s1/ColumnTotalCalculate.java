@@ -1,4 +1,4 @@
-package _03_array_and_method.exercise.o1;
+package _03_array_and_method.exercise.s1;
 
 import java.util.Arrays;
 

@@ -1,21 +1,12 @@
 package _11_stack_queue.practice.p1;
 
 public class Test {
-    private static void stackOfIStrings() {
-        MyStackByLinkedList<String> stack = new MyStackByLinkedList();
-        stack.push("Five");
-        stack.push("Four");
-        stack.push("Three");
-        stack.push("Two");
-        stack.push("One");
-        System.out.println("1.1 Size of stack after push operations: " + stack.size());
-        System.out.printf("1.2. Pop elements from stack : ");
+    public static void main(String[] args) {
+        System.out.println("----- Stack of integers -----");
+        stackOfIntegers();
 
-        while (!stack.isEmpty()) {
-            System.out.printf(" %s", stack.pop());
-        }
-
-        System.out.println("\n1.3. Size of stack after pop operations : " + stack.size());
+        System.out.println("----- Stack of Strings -----");
+        stackOfIStrings();
     }
 
     private static void stackOfIntegers() {
@@ -25,21 +16,31 @@ public class Test {
         stack.push(3);
         stack.push(2);
         stack.push(1);
-        System.out.println("2.1. Size of stack after push operations: " + stack.size());
-        System.out.printf("2.2. Pop elements from stack : ");
+
+        System.out.println("Size of stack after push operations: " + stack.size());
+        System.out.printf("Pop elements from stack: ");
 
         while (!stack.isEmpty()) {
             System.out.printf(" %d", stack.pop());
         }
 
-        System.out.println("\n3.3 Size of stack after pop operations : " + stack.size());
+        System.out.println("\n Size of stack after pop operations : " + stack.size());
     }
 
-    public static void main(String[] args) {
-        System.out.println("1. Stack of integers");
-        stackOfIntegers();
+    private static void stackOfIStrings() {
+        MyStackByLinkedList<String> stack = new MyStackByLinkedList();
+        stack.push("Five");
+        stack.push("Four");
+        stack.push("Three");
+        stack.push("Two");
+        stack.push("One");
+        System.out.println("Size of stack after push operations: " + stack.size());
+        System.out.printf("Pop elements from stack : ");
 
-        System.out.println("\n2. Stack of Strings");
-        stackOfIStrings();
+        while (!stack.isEmpty()) {
+            System.out.printf(" %s", stack.pop());
+        }
+
+        System.out.println("\nSize of stack after pop operations : " + stack.size());
     }
 }

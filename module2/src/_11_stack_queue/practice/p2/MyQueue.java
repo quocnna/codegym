@@ -1,5 +1,6 @@
 package _11_stack_queue.practice.p2;
 
+// implement queue with linked list, not need tail
 public class MyQueue {
     private Node head;
     private Node tail;
@@ -12,12 +13,16 @@ public class MyQueue {
     public void enqueue(int key) {
         Node temp = new Node(key);
 
+        // ref head, tail to heap with one value tmp
         if (this.tail == null) {
             this.head = this.tail = temp;
             return;
         }
 
+        // link tail.next = tmp
         this.tail.next = temp;
+
+        // just assign again tail
         this.tail = temp;
     }
 

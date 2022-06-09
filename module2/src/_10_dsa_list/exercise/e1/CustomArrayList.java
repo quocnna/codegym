@@ -3,7 +3,7 @@ package _10_dsa_list.exercise.e1;
 import java.util.Arrays;
 
 public class CustomArrayList<E> implements Cloneable {
-  private static final int DEFAULT_CAPACITY = 10;
+  private int DEFAULT_CAPACITY = 10;
   private E[] elements;
   private int size;
 
@@ -39,17 +39,28 @@ public class CustomArrayList<E> implements Cloneable {
   }
 
   E remove(int index) {
-    E[] tmp = (E[]) new Object[size - 1];
-    E res = elements[index];
-
-    for (int i = 0, j = 0; i < size; i++) {
-      if (i != index) {
-        tmp[j++] = elements[i];
-      }
+    if (index >= size) {
+      throw new IndexOutOfBoundsException();
     }
 
-    elements = tmp;
-    size--;
+    E res = elements[index];
+    if(size > 1){
+      E[] tmp = (E[]) new Object[size - 1];
+
+      for (int i = 0, j = 0; i < size; i++) {
+        if (i != index) {
+          tmp[j++] = elements[i];
+        }
+      }
+
+      elements = tmp;
+      size--;
+    }
+    else{
+      //qq cannot init arr with size 0
+      clear();
+    }
+
     return res;
 
     /*        // the way two
@@ -65,7 +76,7 @@ public class CustomArrayList<E> implements Cloneable {
   }
 
   E get(int index) {
-    if (index < 0 || index > size){
+    if (index < 0 || index > size) {
       throw new IndexOutOfBoundsException();
     }
 
@@ -74,7 +85,7 @@ public class CustomArrayList<E> implements Cloneable {
 
   boolean contains(E e) {
     for (int i = 0; i < size; i++) {
-      if (elements[i].equals(e)){
+      if (elements[i].equals(e)) {
         return true;
       }
     }
@@ -84,7 +95,7 @@ public class CustomArrayList<E> implements Cloneable {
 
   int indexOf(E e) {
     for (int i = 0; i < size; i++) {
-      if (elements[i].equals(e)){
+      if (elements[i].equals(e)) {
         return i;
       }
     }

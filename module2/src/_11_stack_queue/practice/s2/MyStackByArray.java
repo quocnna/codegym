@@ -1,4 +1,4 @@
-package _11_stack_queue.practice.o2;
+package _11_stack_queue.practice.s2;
 
 import java.util.Arrays;
 
@@ -23,9 +23,9 @@ public class MyStackByArray {
     }
 
     public int pop() throws Exception{
-        if(isEmpty()){
-            throw new Exception("Stack is null");
-        }
+    if (isEmpty()) {
+      throw new Exception("Stack is null");
+    }
 
         int res= arr[--index];
         arr= Arrays.copyOf(arr, index);
