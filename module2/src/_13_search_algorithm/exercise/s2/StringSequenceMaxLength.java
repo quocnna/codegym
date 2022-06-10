@@ -1,4 +1,4 @@
-package _13_search_algorithm.exercise.o2;
+package _13_search_algorithm.exercise.s2;
 
 import java.util.LinkedList;
 import java.util.Scanner;

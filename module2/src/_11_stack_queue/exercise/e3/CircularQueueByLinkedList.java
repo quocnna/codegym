@@ -2,73 +2,72 @@ package _11_stack_queue.exercise.e3;
 
 // https://www.baeldung.com/java-circular-linked-list
 public class CircularQueueByLinkedList<T> {
-    private int size;
-    private Node<T> head;
-    private Node<T> tail;
+  private int size;
+  private Node<T> head;
+  private Node<T> tail;
 
-    private class Node<T>{
-        T data;
-        Node<T> next;
+  private class Node<T> {
+    T data;
+    Node<T> next;
 
-        public Node(T data) {
-            this.data = data;
-        }
+    public Node(T data) {
+      this.data = data;
+    }
+  }
+
+  void enQueue(T t) {
+    Node node = new Node(t);
+    if (head == null) {
+      head = node;
+    } else {
+      tail.next = node;
     }
 
-    void enQueue(T t){
-        Node node= new Node(t);
-        if(head== null){
-            head= node;
-//            tail= node;
-//            tail.next= head;
-        }
-        else{
-            tail.next= node;
-//            tail= node;
-//            tail.next= head;
-        }
+    tail = node;
+    tail.next = head;
+    size++;
+  }
 
-        tail= node;
-        tail.next= head;
-        size++;
+  void deQueue() {
+    if (head != null) {
+      if (head.equals(tail)) {
+        head = null;
+        tail = null;
+      } else {
+        head = head.next;
+        tail.next = head;
+      }
+
+      size--;
+    }
+  }
+
+  boolean contains(T t) {
+    Node tmp = head;
+
+    if (head == null) {
+      return false;
     }
 
-    boolean contains(T t){
-        Node tmp = head;
+    do {
+      if (t.equals(tmp.data)) {
+        return true;
+      }
 
-        if(head== null)
-            return false;
+      tmp = tmp.next;
+    } while (tmp.next != head);
 
-        do{
-            if(t.equals(tmp.data))
-                return true;
-            tmp= tmp.next;
-        }while (tmp.next!= head);
+    return false;
+  }
 
-        return false;
+  void display() {
+    if (head != null) {
+      Node tmp = head;
+
+      do {
+        System.out.println(tmp.data);
+        tmp = tmp.next;
+      } while (tmp != head);
     }
-
-    void deQueue(){
-        if(head!= null){
-            if(head.equals(tail)){
-                head= null;
-                tail= null;
-            }
-            else {
-                head= head.next;
-                tail.next= head;
-            }
-            size--;
-        }
-    }
-
-    void display(){
-        if(head!= null){
-            Node tmp= head;
-            do{
-                System.out.println(tmp.data);
-                tmp= tmp.next;
-            }while (tmp!= head);
-        }
-    }
+  }
 }

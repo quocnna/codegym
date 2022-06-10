@@ -17,8 +17,7 @@ public class CountCharInString {
             treeMap.put(e.charAt(0),count);
         });
 
-        for (Map.Entry<Character, Integer> s: treeMap.entrySet()
-             ) {
+        for (Map.Entry<Character, Integer> s: treeMap.entrySet()) {
             System.out.println(s);
         }
     }

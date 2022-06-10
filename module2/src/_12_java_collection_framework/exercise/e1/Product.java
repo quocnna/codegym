@@ -1,7 +1,5 @@
 package _12_java_collection_framework.exercise.e1;
 
-import java.util.Objects;
-
 public class Product {
     private int id;
     private String name;
@@ -39,8 +37,14 @@ public class Product {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Product)) return false;
+        if (this == o){
+            return true;
+        }
+
+        if (!(o instanceof Product)){
+            return false;
+        }
+
         Product product = (Product) o;
         return getId() == product.getId();
     }

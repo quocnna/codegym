@@ -17,7 +17,10 @@ public class Test {
         students.add(student1);
         students.add(student2);
         students.add(student3);
+
         Collections.sort(students);
+
+        System.out.println("So sanh theo ten:");
         for(Student st : students){
             System.out.println(st.toString());
         }

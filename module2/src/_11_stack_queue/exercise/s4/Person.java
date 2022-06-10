@@ -1,4 +1,4 @@
-package _11_stack_queue.exercise.o4;
+package _11_stack_queue.exercise.s4;
 
 public class Person {
     public String getName() {

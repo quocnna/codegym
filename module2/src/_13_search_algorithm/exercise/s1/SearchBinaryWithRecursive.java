@@ -1,4 +1,4 @@
-package _13_search_algorithm.exercise.o1;
+package _13_search_algorithm.exercise.s1;
 
 public class SearchBinaryWithRecursive {
     private static int binarySearch(int arr[], int low, int high, int value) {

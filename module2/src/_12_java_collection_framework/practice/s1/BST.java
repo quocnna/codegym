@@ -1,4 +1,4 @@
-package _12_java_collection_framework.practice.p4;
+package _12_java_collection_framework.practice.s1;
 
 public class BST<E extends Comparable<E>> extends AbstractTree<E> {
     protected TreeNode<E> root;
