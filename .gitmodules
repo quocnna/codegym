@@ -4,3 +4,6 @@
 [submodule "module3/case_study_db"]
 	path = module3/case_study_db
 	url = https://github.com/quocnna/case_study_m3_db.git
+[submodule "module3/case_study_web"]
+	path = module3/case_study_web
+	url = https://github.com/quocnna/case_study_m3_web.git
