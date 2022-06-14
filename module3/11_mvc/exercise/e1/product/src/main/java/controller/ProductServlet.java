@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Optional;
 
 @WebServlet(name = "controller.ProductServlet")
 public class ProductServlet extends HttpServlet {
@@ -19,8 +18,8 @@ public class ProductServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action= request.getParameter("action");
-//        String sid= request.getParameter("id");
         int id= CommonUtil.toInt(request.getParameter("id"));
+
         switch (action){
             case "delete":
                 productService.delete(id);
@@ -42,7 +41,7 @@ public class ProductServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("products", productService.getAll());
+        request.setAttribute("products", productService.findAll());
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 }
