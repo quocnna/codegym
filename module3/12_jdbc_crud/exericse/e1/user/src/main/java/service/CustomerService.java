@@ -17,38 +17,20 @@ public class CustomerService {
     private final String SELECT_BY_ID= "select * from customer where id= ?";
 
     private Connection getConnection() throws SQLException, ClassNotFoundException {
-        try{
-            Context initContext = new InitialContext();
-            Context envContext  = (Context)initContext.lookup("java:/comp/env");
-            DataSource ds = (DataSource)envContext.lookup("jdbc/quoc");
-            Connection conn = ds.getConnection();
-            return conn;
-        }
-        catch (NamingException e){
-            e.printStackTrace();
-        }
-        return null;
-
-
-
-//        Class.forName("com.mysql.jdbc.Driver");
-//        try (Connection conn = DriverManager.getConnection(
-//                "jdbc:mysql://127.0.0.1:3306/demo", "root", "40forever")) {
-//
-//            if (conn != null) {
-//                System.out.println("Connected to the database!");
-//            } else {
-//                System.out.println("Failed to make connection!");
-//            }
-//
-//        } catch (SQLException e) {
-//            System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
-//        } catch (Exception e) {
+//        try{
+//            Context initContext = new InitialContext();
+//            Context envContext  = (Context)initContext.lookup("java:/comp/env");
+//            DataSource ds = (DataSource)envContext.lookup("jdbc/quoc");
+//            Connection conn = ds.getConnection();
+//            return conn;
+//        }
+//        catch (NamingException e){
 //            e.printStackTrace();
 //        }
 //        return null;
-//        Class.forName("com.mysql.jdbc.Driver");
-//        return DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?useSSL=false", "root", "40forever");
+
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        return DriverManager.getConnection("jdbc:mysql://localhost:3306/user_demo", "root", "12345");
     }
 
     public void save(Customer customer){
