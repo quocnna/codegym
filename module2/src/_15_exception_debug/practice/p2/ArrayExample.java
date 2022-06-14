@@ -27,6 +27,7 @@ public class ArrayExample {
             arr[i] = rd.nextInt(100);
             System.out.print(arr[i]+ " ");
         }
+
         return arr;
     }
 }

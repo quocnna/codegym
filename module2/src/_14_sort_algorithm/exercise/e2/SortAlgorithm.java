@@ -73,6 +73,8 @@ public class SortAlgorithm {
 
     private static void display(int[] arr) {
         int length = arr.length;
-        for (int i = 0; i < length; i++) System.out.printf("%d ", arr[i]);
+        for (int i = 0; i < length; i++) {
+            System.out.printf("%d ", arr[i]);
+        }
     }
 }

@@ -8,8 +8,7 @@ public class InsertionSort {
     }
 
     private static void insertionSort(int[] arr) {
-        int length = arr.length;
-        for (int i = 1; i < length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             int tmp = arr[i];
             int pos = i - 1;
 
@@ -28,6 +27,8 @@ public class InsertionSort {
 
     private static void display(int[] arr) {
         int length = arr.length;
-        for (int i = 0; i < length; i++) System.out.printf("%d ", arr[i]);
+        for (int i = 0; i < length; i++){
+            System.out.printf("%d ", arr[i]);
+        }
     }
 }

@@ -1,5 +1,7 @@
 package _14_sort_algorithm.practice.p1;
 
+import java.util.Arrays;
+
 public class BubbleSort {
     static int[] list = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
 
@@ -19,12 +21,16 @@ public class BubbleSort {
                     needNextPass = true; /* Next pass still needed */
                 }
             }
+
+            System.out.println(Arrays.toString(list));
         }
     }
 
     public static void main(String[] args) {
         bubbleSort(list);
-        for (int i = 0; i < list.length; i++)
+
+        for (int i = 0; i < list.length; i++){
             System.out.print(list[i] + " ");
+        }
     }
 }
