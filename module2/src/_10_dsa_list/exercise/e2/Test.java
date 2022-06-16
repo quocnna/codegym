@@ -8,6 +8,7 @@ public class Test {
         customLinkedList.addLast("3");
         customLinkedList.add(1, "CodeGym");
 
+        System.out.println(customLinkedList.contains("3"));
         System.out.println(customLinkedList.getFirst());
         System.out.println(customLinkedList.getLast());
         System.out.println(customLinkedList.get(1));

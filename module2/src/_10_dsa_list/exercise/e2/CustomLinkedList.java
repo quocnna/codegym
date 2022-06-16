@@ -120,7 +120,7 @@ public class CustomLinkedList<E> implements Cloneable {
         }
 
         tmp = tmp.next;
-      } while (tmp.next != null);
+      } while (tmp != null);
     }
 
     return false;
