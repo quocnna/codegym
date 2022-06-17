@@ -1,6 +1,7 @@
 package _12_java_collection_framework.exercise.e1.advance;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import javax.tools.*;
@@ -24,19 +25,47 @@ public class CommonUtil {
         Iterator<String> iterator = obj.keys();
         while(iterator.hasNext()){
             RunTimeClass runTimeClass = new RunTimeClass();
+            Map<String, String> mapFields = new LinkedHashMap<>();
+            Map<String, String> mapSort = new LinkedHashMap<>();
+
             String entity = iterator.next();
             runTimeClass.setEntityName(entity);
-            Map<String, String> maps = new LinkedHashMap<>();
-            int l = obj.getJSONObject(entity).length();
-            for(int i = l -1; i >= 0; i--){
-                JSONObject o = obj.getJSONObject(entity);
-                JSONArray arr = o.names();
+
+            JSONObject ent = obj.getJSONObject(entity);
+            Set<String> keys= ent.keySet();
+            for (int i = 0; i < keys.size(); i++) {
+                JSONArray arr = ent.names();
                 String field = arr.get(i).toString();
-                String dataType = o.getString(field);
-                maps.put(field, dataType);
+
+                if(field.equals("search")){
+                    String val = ent.getString(field);
+                    runTimeClass.setSearchBy(val);
+                }
+                else if(field.equals("sort")){
+                    JSONObject jsonSort = ent.getJSONObject("sort");
+                    JSONArray sortArrays = jsonSort.names();
+
+                    for (int j = 0; j < sortArrays.length(); j++) {
+                        String f = sortArrays.get(j).toString();
+                        String v = jsonSort.getString(f);
+                        mapSort.put(f,v);
+                    }
+                }
+                else if(field.equals("field")){
+                    JSONObject jsonField = ent.getJSONObject("field");
+                    Set<String> aaa= jsonField.keySet();
+                    JSONArray fieldArrays = jsonField.names();
+
+                    for (int j = fieldArrays.length() - 1; j >= 0; j--) {
+                        String f = fieldArrays.get(j).toString();
+                        String v = jsonField.getString(f);
+                        mapFields.put(f,v);
+                    }
+                }
             }
 
-            runTimeClass.setFields(maps);
+            runTimeClass.setFields(mapFields);
+            runTimeClass.setSort(mapSort);
             runTimeClass.setCls(generateDynamicClass(runTimeClass));
             result.add(runTimeClass);
         }
@@ -164,7 +193,7 @@ public class CommonUtil {
     public static String inputWithoutEmpty(String fieldName) {
         String value = "0";
         do {
-            System.out.print(value.isEmpty() ? fieldName + " cannot be empty. Please input again: " : fieldName + " : ");
+            System.out.print(value.isEmpty() ? fieldName + " cannot be empty. Please input again: " : fieldName + ": ");
             value = getScanner().nextLine();
         } while (value.isEmpty());
 
@@ -193,4 +222,24 @@ public class CommonUtil {
 
         return res;
     }
+
+//    private static List listFromJsonSorted(JSONObject json) {
+//        if (json == null){
+//            return null;
+//        }
+//
+//        SortedMap map = new TreeMap();
+//        Iterator i = json.keys();
+//        while (i.hasNext()) {
+//            try {
+//                String key = i.next().toString();
+//                JSONObject j = json.getJSONObject(key);
+//                map.put(key, j);
+//            } catch (JSONException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//
+//        return new LinkedList(map.values());
+//    }
 }

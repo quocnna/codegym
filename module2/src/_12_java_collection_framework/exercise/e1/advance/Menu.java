@@ -7,12 +7,12 @@ public class Menu {
     private static GenericService generalService = new GenericService();
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Optional<RunTimeClass> opRunTimeClass = CommonUtil.jSonToClass("src/_12_java_collection_framework/exercise/e1/advance/test.json").stream().findFirst();
+        Optional<RunTimeClass> opRunTimeClass = CommonUtil.jSonToClass("src/_12_java_collection_framework/exercise/e1/advance/t.json").stream().findFirst();
 
         if(opRunTimeClass.isPresent()) {
             while(true){
                 System.out.println("----- Menu " + opRunTimeClass.get().getEntityName() + " -----");
-                System.out.println("1. Create\n2. Update\n3. Delete\n4. Display\n5. Search by name\n6. Sort");
+                System.out.println("1. Create\n2. Update\n3. Delete\n4. Display\n5. Search\n6. Sort");
                 int choice = Integer.parseInt(CommonUtil.inputWithoutEmpty("Enter your choice"));
 
                 switch (choice) {
@@ -42,16 +42,15 @@ public class Menu {
     }
 
     private static void sort(RunTimeClass runTimeClass) {
-        String fieldSort = "price";
-        boolean isDESC = false;
+        String fieldSort = runTimeClass.getSort().get("by");
+        boolean isDESC = runTimeClass.getSort().get("dir").equals("DESC");
         generalService.sort(fieldSort, isDESC);
         System.out.println("Sorted successfully...");
     }
 
     private static void search(RunTimeClass runTimeClass) {
-        String fieldSearch = "name";
-        String val = CommonUtil.inputWithoutEmpty("Input " +  fieldSearch + " to search:");
-        generalService.search(fieldSearch, val).forEach(System.out::println);
+        String val = CommonUtil.inputWithoutEmpty("Input " +  runTimeClass.getSearchBy() + " to search");
+        generalService.search(runTimeClass.getSearchBy(), val).forEach(System.out::println);
     }
 
     private static void delete(RunTimeClass runTimeClass) {
