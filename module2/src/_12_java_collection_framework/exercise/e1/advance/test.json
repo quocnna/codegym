@@ -1,0 +1,8 @@
+{
+  "Product":
+    {
+      "id": "int",
+      "name": "String",
+      "price": "double"
+    }
+}
