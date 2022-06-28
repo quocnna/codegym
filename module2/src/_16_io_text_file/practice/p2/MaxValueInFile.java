@@ -30,7 +30,9 @@ public class MaxValueInFile {
         int res=0;
         int size= val.size();
         for (int i = 0; i < size; i++) {
-            if(res< val.get(i)) res = val.get(i);
+            if(res< val.get(i)) {
+                res = val.get(i);
+            }
         }
 
         return res;

@@ -20,7 +20,11 @@ public class CopyBinaryFile {
         OutputStream outputStream = new FileOutputStream(des);
         byte[] bytes = new byte[1024];
         int length;
-        while ((length = inputStream.read(bytes)) > 0) outputStream.write(bytes);
+
+        while ((length = inputStream.read(bytes)) > 0){
+            outputStream.write(bytes);
+        }
+
         inputStream.close();
         outputStream.close();
         File file= new File(des);

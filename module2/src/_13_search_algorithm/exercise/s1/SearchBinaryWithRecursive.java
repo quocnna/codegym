@@ -3,7 +3,7 @@ package _13_search_algorithm.exercise.s1;
 public class SearchBinaryWithRecursive {
     private static int binarySearch(int arr[], int low, int high, int value) {
         if (high >= low) {
-            int mid =(high - low) / 2;
+            int mid =(high + low) / 2;
             if (arr[mid] == value){
                 return mid;
             }

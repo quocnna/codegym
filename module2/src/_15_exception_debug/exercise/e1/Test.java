@@ -19,7 +19,6 @@ public class Test {
             Triangle triangle = new Triangle(-1, 6, 8);
             System.out.println(triangle.getPerimeter());
         } catch (IllegalTriangleException e) {
-
             e.printStackTrace();
 //             do action again
 //            System.out.printf("Input again");
