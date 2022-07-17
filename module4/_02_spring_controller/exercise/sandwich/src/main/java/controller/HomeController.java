@@ -26,25 +26,20 @@ public class HomeController {
         return modelAndView;
     }
 
-    @PostMapping("submit")
-    public ModelAndView submit(String c){
-        Test test= new Test();
-        ModelAndView modelAndView= new ModelAndView("index", "condiment", c);
-        modelAndView.addObject("test", test);
-        return modelAndView;
-    }
-
-    @ModelAttribute("condiments")
-    public List<String> condiments()
-    {
-        List<String> condiments = Arrays.asList(
-                "Apache Struts", "Spring", "Hibernate",
-                "Grails", "Java Server Faces");
-        return condiments;
-    }
-
-    @ModelAttribute("c")
-    public String c(){
-        return "con";
-    }
+//    @PostMapping("submit")
+//    public ModelAndView submit(String c){
+//        Test test= new Test();
+//        ModelAndView modelAndView= new ModelAndView("index", "condiment", c);
+//        modelAndView.addObject("test", test);
+//        return modelAndView;
+//    }
+//
+//    @ModelAttribute("condiments")
+//    public List<String> condiments()
+//    {
+//        List<String> condiments = Arrays.asList(
+//                "Apache Struts", "Spring", "Hibernate",
+//                "Grails", "Java Server Faces");
+//        return condiments;
+//    }
 }

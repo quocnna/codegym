@@ -1,8 +1,7 @@
-package com.codegym.configuration;
+package m4.product.conf;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-// go first
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Override

@@ -16,10 +16,10 @@
 
 Result: ${condiment}
 
-<form:form action="submit" method="post" modelAttribute="test">
-<form:label path="c">Test</form:label>
-<form:checkboxes  items="${condiments}" delimiter="|" path="c"></form:checkboxes>
-    <form:button>Submit</form:button>
-</form:form>
+<%--<form:form action="submit" method="post" modelAttribute="test">--%>
+
+<%--<form:checkboxes  items="${condiments}" delimiter="|" path="c"></form:checkboxes>--%>
+<%--    <form:button>Submit</form:button>--%>
+<%--</form:form>--%>
 </body>
 </html>
