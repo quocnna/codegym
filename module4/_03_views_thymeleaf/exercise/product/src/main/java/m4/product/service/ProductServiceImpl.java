@@ -4,6 +4,8 @@ import m4.product.model.Product;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class ProductServiceImpl implements ProductService{
     private List<Product> products = new ArrayList<>();
@@ -23,16 +25,32 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public void save(Product product) {
-
+        if(product.getId() > 0){
+            int index = products.indexOf(product);
+            products.set(index, product);
+        }
+        else{
+            int lastId = 0;
+            if(products.size() > 0){
+                lastId = products.get(products.size() - 1).getId();
+            }
+            product.setId(lastId + 1);
+            products.add(product);
+        }
     }
 
     @Override
     public void delete(int id) {
-
+        products.removeIf(e -> e.getId() == id);
     }
 
     @Override
-    public Product getById(int id) {
-        return null;
+    public Optional<Product> getById(int id) {
+        return products.stream().filter(e -> e.getId() == id).findFirst();
+    }
+
+    @Override
+    public List<Product> search(String name) {
+        return products.stream().filter(e -> e.getName().contains(name)).collect(Collectors.toList());
     }
 }

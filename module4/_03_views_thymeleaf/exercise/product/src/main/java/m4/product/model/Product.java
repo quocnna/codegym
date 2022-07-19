@@ -1,11 +1,16 @@
 package m4.product.model;
 
+import java.util.Objects;
+
 public class Product {
     private int id;
     private String name;
     private Double price;
     private String description;
     private String manufacturer;
+
+    public Product() {
+    }
 
     public Product(int id, String name, Double price, String description, String manufacturer) {
         this.id = id;
@@ -53,5 +58,18 @@ public class Product {
 
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return id == product.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
