@@ -1,0 +1,6 @@
+model/Song.class
+config/AppConfiguration.class
+controller/UploadController.class
+controller/HomeController.class
+config/AppInitializer.class
+service/SongService.class

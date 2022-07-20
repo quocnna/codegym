@@ -9,7 +9,7 @@
 <body>
 <div>
     <h1>List Song</h1>
-    <a>Add new</a>
+    <a href="/create">Add new</a>
 </div>
 <table>
     <thead>
