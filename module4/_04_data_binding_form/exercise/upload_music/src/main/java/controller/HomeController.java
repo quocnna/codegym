@@ -27,4 +27,10 @@ public class HomeController {
         List<Song> songs = songService.getAll();
         return new ModelAndView("home", "res", songs);
     }
+
+    @GetMapping("create")
+    public String create(){
+
+        return "form";
+    }
 }
