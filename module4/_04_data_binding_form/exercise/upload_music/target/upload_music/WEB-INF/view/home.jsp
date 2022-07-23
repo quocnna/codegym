@@ -24,7 +24,9 @@
             <td><c:out value="${e.name}"/></td>
             <td>${e.artist}</td>
             <td>${e.genre}</td>
-            <td>${e.link}</td>
+            <td>
+                <img src="<c:url value="${e.link}"/>"/>
+            </td>
         </tr>
     </c:forEach>
     </tbody>

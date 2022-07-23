@@ -4,7 +4,10 @@
     <title>Title</title>
 </head>
 <body>
+
+
 <form method="post" action="save" novalidate="novalidate" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="0">
     <div>
         Name: <input type="text" name="name">
     </div>
@@ -16,9 +19,8 @@
     <div>
         genre: <input type="text" name="genre">
     </div>
-
     <div>
-        link: <input type="text" name="link">
+        image: <input type="file" name="image">
     </div>
 
     <button>Create</button>

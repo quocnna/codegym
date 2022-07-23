@@ -1,6 +1,7 @@
-model/Song.class
-config/AppConfiguration.class
-controller/UploadController.class
-controller/HomeController.class
-config/AppInitializer.class
-service/SongService.class
+model\ProductForm.class
+controller\HomeController.class
+controller\UploadController.class
+service\SongService.class
+model\Song.class
+config\AppConfiguration.class
+config\AppInitializer.class
