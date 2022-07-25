@@ -1,0 +1,4 @@
+m4\health_declaration\conf\AppInit.class
+m4\health_declaration\controller\HealthDeclarationController.class
+m4\health_declaration\model\HealthDeclaration.class
+m4\health_declaration\conf\AppConfig.class
