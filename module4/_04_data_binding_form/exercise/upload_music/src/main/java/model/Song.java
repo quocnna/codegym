@@ -8,14 +8,18 @@ public class Song {
     private String artist;
     private String genre;
     private String link;
+    private String path;
+    private String fileType;
     private MultipartFile image;
 
-    public Song(int id, String name, String artist, String genre, String link, MultipartFile image) {
+    public Song(int id, String name, String artist, String genre, String link, String path, String fileType, MultipartFile image) {
         this.id = id;
         this.name = name;
         this.artist = artist;
         this.genre = genre;
         this.link = link;
+        this.path = path;
+        this.fileType = fileType;
         this.image = image;
     }
 
@@ -59,11 +63,27 @@ public class Song {
         this.link = link;
     }
 
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
     public MultipartFile getImage() {
         return image;
     }
 
     public void setImage(MultipartFile image) {
         this.image = image;
+    }
+
+    public String getFileType() {
+        return fileType;
+    }
+
+    public void setFileType(String fileType) {
+        this.fileType = fileType;
     }
 }

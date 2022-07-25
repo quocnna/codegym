@@ -1,4 +1,3 @@
-<%--<%@ page contentType="text/html;charset=UTF-8" language="java" %>--%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -25,7 +24,7 @@
             <td>${e.artist}</td>
             <td>${e.genre}</td>
             <td>
-                <img src="<c:url value="${e.link}"/>"/>
+                <img style="width:50px;height:50px" src="<c:url value="${e.link}"/>"/>
             </td>
         </tr>
     </c:forEach>
