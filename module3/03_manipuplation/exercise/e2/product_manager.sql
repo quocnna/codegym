@@ -65,7 +65,7 @@ SELECT * from `order`;
 -- 2 Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
 select c.name, p.name from customer c 
 join `order` o on c.id = o.customer_id 
-join order_detail od on c.id = od.order_id
+join order_detail od on o.id = od.order_id
 join product p on od.product_id = p.id
 
 -- 3 Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào (use explain to test performence)
