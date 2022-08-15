@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 25%;
+            height: 25%;
+        }
+    </style>
+</head>
+<body>
+<form action="save" method="post">
+    <div>
+        <h2 id="hTitle"><input type="text" name="picture.name" value="aaaa"></h2>
+        <h2 id="dDate" name="displayDate"></h2>
+        <img name="picture" id="img-of-the-day">
+        <select name="vote">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        Author
+        <input type="text" name="author">
+        Feedback
+        <input type="text" name="feedback">
+
+        <button>Comment</button>
+    </div>
+
+</form>
+
+<script>
+    let query = 'https://api.nasa.gov/planetary/apod?api_key=bnCdaw8t8XMBoBjAg5lPf3ZuB2hRKnbAtmqAJKh5';
+    let request = new XMLHttpRequest();
+    request.open('GET', query);
+    request.onload = function () {
+        if (request.status === 200) {
+            let response = JSON.parse(request.responseText);
+            document.getElementById('img-of-the-day').setAttribute('src', response.url);
+            document.getElementById('hTitle').textContent = response.title;
+            document.getElementById('dDate').textContent = response.date;
+        }
+    };
+    request.send();
+</script>
+</body>
+</html>
