@@ -14,7 +14,13 @@ public class HealthDeclaration {
     private String numberPlate;
     private String numberSeat;
     private LocalDate startDate;
+    private int startDay;
+    private int startMonth;
+    private int startYear;
     private LocalDate endDate;
+    private int endDay;
+    private int endMonth;
+    private int endYear;
     private String infoWithin14days;
     private String city;
     private String district;
@@ -23,7 +29,13 @@ public class HealthDeclaration {
     private String phone;
     private String email;
     private List<String> symptomsWithin14days;
+    private String sot;
+    private String ho;
+    private String khotho;
+    private String dauhong;
     private List<String> historyExposuresWithin14days;
+    private String dentrangtrai;
+    private String tiepxucgan;
 
     public HealthDeclaration() {
     }
@@ -209,5 +221,101 @@ public class HealthDeclaration {
 
     public void setHistoryExposuresWithin14days(List<String> historyExposuresWithin14days) {
         this.historyExposuresWithin14days = historyExposuresWithin14days;
+    }
+
+    public int getStartDay() {
+        return startDay;
+    }
+
+    public void setStartDay(int startDay) {
+        this.startDay = startDay;
+    }
+
+    public int getStartMonth() {
+        return startMonth;
+    }
+
+    public void setStartMonth(int startMonth) {
+        this.startMonth = startMonth;
+    }
+
+    public int getStartYear() {
+        return startYear;
+    }
+
+    public void setStartYear(int startYear) {
+        this.startYear = startYear;
+    }
+
+    public int getEndDay() {
+        return endDay;
+    }
+
+    public void setEndDay(int endDay) {
+        this.endDay = endDay;
+    }
+
+    public int getEndMonth() {
+        return endMonth;
+    }
+
+    public void setEndMonth(int endMonth) {
+        this.endMonth = endMonth;
+    }
+
+    public int getEndYear() {
+        return endYear;
+    }
+
+    public void setEndYear(int endYear) {
+        this.endYear = endYear;
+    }
+
+    public String getSot() {
+        return sot;
+    }
+
+    public void setSot(String sot) {
+        this.sot = sot;
+    }
+
+    public String getHo() {
+        return ho;
+    }
+
+    public void setHo(String ho) {
+        this.ho = ho;
+    }
+
+    public String getKhotho() {
+        return khotho;
+    }
+
+    public void setKhotho(String khotho) {
+        this.khotho = khotho;
+    }
+
+    public String getDauhong() {
+        return dauhong;
+    }
+
+    public void setDauhong(String dauhong) {
+        this.dauhong = dauhong;
+    }
+
+    public String getDentrangtrai() {
+        return dentrangtrai;
+    }
+
+    public void setDentrangtrai(String dentrangtrai) {
+        this.dentrangtrai = dentrangtrai;
+    }
+
+    public String getTiepxucgan() {
+        return tiepxucgan;
+    }
+
+    public void setTiepxucgan(String tiepxucgan) {
+        this.tiepxucgan = tiepxucgan;
     }
 }

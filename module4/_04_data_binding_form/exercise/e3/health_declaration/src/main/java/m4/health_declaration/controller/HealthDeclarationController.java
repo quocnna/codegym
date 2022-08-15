@@ -4,11 +4,13 @@ import m4.health_declaration.model.HealthDeclaration;
 import m4.health_declaration.service.HealthDeclarationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -16,8 +18,10 @@ public class HealthDeclarationController {
     @Autowired
     private HealthDeclarationService healthDeclarationService;
 
-    @GetMapping
-    public String list(){
+    @GetMapping("list")
+    public String list(Model model){
+        List<HealthDeclaration> res = healthDeclarationService.findAll();
+        model.addAttribute("res", res);
         return "list";
     }
 
@@ -38,6 +42,7 @@ public class HealthDeclarationController {
 
     @PostMapping("save")
     public String save(HealthDeclaration healthDeclaration){
-        return "redirect:";
+        healthDeclarationService.save(healthDeclaration);
+        return "redirect:/list";
     }
 }

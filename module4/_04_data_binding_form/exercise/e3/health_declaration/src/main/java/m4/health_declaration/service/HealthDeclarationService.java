@@ -14,7 +14,7 @@ public class HealthDeclarationService {
     }
 
     public void save(HealthDeclaration healthDeclaration){
-
+        healthDeclarations.add(healthDeclaration);
     }
 
     public Optional<HealthDeclaration> findById(int id){
