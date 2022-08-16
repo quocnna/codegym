@@ -10,11 +10,11 @@ import java.time.LocalDate;
 import java.util.Optional;
 
 public class PictureRepository {
-    @Autowired
-    private SessionFactory sessionFactory;
+//    @Autowired
+//    private SessionFactory sessionFactory;
 
     public Optional<Picture> find(LocalDate localDate) {
-        EntityManager entityManager = sessionFactory.createEntityManager();
+        EntityManager entityManager = HibernateConfig.sessionFactory.createEntityManager();
 
         String queryStr = "SELECT p FROM Picture AS p WHERE p.displayDate = :dateNow";
         TypedQuery<Picture> query = entityManager.createQuery(queryStr, Picture.class);

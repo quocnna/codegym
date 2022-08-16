@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.time.LocalDate;
 import java.util.Optional;
@@ -21,7 +22,10 @@ public class CommentController {
     private PictureRepository pictureRepository;
 
     @GetMapping("home")
-    public String home(Model model) {
+    public String home(Model model, @RequestParam(required = false) Integer c) {
+        if(c != null){
+            commentRepository.updateLike(c);
+        }
         model.addAttribute("comment", new Comment());
         Optional<Picture> optionalPicture = pictureRepository.find(LocalDate.now());
         model.addAttribute("picture", optionalPicture.isPresent() ? optionalPicture.get() : new Picture());

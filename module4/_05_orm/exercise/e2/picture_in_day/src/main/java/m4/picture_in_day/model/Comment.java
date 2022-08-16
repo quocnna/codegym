@@ -3,6 +3,7 @@ package m4.picture_in_day.model;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,7 +20,10 @@ public class Comment {
     private int vote;
     private String author;
     private String feedback;
-    private Long liked;
+//    @Column(columnDefinition = "BIGINT default 0")
+//@Column(name="value", nullable = false, columnDefinition="INT NOT NULL DEFAULT 1")
+@Column(name="liked", nullable = false)
+    private int liked = 0;
 
     @ManyToOne
     @Cascade(CascadeType.SAVE_UPDATE)
@@ -58,11 +62,11 @@ public class Comment {
         this.feedback = feedback;
     }
 
-    public Long getLiked() {
+    public int getLiked() {
         return liked;
     }
 
-    public void setLiked(Long liked) {
+    public void setLiked(int liked) {
         this.liked = liked;
     }
 

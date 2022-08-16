@@ -56,15 +56,15 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         return viewResolver;
     }
 
-    @Bean
-    public SessionFactory getSessionFactory() {
-        return new org.hibernate.cfg.Configuration().configure("hibernate.conf.xml").buildSessionFactory();
-    }
-
-    @Bean
-    public EntityManager entityManager() {
-        return getSessionFactory().createEntityManager();
-    }
+//    @Bean
+//    public SessionFactory getSessionFactory() {
+//        return new org.hibernate.cfg.Configuration().configure("hibernate.conf.xml").buildSessionFactory();
+//    }
+//
+//    @Bean
+//    public EntityManager entityManager() {
+//        return getSessionFactory().createEntityManager();
+//    }
 
     @Bean
     public CommentRepository commentRepository() {
