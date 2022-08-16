@@ -1,5 +1,8 @@
 package m4.picture_in_day.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,9 +19,10 @@ public class Picture {
 
     private String name;
     private String url;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate displayDate;
 
-    @OneToMany(mappedBy = "picture")
+    @OneToMany(mappedBy = "picture", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Comment> comments;
 
     public int getId() {

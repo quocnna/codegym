@@ -1,5 +1,8 @@
 package m4.picture_in_day.model;
 
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,8 +22,9 @@ public class Comment {
     private Long liked;
 
     @ManyToOne
+    @Cascade(CascadeType.SAVE_UPDATE)
     @JoinColumn(name = "picture_id")
-    private Picture picture = new Picture();
+    private Picture picture;
 
     public int getId() {
         return id;

@@ -1,5 +1,7 @@
 package m4.picture_in_day.config;
 
+import m4.picture_in_day.repository.CommentRepository;
+import m4.picture_in_day.repository.PictureRepository;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
@@ -13,6 +15,9 @@ import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 
 @Configuration
 @EnableWebMvc
@@ -54,5 +59,20 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
     @Bean
     public SessionFactory getSessionFactory() {
         return new org.hibernate.cfg.Configuration().configure("hibernate.conf.xml").buildSessionFactory();
+    }
+
+    @Bean
+    public EntityManager entityManager() {
+        return getSessionFactory().createEntityManager();
+    }
+
+    @Bean
+    public CommentRepository commentRepository() {
+        return new CommentRepository();
+    }
+
+    @Bean
+    public PictureRepository pictureRepository() {
+        return new PictureRepository();
     }
 }

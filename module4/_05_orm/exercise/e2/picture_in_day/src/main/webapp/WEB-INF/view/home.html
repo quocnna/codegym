@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:form="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -11,11 +12,16 @@
     </style>
 </head>
 <body>
-<form action="save" method="post">
+<form  action="save" method="post" th:object="${comment}">
     <div>
-        <h2 id="hTitle"><input type="text" name="picture.name" value="aaaa"></h2>
+        <h2 id="hTitle"></h2>
+        <input id="i" type="text" name="picture.id" th:value="${picture.id}">
+        <input id="a" type="text" name="picture.name" th:value="${picture.name}">
+<!--        <input id="a" type="text" th:field="*{picture.name}">-->
+        <input id="b" type="text" name="picture.url" th:value="${picture.url}">
+        <input id="c" type="text" name="picture.displayDate">
         <h2 id="dDate" name="displayDate"></h2>
-        <img name="picture" id="img-of-the-day">
+        <img id="img-of-the-day">
         <select name="vote">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -42,7 +48,10 @@
             let response = JSON.parse(request.responseText);
             document.getElementById('img-of-the-day').setAttribute('src', response.url);
             document.getElementById('hTitle').textContent = response.title;
+            // document.getElementById('a').value = response.title;
             document.getElementById('dDate').textContent = response.date;
+            // document.getElementById('b').value = response.url;
+            document.getElementById('c').value = response.date;
         }
     };
     request.send();
