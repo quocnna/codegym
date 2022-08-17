@@ -5,6 +5,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.TimeZone;
 
@@ -13,7 +19,7 @@ public class TimeController {
 
     @GetMapping("/world-clock")
     public String getTimeByTimezone(ModelMap model, @RequestParam(name = "city", required = false, defaultValue = "Asia/Ho_Chi_Minh") String city) {
-        // Lấy ra thời gian hiện tại
+/*        // Lấy ra thời gian hiện tại
         Date date = new Date();
         // Lấy ra time zone hiện tại
         TimeZone local = TimeZone.getDefault();
@@ -23,7 +29,15 @@ public class TimeController {
         long locale_time = date.getTime() +
                 (locale.getRawOffset() - local.getRawOffset());
         // Cài đặt lại thời gian cho biến date thành thời gian hiện tại của 1 thành phố cụ thể
-        date.setTime(locale_time);
+        date.setTime(locale_time);*/
+
+
+
+        ZonedDateTime utc = ZonedDateTime.now(ZoneOffset.UTC);
+        System.out.println("UTC = " + utc.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        ZonedDateTime tz = ZonedDateTime.now(ZoneId.of(city));
+        LocalDateTime date = tz.toLocalDateTime();
+
         // Chuyển dữ liệu va gửi qua view
         model.addAttribute("city", city);
         model.addAttribute("date", date);

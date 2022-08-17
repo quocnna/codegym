@@ -7,13 +7,14 @@ import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 public class CommentRepository {
 //    @Autowired
 //    private static SessionFactory sessionFactory;
 
-    public void updateLike(int id){
+    public void updateLike(int id) {
         Session session = null;
         Transaction transaction = null;
 
@@ -21,9 +22,13 @@ public class CommentRepository {
             session = HibernateConfig.sessionFactory.openSession();
             transaction = session.beginTransaction();
             Comment comment = findOne(id);
-            int l = comment.getLiked();
-            comment.setLiked(l + 1);
-            session.saveOrUpdate(comment);
+            int liked = comment.getLiked() + 1;
+
+            Query query = session.createSQLQuery("update comment set liked = :liked where id=:id")
+                    .setParameter("liked", liked)
+                    .setParameter("id", id);
+            query.executeUpdate();
+
             transaction.commit();
         } catch (Exception e) {
             e.printStackTrace();
@@ -60,9 +65,9 @@ public class CommentRepository {
                 transaction.rollback();
             }
         } finally {
-//            if (session != null) {
-//                session.close();
-//            }
+            if (session != null) {
+                session.close();
+            }
         }
     }
 }
