@@ -1,3 +1,6 @@
 [submodule "module3/m3_case_study_db"]
 	path = module3/m3_case_study_db
 	url = https://github.com/naqforever/m3_case_study_db.git
+[submodule "module3/m3_case_study_web"]
+	path = module3/m3_case_study_web
+	url = https://github.com/naqforever/m3_case_study_web.git
