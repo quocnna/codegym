@@ -1,7 +1,6 @@
 package _12_java_collection_framework.exercise.e1.advance;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import javax.tools.*;
