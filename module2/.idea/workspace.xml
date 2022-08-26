@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="" />
+    <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/apiguardian-api-1.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/apiguardian-api-1.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/file-handler-1.0.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/hamcrest-core-1.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit4/hamcrest-core-1.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-4.13.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit4/junit-4.13.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-jupiter-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-jupiter-5.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-jupiter-api-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-jupiter-api-5.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-jupiter-engine-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-jupiter-engine-5.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-jupiter-params-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-jupiter-params-5.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-platform-commons-1.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-platform-commons-1.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-platform-engine-1.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-platform-engine-1.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/opentest4j-1.2.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/opentest4j-1.2.0.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +50,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/codegym-main/module2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -49,11 +64,15 @@
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1\advance" />
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib\junit4" />
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib\junit5" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="_12_java_collection_framework.exercise.e1.advance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FizzBuzzRefactoringTest.fizzBuzz">
+  <component name="RunManager" selected="JUnit.TennisGameTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -153,8 +172,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FizzBuzzRefactoringTest.fizzBuzz" />
         <item itemvalue="JUnit.TennisGameTest" />
+        <item itemvalue="JUnit.FizzBuzzRefactoringTest.fizzBuzz" />
         <item itemvalue="JUnit.TennisGameRefactoringTest.getScore" />
         <item itemvalue="JUnit.CylinderRefactoringTest.getVolume" />
         <item itemvalue="JUnit.CalculatorRefactoringTest.testCalculateAdd" />
@@ -191,7 +210,7 @@
       <workItem from="1661493775410" duration="166000" />
       <workItem from="1661503436548" duration="558000" />
       <workItem from="1661504131961" duration="60000" />
-      <workItem from="1661504201365" duration="2883000" />
+      <workItem from="1661504201365" duration="3509000" />
     </task>
     <servers />
   </component>
