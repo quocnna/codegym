@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/apiguardian-api-1.1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/apiguardian-api-1.1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/file-handler-1.0.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/hamcrest-core-1.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit4/hamcrest-core-1.3.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-4.13.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit4/junit-4.13.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-jupiter-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-jupiter-5.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-jupiter-api-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-jupiter-api-5.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-jupiter-engine-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-jupiter-engine-5.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-jupiter-params-5.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-jupiter-params-5.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-platform-commons-1.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-platform-commons-1.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit-platform-engine-1.7.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/junit-platform-engine-1.7.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/opentest4j-1.2.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib/junit5/opentest4j-1.2.0.jar" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2AYbOIFjTF1XPBYnTNGNBSxADIB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path" value="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\lib2" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/_08_clean_code_refactoring/lib" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib" />
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\test\_08_clean_code_refactoring\lib" />
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1\advance\lib" />
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1\advance" />
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib\junit4" />
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib\junit5" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_12_java_collection_framework.exercise.e1.advance" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TennisGameTest">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorRefactoringTest.testCalculateAdd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_08_clean_code_refactoring.practice.p1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_08_clean_code_refactoring.practice.p1" />
+      <option name="MAIN_CLASS_NAME" value="_08_clean_code_refactoring.practice.p1.CalculatorRefactoringTest" />
+      <option name="METHOD_NAME" value="testCalculateAdd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CylinderRefactoringTest.getVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_08_clean_code_refactoring.practice.p3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_08_clean_code_refactoring.practice.p3" />
+      <option name="MAIN_CLASS_NAME" value="_08_clean_code_refactoring.practice.p3.CylinderRefactoringTest" />
+      <option name="METHOD_NAME" value="getVolume" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FizzBuzzRefactoringTest.fizzBuzz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_08_clean_code_refactoring.practice.p2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_08_clean_code_refactoring.practice.p2" />
+      <option name="MAIN_CLASS_NAME" value="_08_clean_code_refactoring.practice.p2.FizzBuzzRefactoringTest" />
+      <option name="METHOD_NAME" value="fizzBuzz" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TennisGameRefactoringTest.getScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_08_clean_code_refactoring.exericse.e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_08_clean_code_refactoring.exericse.e1" />
+      <option name="MAIN_CLASS_NAME" value="_08_clean_code_refactoring.exericse.e1.TennisGameRefactoringTest" />
+      <option name="METHOD_NAME" value="getScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TennisGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_08_clean_code_refactoring.exericse.e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="_08_clean_code_refactoring.exericse.e1" />
+      <option name="MAIN_CLASS_NAME" value="_08_clean_code_refactoring.exericse.e1.TennisGameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="NimRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="nim.task.build.to.cache" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TennisGameTest" />
+        <item itemvalue="JUnit.FizzBuzzRefactoringTest.fizzBuzz" />
+        <item itemvalue="JUnit.TennisGameRefactoringTest.getScore" />
+        <item itemvalue="JUnit.CylinderRefactoringTest.getVolume" />
+        <item itemvalue="JUnit.CalculatorRefactoringTest.testCalculateAdd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="" />
+      <created>1655189432244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655189432244</updated>
+      <workItem from="1655189433670" duration="6826000" />
+      <workItem from="1655196881486" duration="54000" />
+      <workItem from="1655349855311" duration="670000" />
+      <workItem from="1655439353321" duration="17166000" />
+      <workItem from="1655892413869" duration="848000" />
+      <workItem from="1656399314709" duration="1956000" />
+      <workItem from="1656929294267" duration="281000" />
+      <workItem from="1657097295037" duration="14430000" />
+      <workItem from="1657261854936" duration="860000" />
+      <workItem from="1657703788354" duration="1570000" />
+      <workItem from="1657765101528" duration="1143000" />
+      <workItem from="1661484474870" duration="358000" />
+      <workItem from="1661484845645" duration="18000" />
+      <workItem from="1661484942227" duration="986000" />
+      <workItem from="1661487164685" duration="235000" />
+      <workItem from="1661487677144" duration="65000" />
+      <workItem from="1661487767334" duration="33000" />
+      <workItem from="1661487870350" duration="359000" />
+      <workItem from="1661488243042" duration="2400000" />
+      <workItem from="1661493775410" duration="166000" />
+      <workItem from="1661503436548" duration="558000" />
+      <workItem from="1661504131961" duration="60000" />
+      <workItem from="1661504201365" duration="3509000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/s2/StringSequenceMaxLength.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_10_dsa_list/exercise/e2/Test.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/advance/GenericService.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/advance/GenericService.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_12_java_collection_framework/exercise/e1/advance/GenericService.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3/Cylinder.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3/CylinderRefactoring.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="fieldArrays" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
