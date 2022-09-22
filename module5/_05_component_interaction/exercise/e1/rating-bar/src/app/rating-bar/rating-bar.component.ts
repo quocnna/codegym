@@ -8,11 +8,11 @@ import {RatingUnit} from "../rating-unit";
 })
 export class RatingBarComponent implements OnInit {
   @Input()
-  max = 10;
+  max: any = 10;
   @Input()
-  ratingValue = 5;
+  ratingValue: any = 5;
   @Input()
-  showRatingValue = true;
+  showRatingValue : any = true;
 
   @Output()
   rateChange = new EventEmitter<number>();
@@ -44,7 +44,10 @@ export class RatingBarComponent implements OnInit {
 
   select(index : any) {
     this.ratingValue = index + 1;
-    this.ratingUnits.forEach((item, idx) => item.active = idx < this.ratingValue);
+    this.ratingUnits.forEach((item, idx) => {
+      item.active = idx < this.ratingValue
+    });
+
     this.rateChange.emit(this.ratingValue);
   }
   enter(index : any) {

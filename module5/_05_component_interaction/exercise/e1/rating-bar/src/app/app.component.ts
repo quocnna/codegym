@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rating-bar';
+  item: any;
+
+  change($event: number) {
+    console.log("get value from child: " + $event)
+    this.item = $event;
+  }
 }

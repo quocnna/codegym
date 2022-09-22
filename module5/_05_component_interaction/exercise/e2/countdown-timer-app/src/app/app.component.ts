@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'countdown-timer-app';
+
+  finish($event: boolean) {
+    console.log($event)
+  }
 }
