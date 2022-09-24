@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {ListComponent} from "./product/list/list.component";
-import {CreateComponent} from "./product/create/create.component";
+import {FormComponent} from "./product/form/form.component";
 
 const routes: Routes = [
   {
@@ -9,7 +9,13 @@ const routes: Routes = [
     component: ListComponent
   }, {
     path: 'product/create',
-    component: CreateComponent
+    component: FormComponent
+  }, {
+    path: 'product/edit/:id',
+    component: FormComponent
+  }, {
+    path: 'product/delete/:id',
+    component: ListComponent
   }
 ];
 

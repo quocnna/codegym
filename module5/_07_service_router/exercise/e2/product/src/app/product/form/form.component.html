@@ -1,9 +1,9 @@
 <h1>Tạo sản phẩm mới</h1>
 <form [formGroup]="productForm" (ngSubmit)="submit()">
   <table>
-    <tr>
+    <tr *ngIf="product.id">
       <td>Mã sản phẩm:</td>
-      <td><input type="number" formControlName="id"></td>
+      <td><input type="number" formControlName="id" [readonly]="disableMessage"></td>
     </tr>
     <tr>
       <td>Tên sản phẩm:</td>
@@ -19,7 +19,7 @@
     </tr>
     <tr>
       <td></td>
-      <td><button>Tạo mới</button></td>
+      <td><button>Save</button></td>
     </tr>
   </table>
 </form>

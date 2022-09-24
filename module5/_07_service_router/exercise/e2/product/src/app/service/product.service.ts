@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Product} from "../model/product";
 
 @Injectable({
@@ -32,13 +32,53 @@ export class ProductService {
     description: 'Like new'
   }];
 
-  constructor() { }
+  constructor() {
+  }
 
   getAll() {
     return this.products;
   }
 
-  saveProduct(product: any) {
-    this.products.push(product);
+  find(id: number): Product {
+    let res: Product = {} as Product;
+
+    const product = this.products.find((o) => {
+      return o.id === id;
+    });
+
+    if (product) {
+      res = product;
+    }
+
+    return res;
+  }
+
+  delete(id:number){
+    const index = this.products.findIndex(o => o.id == id);
+    this.products.splice(index,1)
+
+    console.log(this.products);
+  }
+
+  save(product: Product) {
+    if (product.id) {
+      const index = this.products.findIndex(o => o.id == product.id);
+      this.products[index] = product;
+
+      // this.products.forEach((p, i) => {
+      //     if(p.id == product.id) {
+      //       this.products[i] =
+      //         {
+      //           name : product.name,
+      //           price : product.price,
+      //           description : product.description
+      //         }
+      //     }
+      // })
+    } else {
+      const lastId = this.products[this.products.length - 1].id;
+      product.id = lastId;
+      this.products.push(product);
+    }
   }
 }

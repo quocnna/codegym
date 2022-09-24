@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Product} from "../../model/product";
 import {ProductService} from "../../service/product.service";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-list',
@@ -11,15 +12,24 @@ export class ListComponent implements OnInit {
 
   products: Product[] = [];
 
-  constructor(private productService: ProductService) {
+  constructor(private productService: ProductService, private activatedRoute: ActivatedRoute, private router: Router) {
+    console.log("Inside TestComponent constructor")
   }
 
   ngOnInit() {
-    this.getAll();
-  }
+    const param = this.activatedRoute.snapshot.paramMap;
+    if (param.has("id")) {
+      const id = param.get("id");
+      this.productService.delete(Number(id));
+      this.router.navigateByUrl("/product/list");
+      }
 
-  getAll() {
-    this.products = this.productService.getAll();
-  }
+      this.getAll();
+    }
 
-}
+    getAll()
+    {
+      this.products = this.productService.getAll();
+    }
+
+  }
