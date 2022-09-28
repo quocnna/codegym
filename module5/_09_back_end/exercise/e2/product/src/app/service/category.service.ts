@@ -24,8 +24,6 @@ export class CategoryService {
   }
 
   updateCategory(id: number, category: Category): Observable<Category> {
-    console.log(category);
-    console.log(id);
     return this.http.put<Category>(`${API_URL}/categories/${id}`, category);
   }
 

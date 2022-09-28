@@ -1,84 +1,29 @@
 import {Injectable} from '@angular/core';
 import {Product} from "../model/product";
+import {HttpClient} from "@angular/common/http";
+import {environment} from "../../environments/environment";
+import {Observable} from "rxjs";
 
+const API_URL = `${environment.apiUrl}`;
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  products: Product[] = [{
-    id: 1,
-    name: 'IPhone 12',
-    price: 2400000,
-    description: 'New'
-  }, {
-    id: 2,
-    name: 'IPhone 11',
-    price: 1560000,
-    description: 'Like new'
-  }, {
-    id: 3,
-    name: 'IPhone X',
-    price: 968000,
-    description: '97%'
-  }, {
-    id: 4,
-    name: 'IPhone 8',
-    price: 7540000,
-    description: '98%'
-  }, {
-    id: 5,
-    name: 'IPhone 11 Pro',
-    price: 1895000,
-    description: 'Like new'
-  }];
-
-  constructor() {
+  constructor(private http: HttpClient) {
   }
 
-  getAll() {
-    return this.products;
+  getAll(): Observable<Product[]> {
+    return this.http.get<Product[]>(API_URL + '/products');
   }
 
-  find(id: number): Product {
-    let res: Product = {} as Product;
-
-    const product = this.products.find((o) => {
-      return o.id === id;
-    });
-
-    if (product) {
-      res = product;
-    }
-
-    return res;
+  find(id: number): Observable<Product> {
+    return this.http.get<Product>(`${API_URL}/products/${id}`);
   }
 
-  delete(id:number){
-    const index = this.products.findIndex(o => o.id == id);
-    this.products.splice(index,1)
-
-    console.log(this.products);
+  delete(id: number): Observable<Product> {
+    return this.http.delete<Product>(`${API_URL}/products/${id}`);
   }
 
   save(product: Product) {
-    if (product.id) {
-      const index = this.products.findIndex(o => o.id == product.id);
-      this.products[index] = product;
-
-      // this.products.forEach((p, i) => {
-      //     if(p.id == product.id) {
-      //       this.products[i] =
-      //         {
-      //           name : product.name,
-      //           price : product.price,
-      //           description : product.description
-      //         }
-      //     }
-      // })
-    } else {
-      const lastId = this.products[this.products.length - 1].id;
-      product.id = lastId;
-      this.products.push(product);
-    }
   }
 }

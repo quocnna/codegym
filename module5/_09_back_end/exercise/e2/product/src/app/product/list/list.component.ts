@@ -13,7 +13,6 @@ export class ListComponent implements OnInit {
   products: Product[] = [];
 
   constructor(private productService: ProductService, private activatedRoute: ActivatedRoute, private router: Router) {
-    console.log("Inside TestComponent constructor")
   }
 
   ngOnInit() {
@@ -22,14 +21,10 @@ export class ListComponent implements OnInit {
       const id = param.get("id");
       this.productService.delete(Number(id));
       this.router.navigateByUrl("/product/list");
-      }
-
-      this.getAll();
     }
-
-    getAll()
-    {
-      this.products = this.productService.getAll();
+    else {
+      this.productService.getAll().subscribe(e=> this.products =e);
     }
-
   }
+
+}

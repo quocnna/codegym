@@ -56,8 +56,6 @@ export class ProductService {
   delete(id:number){
     const index = this.products.findIndex(o => o.id == id);
     this.products.splice(index,1)
-
-    console.log(this.products);
   }
 
   save(product: Product) {

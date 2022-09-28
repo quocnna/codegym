@@ -29,14 +29,14 @@ export class FormComponent implements OnInit {
 
     if (paramMap.has("id")) {
       const id = paramMap.get('id');
-      this.product = this.productService.find(Number(id));
-
-      this.productForm = this.fb.group({
-        id : this.product.id,
-        name: this.product.name,
-        price: this.product.price,
-        description: this.product.description
-      });
+      this.productService.find(Number(id)).subscribe(e => {
+        this.productForm = this.fb.group({
+          id : e.id,
+          name: e.name,
+          price: e.price,
+          description: e.description
+        });
+      })
     }
   }
 
