@@ -12,10 +12,7 @@ import {Category} from "../../model/category";
 export class CategoryEditComponent implements OnInit {
   category : Category = {} as Category;
 
-  categoryForm: FormGroup = new FormGroup({
-    name: new FormControl(this.category.name),
-    id: new FormControl(this.category.id)
-  });
+  categoryForm: FormGroup = new FormGroup({});
 
   constructor(private categoryService: CategoryService,
               private activatedRoute: ActivatedRoute) {
@@ -30,7 +27,10 @@ export class CategoryEditComponent implements OnInit {
 
   getCategory(id: number) {
     return this.categoryService.findById(id).subscribe(category => {
-        this.category = category;
+      this.categoryForm = new FormGroup({
+        name: new FormControl(category.name),
+        id: new FormControl(category.id)
+      });
     });
   }
 

@@ -19,7 +19,8 @@ export class ListComponent implements OnInit {
     const param = this.activatedRoute.snapshot.paramMap;
     if (param.has("id")) {
       const id = param.get("id");
-      this.productService.delete(Number(id));
+      this.productService.delete(Number(id)).subscribe(e => {
+        console.log("deleted")});
       this.router.navigateByUrl("/product/list");
     }
     else {
