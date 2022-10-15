@@ -6,10 +6,14 @@ body{
     margin: 0 auto;
     width: 80%;
     background: darkgrey;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
 }
 
 header{
-    height: 50px;
+    /*height: 50px;*/
+    min-height:50px;
     background: yellow;
 }
 
@@ -20,7 +24,8 @@ nav{
 
 main{
     display: flex;
-    height: 800px;
+    flex: 1;
+    /*height: 800px;*/
     background: black;
 }
 
@@ -43,6 +48,7 @@ aside{
 }
 
 footer{
-    height: 50px;
+    /*height: 50px;*/
+    min-height:50px;
     background: red;
 }
