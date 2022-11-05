@@ -3,15 +3,15 @@ package m4.music_page.repository;
 import m4.music_page.model.Song;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
+
+
 import java.util.List;
 import java.util.Optional;
 
@@ -20,7 +20,7 @@ public class SongRepository {
     @Autowired
     private SessionFactory sessionFactory;
 
-    private static EntityManager entityManager;
+    private EntityManager entityManager;
 
     public List<Song> findAll() {
         entityManager = sessionFactory.createEntityManager();
@@ -41,14 +41,22 @@ public class SongRepository {
 //        session.delete(book);
     }
 
+    @Transactional
     public void save(Song song) {
-//        Session currentSession = sessionFactory.getCurrentSession();
-//        currentSession.saveOrUpdate(theCustomer);
+        try {
+            Session currentSession = sessionFactory.openSession();
+            Transaction transaction = currentSession.beginTransaction();
+            currentSession.saveOrUpdate(song);
+            transaction.commit();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    public Optional<Song> getById(int id) {
-//        Session currentSession = sessionFactory.getCurrentSession();
-//        Customer theCustomer = currentSession.get(Customer.class, theId);
-        return null;
+    public Optional<Song> getById(Long id) {
+        Session currentSession = sessionFactory.openSession();
+        Song song = currentSession.get(Song.class, id);
+        return Optional.of(song);
     }
 }

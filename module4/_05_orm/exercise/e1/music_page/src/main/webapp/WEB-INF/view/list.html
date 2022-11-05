@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Music</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.2.2/css/bootstrap.min.css">
 </head>
 <body>
-
+<div class="container">
+    <div class="row pt-2">
+        <div class="col-6">
+           <h2>Music Management</h2>
+        </div>
+        <div class="col-6">
+            <a class="btn btn-primary float-end" href="form">Add New</a>
+        </div>
+    </div>
+    <div class="row pt-2">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Kind</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Link</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="c : ${res}">
+                <th scope="row">1</th>
+                <td th:text="${c.name}"></td>
+                <td th:text="${c.kind}"></td>
+                <td th:text="${c.artist}"></td>
+                <td th:text="${c.link}"></td>
+                <td>
+                    <a class="btn btn-outline-success" th:href="@{form/__${c.id}__}">Edit</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>
