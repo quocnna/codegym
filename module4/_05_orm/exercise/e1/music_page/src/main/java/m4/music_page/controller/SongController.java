@@ -7,6 +7,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,7 +29,7 @@ public class SongController {
     }
 
     @GetMapping(value ={"form","form/{id}"})
-    public String create(Model model, @PathVariable(required = false) Long id){
+    public String viewForm(Model model, @PathVariable(required = false) Long id){
         if(null != id){
             Optional<Song> opSong = songService.findById(id);
             if(opSong.isPresent())
@@ -48,6 +49,13 @@ public class SongController {
         songService.save(song);
         return "redirect:/list";
     }
+
+    @DeleteMapping("delete/{id}")
+    public String delete(@PathVariable Long id){
+        songService.delete(id);
+        return "redirect:/list";
+    }
+
 
     @GetMapping("img/{code}")
     public ResponseEntity<Resource> playMp3(@PathVariable String code) {

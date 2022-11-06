@@ -24,4 +24,8 @@ public class SongService {
      public Optional<Song> findById(Long id){
          return songRepository.getById(id);
      }
+
+     public void  delete(Long id){
+         songRepository.delete(id);
+     }
 }

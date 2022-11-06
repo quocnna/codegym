@@ -1,6 +1,7 @@
 package m4.music_page.repository;
 
 import m4.music_page.model.Song;
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -35,12 +36,6 @@ public class SongRepository {
 //        Query query = session.createQuery(cq);
     }
 
-    public void delete(int id) {
-//        Session session = sessionFactory.getCurrentSession();
-//        Customer book = session.byId(Customer.class).load(id);
-//        session.delete(book);
-    }
-
     @Transactional
     public void save(Song song) {
         try {
@@ -58,5 +53,17 @@ public class SongRepository {
         Session currentSession = sessionFactory.openSession();
         Song song = currentSession.get(Song.class, id);
         return Optional.of(song);
+    }
+
+    public void delete(Long id){
+        try {
+            Session currentSession = sessionFactory.openSession();
+            Transaction transaction = currentSession.beginTransaction();
+            Song song = currentSession.get(Song.class, id);
+            currentSession.delete(song);
+            transaction.commit();
+        } catch (HibernateException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
