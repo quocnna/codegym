@@ -15,8 +15,9 @@ public class ColumnTotalCalculate {
         int res=0;
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
-                if(j==1)
+                if(j == col){
                     res+=a[i][j];
+                }
             }
         }
 

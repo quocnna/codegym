@@ -6,12 +6,14 @@ public class CountStudentPass {
     public static void main(String[] args) {
         int size;
         int[] array;
+
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.print("Enter a size:");
             size = scanner.nextInt();
-            if (size > 30)
+            if (size > 30){
                 System.out.println("Size should not exceed 30");
+            }
         } while (size > 30);
 
         array = new int[size];
@@ -35,6 +37,7 @@ public class CountStudentPass {
             if (array[j] >= 5 && array[j] <= 10)
                 count++;
         }
+
         System.out.print("\n The number of students passing the exam is " + count);
     }
 }
