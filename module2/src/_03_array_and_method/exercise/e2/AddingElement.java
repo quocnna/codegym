@@ -44,12 +44,13 @@ public class AddingElement {
             tmp[i]= arr[i];
         }
 
-        for (int i = length; i > index ; i--) {
+        for (int i = length; i > index; i--) {
             if(i!=index){
                 tmp[i]= arr[i-1];
             }
         }
         tmp[index]= val;
+
         return tmp;
     }
 }

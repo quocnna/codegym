@@ -29,6 +29,7 @@ public class RemoveElement2 {
         if(index>=0){
             return removeByIndex(arr, index);
         }
+
         return null;
     }
 
@@ -40,6 +41,7 @@ public class RemoveElement2 {
                 tmp[j++]= arr[i];
             }
         }
+
         return tmp;
     }
 }

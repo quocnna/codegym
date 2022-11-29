@@ -36,11 +36,11 @@ public class QuadraticEquation {
         QuadraticEquation q = new QuadraticEquation(a,b,c);
         double delta= q.getDiscriminant();
 
-        if(delta>0){
+        if(delta > 0){
             System.out.printf("x1 = %.2f, x2 = %.2f", q.getRoot1(), q.getRoot2());
         }
-        else if(delta==0){
-            System.out.printf("x= "+q.getRoot1());
+        else if(delta == 0){
+            System.out.printf("x= " + q.getRoot1());
         }
         else{
             System.out.println("The equation has no roots");

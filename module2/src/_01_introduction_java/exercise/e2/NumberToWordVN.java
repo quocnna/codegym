@@ -49,8 +49,10 @@ public class NumberToWordVN {
 
     private static String twoDigit(int number){
         String res;
+
         int teens= number/ 10;
         int ones= number % 10;
+
         if(teens== 1){
             res= "mười " + oneDigit(ones);
         }
@@ -58,7 +60,7 @@ public class NumberToWordVN {
             res= oneDigit(teens)+ " "+ oneDigit(ones);
         }
 
-        return res.replace("một", "mốt");
+        return res.replace("một", "mốt").replace("không", "mươi");
     }
 
     private static String threeDigit(int number){

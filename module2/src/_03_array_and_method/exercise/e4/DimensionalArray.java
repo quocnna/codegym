@@ -26,6 +26,7 @@ public class DimensionalArray {
                 }
             }
         }
+
         System.out.println("Max value in matrix: "+ res);
     }
 }
