@@ -10,6 +10,6 @@
 [submodule "module4/m4_case_study"]
 	path = module4/m4_case_study
 	url = https://github.com/naqforever/m4_case_study.git
-[submodule "module2/m2_case_study"]
-	path = module2/m2_case_study
+[submodule "module2/src/m2_case_study"]
+	path = module2/src/m2_case_study
 	url = https://github.com/naqforever/m2_case_study.git
