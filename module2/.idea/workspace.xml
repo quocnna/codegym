@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2/NumberToWordVN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2/NumberToWordVN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p7/IBM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/p7/IBM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_03_array_and_method/exercise/e1/RemoveElement2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_03_array_and_method/exercise/e1/RemoveElement2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_03_array_and_method/exercise/e2/AddingElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_03_array_and_method/exercise/e2/AddingElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_03_array_and_method/exercise/e4/DimensionalArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_03_array_and_method/exercise/e4/DimensionalArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_03_array_and_method/exercise/s3/CountCharacterInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_03_array_and_method/exercise/s3/CountCharacterInString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_04_class_and_object/exercise/e1/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_04_class_and_object/exercise/e1/QuadraticEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/FuramaManager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/util/CommonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/BookingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/BookingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/CustomerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/EmployeeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/FacilityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/FacilityView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/HomeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/PromotionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/PromotionView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/m2_case_study" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,19 +42,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/quocnna.UNITEK/Desktop/codegym/module2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/quocnna.UNITEK/Desktop/codegym/module2/src/m2_case_study",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3494253",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\codegym\module2\src\m2_case_study" />
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib" />
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\test\_08_clean_code_refactoring\lib" />
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1\advance\lib" />
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1\advance" />
-      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib\junit4" />
@@ -58,7 +72,7 @@
       <recent name="_12_java_collection_framework.exercise.e1.advance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StopWatch">
+  <component name="RunManager" selected="Application.m2_case_study.FuramaManager.view.HomeView">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -103,25 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeapYearChecking" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_01_introduction_java.practice.p6.LeapYearChecking" />
+    <configuration name="HomeView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.HomeView" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_01_introduction_java.practice.p6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberToWordVN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_01_introduction_java.exercise.e2.NumberToWordVN" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_01_introduction_java.exercise.e2.*" />
+          <option name="PATTERN" value="view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,13 +143,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="m2_case_study.FuramaManager.view.HomeView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="m2_case_study.FuramaManager.view.HomeView" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="m2_case_study.FuramaManager.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.m2_case_study.FuramaManager.view.HomeView" />
+        <item itemvalue="Application.HomeView" />
         <item itemvalue="Application.StopWatch" />
         <item itemvalue="Application.ColumnTotalCalculate" />
         <item itemvalue="Application.DimensionalArray" />
-        <item itemvalue="Application.NumberToWordVN" />
-        <item itemvalue="Application.LeapYearChecking" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +201,9 @@
       <workItem from="1668563570819" duration="19000" />
       <workItem from="1668762211950" duration="3413000" />
       <workItem from="1669014076318" duration="12000" />
+      <workItem from="1672715247216" duration="987000" />
+      <workItem from="1672716793547" duration="376000" />
+      <workItem from="1672717496811" duration="122000" />
     </task>
     <servers />
   </component>
