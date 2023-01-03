@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/m2_case_study" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/FuramaManager.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/util/CommonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/BookingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/BookingView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/CustomerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/CustomerView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/EmployeeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/EmployeeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/FacilityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/FacilityView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/HomeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/HomeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/src/view/PromotionView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/view/PromotionView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +36,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/quocnna.UNITEK/Desktop/codegym/module2/src/m2_case_study",
+    "last_opened_file_path": "C:/Users/quocnna.UNITEK/Desktop/codegym/module2/src/m2_case_study/FuramaManager/service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,17 +49,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\codegym\module2\src\m2_case_study\FuramaManager\service" />
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\codegym\module2\src\m2_case_study\FuramaManager\controller" />
+      <recent name="C:\Users\quocnna.UNITEK\Desktop\codegym\module2\src\m2_case_study\FuramaManager" />
       <recent name="C:\Users\quocnna.UNITEK\Desktop\codegym\module2\src\m2_case_study" />
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib" />
-      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\test\_08_clean_code_refactoring\lib" />
-      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1\advance\lib" />
-      <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_12_java_collection_framework\exercise\e1\advance" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib\junit4" />
       <recent name="C:\Users\quocnna.UNITEK\Desktop\git_cg\module2\src\_08_clean_code_refactoring\lib\junit5" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="m2_case_study.FuramaManager.controller" />
+      <recent name="m2_case_study.FuramaManager.util" />
       <recent name="_12_java_collection_framework.exercise.e1.advance" />
     </key>
   </component>
@@ -203,7 +196,7 @@
       <workItem from="1669014076318" duration="12000" />
       <workItem from="1672715247216" duration="987000" />
       <workItem from="1672716793547" duration="376000" />
-      <workItem from="1672717496811" duration="122000" />
+      <workItem from="1672717496811" duration="24044000" />
     </task>
     <servers />
   </component>
@@ -259,11 +252,22 @@
           <line>7</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/m2_case_study/FuramaManager/view/BookingView.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/m2_case_study/FuramaManager/service/PromotionServiceImpl.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="fieldArrays" />
+        <watch expression="bookingService.findAll()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
