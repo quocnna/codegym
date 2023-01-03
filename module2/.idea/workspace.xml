@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study" afterDir="false" />
-    </list>
+    <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +33,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/quocnna.UNITEK/Desktop/codegym/module2/src/m2_case_study/FuramaManager/service",
+    "last_opened_file_path": "C:/Users/quocnna.UNITEK/Desktop/test_demo/codegym/m2/vehicle_manager/VehicleManager_p3_improve",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -196,7 +193,7 @@
       <workItem from="1669014076318" duration="12000" />
       <workItem from="1672715247216" duration="987000" />
       <workItem from="1672716793547" duration="376000" />
-      <workItem from="1672717496811" duration="24044000" />
+      <workItem from="1672717496811" duration="24275000" />
     </task>
     <servers />
   </component>
