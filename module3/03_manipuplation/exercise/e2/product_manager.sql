@@ -1,6 +1,6 @@
 CREATE DATABASE product_manager;
 
-use product_management;
+use product_manager;
 
 CREATE TABLE customer (
 	id int PRIMARY KEY AUTO_INCREMENT,

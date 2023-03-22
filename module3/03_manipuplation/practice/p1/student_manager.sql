@@ -48,10 +48,18 @@ INSERT INTO class value (2, 'C0420G1', '2020-12-15', 1);
 
 insert into student (`name`, address, phone, `status`, class_id) VALUE('quoc', '19 le do', '0708', 1, 1);
 insert into student (`name`, address, phone, `status`, class_id) VALUE('dung', '19 le do', '0708', 1, 2);
+insert into student (`name`, address, phone, `status`, class_id) VALUE('toan', '19 le do', '0708', 1, 2);
+insert into student (`name`, address, phone, `status`, class_id) VALUE('my', '19 le do', '0708', 1, 2);
 
 insert into `subject` (name, credit, `status`) VALUE('java', 10, 1);
+insert into `subject` (name, credit, `status`) VALUE('csharp', 15, 1);
 
-insert into mark(sub_id, student_id, mark, exam_times) VALUE(1, 1, 8.5, 2);
+insert into mark(sub_id, student_id, mark, exam_times) VALUE(1, 1, 12, 2);
+insert into mark(sub_id, student_id, mark, exam_times) VALUE(2, 2, 10, 2);
+insert into mark(sub_id, student_id, mark, exam_times) VALUE(2, 1, 8, 2);
+insert into mark(sub_id, student_id, mark, exam_times) VALUE(1, 3, 5, 2);
+insert into mark(sub_id, student_id, mark, exam_times) VALUE(2, 3, 4, 2);
+insert into mark(sub_id, student_id, mark, exam_times) VALUE(2, 4, 5, 2);
 
 
 
