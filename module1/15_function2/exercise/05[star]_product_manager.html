@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Product{
+        constructor(id, name, color, price) {
+            this.id = id;
+            this.name = name;
+            this.color = color;
+            this.price = price;
+        }
+    }
+
+    class ProductService{
+        products = [];
+
+        findAll(){
+            return this.products;
+        }
+
+        save(p){
+            this.products.push(p);
+        }
+    }
+
+
+    let ps = new ProductService();
+
+    let a = new Product(1, "a", "c", 123);
+    alert(ps.findAll().length);
+    ps.save(a);
+    alert(ps.findAll()[0].color);
+
+</script>
+</body>
+</html>
