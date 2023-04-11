@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Class</title>
+</head>
+<body>
+
+<script>
+    class Mobile {
+        messageInbox = [];
+        messageSent = [];
+        messageComposing;
+        #pin = 50;
+        status;
+
+        constructor(fromNumber, toNumber, message) {
+            this.fromNumber = fromNumber;
+            this.toNumber = toNumber;
+            this.message = message;
+        }
+
+
+        chargePin(){
+            let interval = setInterval(() => {
+                this.#pin++;
+                console.log(this.#pin);
+
+                if(this.#pin == 100){
+                    clearInterval(interval);
+                    console.log("battery is charge fully")
+                }
+            }, 3000);
+        }
+
+        get Status(){
+            return this.status;
+        }
+
+        set Status(s){
+            this.status = s;
+        }
+
+        get Pin(){
+            return this.#pin;
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
