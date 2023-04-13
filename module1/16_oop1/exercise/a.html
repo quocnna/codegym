@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="gameCanvas"></canvas>
+<button>abc</button>
+<script>
+
+  var canvas = document.querySelector('canvas');
+  canvas.height = canvas.width = 0;
+  var context = canvas.getContext('2d');
+  function resize() {
+    const  sourceimage = new Image();
+    sourceimage.src = `img/car_down.png`;
+    var imgwidth = sourceimage.offsetWidth;
+    var imgheight = sourceimage.offsetHeight;
+    canvas.width = 10;
+    canvas.height = 50;
+    context.drawImage(
+            sourceimage, 0, 0, imgwidth, imgheight, 0, 0, 10, 50
+    );
+  }
+  var button = document.querySelector('button');
+  button.addEventListener('click', resize, false);
+</script>
+</body>
+</html>
