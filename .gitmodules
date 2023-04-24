@@ -13,3 +13,6 @@
 [submodule "module2/src/m2_case_study"]
 	path = module2/src/m2_case_study
 	url = https://github.com/naqforever/m2_case_study.git
+[submodule "module1/m1_case_study"]
+	path = module1/m1_case_study
+	url = https://github.com/naqforever/m1_case_study.git
