@@ -1,7 +1,0 @@
-m4/product/model/Product.class
-m4/product/service/ProductService.class
-m4/product/controller/ProductController.class
-m4/product/conf/WebConfig.class
-m4/product/service/ProductServiceImpl.class
-m4/product/conf/AppConfiguration.class
-m4/product/conf/AppInitializer.class
