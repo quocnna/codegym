@@ -1,6 +1,8 @@
 package com.codegym.service;
 
 import com.codegym.model.Product;
+import org.springframework.core.io.Resource;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 
@@ -8,11 +10,5 @@ public interface IProductService {
     List<Product> findAll();
 
     void save(Product product);
-
-    Product findById(int id);
-
-    void update(int id, Product product);
-
-    void remove(int id);
-
+    ResponseEntity<Resource> downloadFile(String code);
 }

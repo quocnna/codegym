@@ -18,18 +18,15 @@ import java.util.List;
 
 @Controller
 public class HomeController {
-    @Autowired
-    private SongService songService;
+    private final SongService songService;
 
-    @Autowired
-    public void setSongService(SongService songService) {
+    public HomeController(SongService songService){
         this.songService = songService;
     }
 
     @GetMapping("home")
     public ModelAndView home(HttpServletRequest request, HttpServletResponse response) {
-        List<Song> songs = songService.getAll();
-        return new ModelAndView("home", "res", songs);
+        return new ModelAndView("home", "res", songService.getAll());
     }
 
     @GetMapping("create")
@@ -37,14 +34,15 @@ public class HomeController {
         return "form";
     }
 
-    @PostMapping("save")
+    @PostMapping
     public String save(@ModelAttribute Song song){
         songService.create(song);
+
         return "redirect:/home";
     }
 
     @GetMapping("img/{code}")
-    public ResponseEntity<Resource> playMp3(@PathVariable String code) {
+    public ResponseEntity<Resource> viewImage(@PathVariable String code) {
         return songService.downloadFile(code);
     }
 }

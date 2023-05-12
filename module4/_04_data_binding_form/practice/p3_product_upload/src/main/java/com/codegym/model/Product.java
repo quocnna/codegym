@@ -7,16 +7,19 @@ public class Product {
 
     private String description;
 
-    private String image;
+    private String imageUrl;
 
-    public Product() {
-    }
+    private String fileType;
 
-    public Product(int id, String name, String description, String image) {
+    private String path;
+
+    public Product(int id, String name, String description, String imageUrl, String fileType, String path) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.image = image;
+        this.imageUrl = imageUrl;
+        this.fileType = fileType;
+        this.path = path;
     }
 
     public int getId() {
@@ -43,11 +46,27 @@ public class Product {
         this.description = description;
     }
 
-    public String getImage() {
-        return image;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getFileType() {
+        return fileType;
+    }
+
+    public void setFileType(String fileType) {
+        this.fileType = fileType;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
     }
 }

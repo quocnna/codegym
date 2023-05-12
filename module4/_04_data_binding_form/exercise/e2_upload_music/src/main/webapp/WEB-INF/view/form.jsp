@@ -6,7 +6,7 @@
 <body>
 
 
-<form method="post" action="save" novalidate="novalidate" enctype="multipart/form-data">
+<form method="post" action="/" novalidate="novalidate" enctype="multipart/form-data">
     <input type="hidden" name="id" value="0">
     <div>
         Name: <input type="text" name="name">

@@ -48,19 +48,19 @@ public class SongService {
 
     public void create(Song song) {
         int lastId = 0;
-
         if (songs.size() > 0) {
             lastId = songs.get(songs.size() - 1).getId();
         }
         song.setId(lastId + 1);
+
         MultipartFile multipartFile = song.getImage();
         String idEncode = CommonlUtil.encode64(String.valueOf(song.getId()));
         try {
-            String path = getAbsolutePath("") + CommonlUtil.encodeMD5(multipartFile.getName() + LocalDateTime.now());
+            String path = getAbsolutePath("img") + File.separator + CommonlUtil.encodeMD5(multipartFile.getName() + LocalDateTime.now());
             FileCopyUtils.copy(multipartFile.getBytes(), new File(path));
             String url = ServletUriComponentsBuilder.fromCurrentRequest().toUriString();
             URI uri = new URI(url);
-            song.setLink(String.format("%s://%s:8080/img/%s", uri.getScheme(), uri.getHost(), idEncode + "QG"));
+            song.setLink(String.format("%s://%s:%s/img/%s", uri.getScheme(), uri.getHost(), uri.getPort(), idEncode + "QG"));
             song.setPath(path);
             song.setFileType(CommonlUtil.getMimeTypeFromFileName(multipartFile.getOriginalFilename()));
             songs.add(song);
@@ -77,22 +77,22 @@ public class SongService {
         Resource resource = null;
         try {
             resource = new UrlResource(Paths.get(filePath).toUri());
-            if (resource.exists())
+            if (resource.exists()) {
                 return resource;
+            }
         } catch (MalformedURLException ex) {
             ex.printStackTrace();
         }
         return resource;
     }
 
-    private String getAbsolutePath(String code) {
-//            System.getProperty("user.dir");
-//            String saveDirectory= request.getSession().getServletContext().getRealPath("/");
+    private String getAbsolutePath(String folder) {
         String rootPath = System.getProperty("catalina.home");
-        File dir = new File(rootPath + File.separator + "img");
-        if (!dir.exists())
+        File dir = new File(rootPath + File.separator + folder);
+        if (!dir.exists()) {
             dir.mkdirs();
+        }
 
-        return dir.getAbsolutePath() + "\\" + code;
+        return dir.getAbsolutePath();
     }
 }

@@ -1,9 +1,34 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1" isELIgnored="false"%>
+         pageEncoding="ISO-8859-1" isELIgnored="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>Title</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid;
+            table-layout: fixed;
+        }
+
+        table td {
+            border: 1px solid;
+            text-align: center;
+        }
+
+        tr:hover {
+            background-color: yellow;
+        }
+
+        table th:first-child {
+            width: 5%;
+        }
+
+        table th:last-child {
+            width: 30%;
+        }
+    </style>
 </head>
 <body>
 <div>
@@ -24,7 +49,7 @@
             <td>${e.artist}</td>
             <td>${e.genre}</td>
             <td>
-                <img style="width:50px;height:50px" src="<c:url value="${e.link}"/>"/>
+                <img style="width:90px;height:90px" src="<c:url value="${e.link}"/>"/>
             </td>
         </tr>
     </c:forEach>

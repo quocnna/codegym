@@ -1,9 +1,18 @@
 package com.codegym.service;
 
 import com.codegym.model.Product;
+import com.codegym.util.CommonlUtil;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 
+import java.net.MalformedURLException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 
 public class ProductService implements IProductService {
@@ -19,29 +28,36 @@ public class ProductService implements IProductService {
         products.add(product);
     }
 
-    @Override
-    public Product findById(int id) {
-        return products.get(id);
-    }
+    public ResponseEntity<Resource> downloadFile(String code) {
+        Resource resource = null;
+        String id = code.substring(0, code.length() - 2);
+        int idDecode = Integer.parseInt(CommonlUtil.decode64(id));
+        Optional<Product> opProduct = products.stream().filter(e -> e.getId() == idDecode).findFirst();
 
-    @Override
-    public void update(int id, Product product) {
-        for (Product p : products) {
-            if (p.getId() == id) {
-                p = product;
-                break;
-            }
+        String fileName = "";
+        String mime = "";
+        if (opProduct.isPresent()) {
+            String path = opProduct.get().getPath();
+            resource = loadFileAsResource(path);
+            fileName = opProduct.get().getName();
+            mime = opProduct.get().getFileType();
         }
+
+        return ResponseEntity.ok()
+                .contentType(MediaType.parseMediaType(mime))
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileName + "\"")
+                .body(resource);
     }
 
-    @Override
-    public void remove(int id) {
-        for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getId() == id) {
-                products.remove(i);
-                break;
-            }
+    public Resource loadFileAsResource(String filePath) {
+        Resource resource = null;
+        try {
+            resource = new UrlResource(Paths.get(filePath).toUri());
+            if (resource.exists())
+                return resource;
+        } catch (MalformedURLException ex) {
+            ex.printStackTrace();
         }
+        return resource;
     }
-
 }
