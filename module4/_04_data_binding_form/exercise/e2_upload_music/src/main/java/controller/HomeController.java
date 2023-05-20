@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 import service.SongService;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
@@ -19,13 +20,15 @@ import java.util.List;
 @Controller
 public class HomeController {
     private final SongService songService;
+    @Autowired
+    private ServletContext servletContext;
 
     public HomeController(SongService songService){
         this.songService = songService;
     }
 
-    @GetMapping("home")
-    public ModelAndView home(HttpServletRequest request, HttpServletResponse response) {
+    @GetMapping
+    public ModelAndView home() {
         return new ModelAndView("home", "res", songService.getAll());
     }
 
@@ -36,13 +39,13 @@ public class HomeController {
 
     @PostMapping
     public String save(@ModelAttribute Song song){
-        songService.create(song);
+        songService.create(servletContext,song);
 
-        return "redirect:/home";
+        return "redirect:/";
     }
 
     @GetMapping("img/{code}")
     public ResponseEntity<Resource> viewImage(@PathVariable String code) {
-        return songService.downloadFile(code);
+        return songService.downloadFile(this.servletContext,code);
     }
 }

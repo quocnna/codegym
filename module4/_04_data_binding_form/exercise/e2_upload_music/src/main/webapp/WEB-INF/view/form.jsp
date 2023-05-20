@@ -20,7 +20,7 @@
         genre: <input type="text" name="genre">
     </div>
     <div>
-        image: <input type="file" name="image">
+        file: <input type="file" name="file" accept=".mp3,.wav,.ogg,.m4p">
     </div>
 
     <button>Create</button>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Music</title>
@@ -12,7 +12,7 @@
            <h2>Music Management</h2>
         </div>
         <div class="col-6">
-            <a class="btn btn-primary float-end" href="form">Add New</a>
+            <a class="btn btn-primary float-end" href="/form">Add New</a>
         </div>
     </div>
     <div class="row pt-2">
@@ -33,10 +33,13 @@
                 <td th:text="${c.name}"></td>
                 <td th:text="${c.kind}"></td>
                 <td th:text="${c.artist}"></td>
-                <td th:text="${c.link}"></td>
                 <td>
-                    <a class="btn btn-outline-success" th:href="@{form/__${c.id}__}">Edit</a>
-                    <button th:onclick="document.getElementById('deleteForm').action = '/delete/[[${c.id}]]'" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+                    <audio controls><source th:src="@{/file/{code}(code=${c.link})}" type="audio/wav">
+                    </audio>
+                </td>
+                <td>
+                    <a class="btn btn-outline-success" th:href="@{/form/__${c.id}__}">Edit</a>
+                    <button th:onclick="document.getElementById('deleteForm').action = '/[[${c.id}]]'" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
                 </td>
             </tr>
             </tbody>

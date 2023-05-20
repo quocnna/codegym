@@ -9,8 +9,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import util.CommonlUtil;
+import util.CommonUtil;
 
+import javax.servlet.ServletContext;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -23,44 +24,46 @@ import java.util.List;
 import java.util.Optional;
 
 public class SongService {
-    private List<Song> songs = new ArrayList<>();
+    private final List<Song> songs = new ArrayList<>();
 
-    public ResponseEntity<Resource> downloadFile(String code) {
+    public ResponseEntity<Resource> downloadFile(ServletContext servletContext, String code) {
         Resource resource = null;
+        String path = "";
         String id = code.substring(0, code.length() - 2);
-        int idDecode = Integer.parseInt(CommonlUtil.decode64(id));
+        int idDecode = Integer.parseInt(CommonUtil.decode64(id));
         Optional<Song> opSong = songs.stream().filter(e -> e.getId() == idDecode).findFirst();
 
         String fileName = "";
         if (opSong.isPresent()) {
-            String path = opSong.get().getPath();
+            path = opSong.get().getPath();
             resource = loadFileAsResource(path);
             fileName = opSong.get().getName();
         }
 
         return ResponseEntity.ok()
-                .contentType(MediaType.IMAGE_JPEG)
+                .contentType(CommonUtil.getMediaTypeForFileName(servletContext,path))
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileName + "\"")
                 .body(resource);
     }
 
-    public void create(Song song) {
+    public void create(ServletContext servletContext, Song song) {
         int lastId = 0;
         if (songs.size() > 0) {
             lastId = songs.get(songs.size() - 1).getId();
         }
         song.setId(lastId + 1);
 
-        MultipartFile multipartFile = song.getImage();
-        String idEncode = CommonlUtil.encode64(String.valueOf(song.getId()));
+        MultipartFile multipartFile = song.getFile();
+        String idEncode = CommonUtil.encode64(String.valueOf(song.getId()));
         try {
-            String path = getAbsolutePath("img") + File.separator + CommonlUtil.encodeMD5(multipartFile.getName() + LocalDateTime.now());
+            String path = getAbsolutePath("img") + File.separator + CommonUtil.encodeMD5(multipartFile.getName() + LocalDateTime.now());
             FileCopyUtils.copy(multipartFile.getBytes(), new File(path));
             String url = ServletUriComponentsBuilder.fromCurrentRequest().toUriString();
             URI uri = new URI(url);
             song.setLink(String.format("%s://%s:%s/img/%s", uri.getScheme(), uri.getHost(), uri.getPort(), idEncode + "QG"));
             song.setPath(path);
-            song.setFileType(CommonlUtil.getMimeTypeFromFileName(multipartFile.getOriginalFilename()));
+            MediaType mediaType = CommonUtil.getMediaTypeForFileName(servletContext,multipartFile.getOriginalFilename());
+            song.setFileType(mediaType.getType());
             songs.add(song);
         } catch (IOException | URISyntaxException ex) {
             ex.printStackTrace();
@@ -81,6 +84,7 @@ public class SongService {
         } catch (MalformedURLException ex) {
             ex.printStackTrace();
         }
+
         return resource;
     }
 

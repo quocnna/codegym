@@ -1,14 +1,16 @@
 package util;
 
 import jakarta.xml.bind.DatatypeConverter;
+import org.springframework.http.MediaType;
 
+import javax.servlet.ServletContext;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 import java.util.Optional;
 
-public class CommonlUtil {
+public class CommonUtil {
     public static String encode64(String raw) {
         return Base64.getEncoder().encodeToString(raw.getBytes(StandardCharsets.UTF_8));
     }
@@ -57,5 +59,14 @@ public class CommonlUtil {
                 res= "image/svg+xml";
         }
         return res;
+    }
+
+    public static MediaType getMediaTypeForFileName(ServletContext servletContext, String fileName) {
+        String mineType = servletContext.getMimeType(fileName);
+        try {
+            return MediaType.parseMediaType(mineType);
+        } catch (Exception e) {
+            return MediaType.APPLICATION_OCTET_STREAM;
+        }
     }
 }

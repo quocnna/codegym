@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,7 +23,7 @@ public class SongController {
     @Autowired
     private SongService songService;
 
-    @GetMapping("list")
+    @GetMapping
     public ModelAndView list() {
         List<Song> songs = songService.findAll();
         return new ModelAndView("list", "res", songs);
@@ -32,10 +33,7 @@ public class SongController {
     public String viewForm(Model model, @PathVariable(required = false) Long id){
         if(null != id){
             Optional<Song> opSong = songService.findById(id);
-            if(opSong.isPresent())
-            {
-                model.addAttribute("song", opSong.get());
-            }
+            opSong.ifPresent(song -> model.addAttribute("song", song));
         }
         else{
             model.addAttribute("song", new Song());
@@ -44,22 +42,21 @@ public class SongController {
         return "form";
     }
 
-    @PostMapping("save")
-    public String save(@ModelAttribute Song song){
+    @PostMapping
+    public String save(Song song){
         songService.save(song);
-        return "redirect:/list";
+        return "redirect:/";
     }
 
-    @DeleteMapping("delete/{id}")
-    public String delete(@PathVariable Long id){
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable Integer id){
         songService.delete(id);
-        return "redirect:/list";
+        return "redirect:/";
     }
 
 
-    @GetMapping("img/{code}")
-    public ResponseEntity<Resource> playMp3(@PathVariable String code) {
-        return null;
-//        return songService.downloadFile(code);
+    @GetMapping("file/{code}")
+    public ResponseEntity<Resource> playMp3(HttpServletRequest request, @PathVariable String code) {
+        return songService.downloadFile(request.getServletContext(), code);
     }
 }

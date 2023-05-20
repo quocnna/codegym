@@ -1,42 +1,42 @@
 package m4.music_page.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.persistence.*;
 
 @Entity
 @Table
 public class Song {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     private String name;
     private String artist;
     private String kind;
     private String link;
     private String path;
-    private String mime;
+
+    @Transient
+    private MultipartFile file;
 
     public Song() {
     }
 
-    public Song(Long id, String name, String artist, String kind, String link, String path, String mime) {
+    public Song(int id, String name, String artist, String kind, String link, String path, MultipartFile file) {
         this.id = id;
         this.name = name;
         this.artist = artist;
         this.kind = kind;
         this.link = link;
         this.path = path;
-        this.mime = mime;
+        this.file = file;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -80,11 +80,11 @@ public class Song {
         this.path = path;
     }
 
-    public String getMime() {
-        return mime;
+    public MultipartFile getFile() {
+        return file;
     }
 
-    public void setMime(String mime) {
-        this.mime = mime;
+    public void setFile(MultipartFile file) {
+        this.file = file;
     }
 }

@@ -55,7 +55,7 @@ public class SongRepository {
         return Optional.of(song);
     }
 
-    public void delete(Long id){
+    public void delete(Integer id){
         try {
             Session currentSession = sessionFactory.openSession();
             Transaction transaction = currentSession.beginTransaction();

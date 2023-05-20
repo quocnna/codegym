@@ -49,7 +49,8 @@
             <td>${e.artist}</td>
             <td>${e.genre}</td>
             <td>
-                <img style="width:90px;height:90px" src="<c:url value="${e.link}"/>"/>
+                <audio controls><source src="<c:url value="${e.link}"/>" type="audio/wav">
+                </audio>
             </td>
         </tr>
     </c:forEach>
