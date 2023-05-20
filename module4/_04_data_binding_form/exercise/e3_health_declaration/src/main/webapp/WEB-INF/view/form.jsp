@@ -19,7 +19,7 @@
     <h6 class="text-danger mt-3">Khuyen cao: Khai bao thong tin sai la vi pham phap luat Viet Nam va co the xu ly hinh su</h6>
 </div>
 
-<form:form method="post" modelAttribute="result" action="/save">
+<form:form method="post" modelAttribute="result" action="/">
     <form:hidden path="id"></form:hidden>
     <div class="mb-3 row">
         <label for="inputName" class="form-label">Ho va ten (ghi chu in hoa) <span class="text-danger">(*)</span></label>

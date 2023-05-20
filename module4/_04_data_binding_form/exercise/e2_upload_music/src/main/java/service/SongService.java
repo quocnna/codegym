@@ -32,16 +32,14 @@ public class SongService {
         Optional<Song> opSong = songs.stream().filter(e -> e.getId() == idDecode).findFirst();
 
         String fileName = "";
-        String mime = "";
         if (opSong.isPresent()) {
             String path = opSong.get().getPath();
             resource = loadFileAsResource(path);
             fileName = opSong.get().getName();
-            mime = opSong.get().getFileType();
         }
 
         return ResponseEntity.ok()
-                .contentType(MediaType.parseMediaType(mime))
+                .contentType(MediaType.IMAGE_JPEG)
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileName + "\"")
                 .body(resource);
     }

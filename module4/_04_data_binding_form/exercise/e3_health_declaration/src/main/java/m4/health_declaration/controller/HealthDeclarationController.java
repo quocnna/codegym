@@ -18,7 +18,7 @@ public class HealthDeclarationController {
     @Autowired
     private HealthDeclarationService healthDeclarationService;
 
-    @GetMapping("list")
+    @GetMapping
     public String list(Model model){
         List<HealthDeclaration> res = healthDeclarationService.findAll();
         model.addAttribute("res", res);
@@ -40,9 +40,9 @@ public class HealthDeclarationController {
         return modelAndView;
     }
 
-    @PostMapping("save")
+    @PostMapping
     public String save(HealthDeclaration healthDeclaration){
         healthDeclarationService.save(healthDeclaration);
-        return "redirect:/list";
+        return "redirect:/";
     }
 }
