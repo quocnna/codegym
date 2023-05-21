@@ -22,6 +22,7 @@ public class CommentRepository {
             session = HibernateConfig.sessionFactory.openSession();
             transaction = session.beginTransaction();
             Comment comment = findOne(id);
+            session.refresh(comment);
             int liked = comment.getLiked() + 1;
 
             Query query = session.createSQLQuery("update comment set liked = :liked where id=:id")
