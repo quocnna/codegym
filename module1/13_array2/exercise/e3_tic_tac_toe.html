@@ -31,32 +31,40 @@
 <main></main>
 <script>
     let main = document.querySelector("main");
-    let turnNext = false;
     let boardSize =20;
-    let a = [];
+    let a;
 
-    for (let i = 0; i < boardSize; i++) {
-        a[i] = [];
-        const row = document.createElement("section");
+    newGame();
 
-        for (let j = 0; j < boardSize; j++) {
-            const cell = document.createElement("div");
-            a[i][j] = '';
-            row.appendChild(cell);
+    function newGame(){
+        a = [];
+        main.innerHTML = "";
+        let turnNext = false;
 
-            cell.onclick = function () {
-                a[i][j] = turnNext ? "x" : "o";
-                turnNext = !turnNext;
-                cell.innerText = a[i][j];
-                console.log(a);
+        for (let i = 0; i < boardSize; i++) {
+            a[i] = [];
+            const row = document.createElement("section");
 
-                if (checkWin(a[i][j])) {
-                    alert("win");
+            for (let j = 0; j < boardSize; j++) {
+                const cell = document.createElement("div");
+                a[i][j] = '';
+                row.appendChild(cell);
+
+                cell.onclick = function () {
+                    a[i][j] = turnNext ? "o" : "x";
+                    turnNext = !turnNext;
+                    cell.innerText = a[i][j];
+                    console.log(a);
+
+                    if (checkWin(a[i][j])) {
+                        alert("win");
+                        newGame();
+                    }
                 }
             }
-        }
 
-        main.appendChild(row);
+            main.appendChild(row);
+        }
     }
 
     function checkWin(val) {
