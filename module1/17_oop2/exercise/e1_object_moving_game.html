@@ -1,10 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<img id="img" style="position: relative"/>
+
+<script>
+    class MovingObject {
+        #speed = 1;
+
+        constructor(x, y, img, movingType) {
+            this.x = x;
+            this.y = y;
+            this.img = img;
+            this.movingType = movingType;
+        }
+
+        async move() {
+            console.log('calling');
+            const result = await this.leftToRight();
+            const result1 = await this.topToBottom();
+            // await this.topToBottom();
+
+/*            img.src = this.img;
+
+            if (this.movingType === 'leftToRight') {
+                await this.leftToRight();
+            } else {
+                 await this.leftToRight();
+                  await this.topToBottom();
+                // this.rightToLeft();
+                //  this.bottomToTop();
+            }*/
+        };
+
+         leftToRight() {
+             return new Promise(resolve => {
+                 setTimeout(() => {
+                     // resolve('resolved');
+                     console.log("1")
+                 }, 2000);
+             });
+        }
+
+        topToBottom() {
+            return  new Promise(() => {
+                setTimeout(e => {
+                    console.log("2");
+                }, 500);
+            })
+
+            // const run = setInterval(() => {
+            //     this.y += this.#speed;
+            //     img.style.left = this.y + 'px';
+            //
+            //     console.log(this.y);
+            //     if (this.y > window.innerWidth - 120) {
+            //         clearInterval(run);
+            //     }
+            // }, 0);
+
+        }
+
+        rightToLeft() {
+
+        }
+
+        bottomToTop() {
+
+        }
+    }
+
+
+    window.onload = function () {
+        const obj = new MovingObject(0, 0, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA2IZJYSa34VobkLZlDUpj8LsNsMloZndrH46oCqSCCg&s', 'leftToRighta');
+        obj.move();
+    }
+</script>
 </body>
 </html>

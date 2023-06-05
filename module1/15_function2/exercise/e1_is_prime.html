@@ -8,13 +8,18 @@
 <script>
   const val = prompt("Enter a number:")
   alert(isPrime(val));
+
   function isPrime(val){
     if(val <2){
       return false;
     }
 
+    if(val === 2){
+        return true;
+    }
+
     for (let i = 2;  i < val; i++) {
-      if(val % i == 0){
+      if(val % i === 0){
         return false;
       }
     }

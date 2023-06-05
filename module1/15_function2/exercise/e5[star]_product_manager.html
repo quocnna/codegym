@@ -194,22 +194,17 @@
 
         save(p) {
             if(p.id > 0){
-                const  index = this.products.findIndex(e => e.id == p.id);
+                const  index = this.products.findIndex(e => e.id === p.id);
                 this.products[index] = p;
             }
             else {
-                let lastId= 1;
-                if(this.products.length > 0){
-                    lastId = this.products[this.products.length -1].id;
-                }
-                p.id = Number(lastId) +1;
-
+                p.id = this.products.at(-1).id +1;
                 this.products.push(p);
             }
         }
 
         deleteById(id){
-            const  index = this.products.findIndex(e => e.id == id);
+            const  index = this.products.findIndex(e => e.id === id);
 
             if(index > -1){
                 this.products.splice(index, 1);
