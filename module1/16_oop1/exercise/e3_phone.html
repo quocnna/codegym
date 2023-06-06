@@ -47,7 +47,7 @@
         </div>
         <button onclick="nokia('init')">Init</button>
         <button onclick="nokia('shutdown')">On/Off</button>
-        <button onclick="iphone('outbox')">Charge Pin</button>
+        <button onclick="nokia('charge')">Charge Pin</button>
         <button onclick="nokia('send')">Send</button>
         <button onclick="nokia('inbox')">Inbox</button>
         <button onclick="nokia('outbox')">OutBox</button>
@@ -70,7 +70,7 @@
         </div>
         <button onclick="iphone('init')">Init</button>
         <button onclick="iphone('shutdown')">On/Off</button>
-        <button onclick="iphone('outbox')">Charge Pin</button>
+        <button onclick="iphone('charge')">Charge Pin</button>
         <button onclick="iphone('send')">Send</button>
         <button onclick="iphone('inbox')">Inbox</button>
         <button onclick="iphone('outbox')">OutBox</button>
@@ -181,6 +181,7 @@
         switch (action) {
             case 'init':
                 n = new Mobile(nokiaNumber.value);
+                console.log(n);
                 break;
             case 'shutdown':
                 n.status = false;
@@ -191,6 +192,10 @@
                 n.sendMessage();
                 break;
             case 'inbox':
+                console.log(n.messageInbox);
+                break;
+            case 'outbox':
+                console.log(n.messageSent);
                 break;
         }
     }
@@ -200,6 +205,7 @@
         switch (action) {
             case 'init':
                 i = new Mobile(iphoneNumber.value);
+                console.log(i);
                 break;
             case 'shutdown':
                 console.log('s');
@@ -208,6 +214,9 @@
                 console.log('send');
             case 'inbox':
                 console.log(i.messageInbox);
+                break;
+            case 'outbox':
+                console.log(i.messageSent);
                 break;
         }
     }
