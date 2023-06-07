@@ -28,6 +28,7 @@
                 await this.topToBottom();
                 await this.rightToLeft();
                 await this.bottomToTop();
+                console.log("test");
             }
         };
 
@@ -51,7 +52,6 @@
                     this.y += this.#speed;
                     img.style.top = this.y + 'px';
 
-                    console.log(this.y);
                     if (this.y > window.innerHeight - 120) {
                         clearInterval(run);
                         resolve();
