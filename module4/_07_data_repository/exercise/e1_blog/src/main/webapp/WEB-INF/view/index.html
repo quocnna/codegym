@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link href="/css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href="user/css/style.css" rel="stylesheet" type="text/css"  media="all" />
 		<title>Problog Website Template | Home :: W3layouts</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link href='https://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
@@ -12,7 +11,7 @@
 			<div class="header">
 				<div class="wrap">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" title="logo" /></a>
+					<a href="index.html"><img src="user/images/logo.png" title="logo" /></a>
 				</div>
 				<div class="clear"> </div>				
 			</div>
@@ -40,22 +39,22 @@
 					<div class="services-sidebar">
 					<h4>Categories</h4>
 					<ul>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
 					</ul><br>
 					<h4>Archives</h4>
 					<ul>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Jan, 2012</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">Feb, 2012</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">March, 2012</a></li>
-						<li><img src="images/pointer.png" title="pointer" /><a href="#">April, 2012</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Jan, 2012</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">Feb, 2012</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">March, 2012</a></li>
+						<li><img src="user/images/pointer.png" title="pointer" /><a href="#">April, 2012</a></li>
 					</ul>
 				</div>
 					<div class="bloder-content">
@@ -63,7 +62,7 @@
 
 					<div th:each="item: ${res}" class="bloger-grid">
 						<div class="blog-img">
-							<img th:src="'images/'+${item.imageUrl}" />
+							<img th:src="user/'images/'+${item.imageUrl}" />
 						</div>
 						<div class="bloger-content">
 							<h5><a href="single.html" th:text="${item.title}"></a></h5>
