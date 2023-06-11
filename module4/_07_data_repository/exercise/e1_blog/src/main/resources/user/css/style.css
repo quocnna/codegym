@@ -87,7 +87,7 @@ img{max-width:100%;}
 }
 .search-bar input[type="submit"]{
 	cursor:pointer;
-	background: url('imagesg') no-repeat 11px 7px;
+	background: url('../images/search.png') no-repeat 11px 7px;
 	padding: 4px 16px;
 }
 /*----top-nav----*/
