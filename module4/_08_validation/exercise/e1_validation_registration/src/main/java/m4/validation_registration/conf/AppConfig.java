@@ -8,6 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.validation.Validator;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.thymeleaf.spring5.SpringTemplateEngine;
@@ -21,6 +23,11 @@ import org.thymeleaf.templatemode.TemplateMode;
 public class AppConfig implements WebMvcConfigurer,  ApplicationContextAware {
 
     private ApplicationContext applicationContext;
+
+    @Override
+    public Validator getValidator() {
+        return validator();
+    }
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
@@ -53,10 +60,18 @@ public class AppConfig implements WebMvcConfigurer,  ApplicationContextAware {
         return viewResolver;
     }
 
+
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
         messageSource.setBasenames("validation-message");
         return messageSource;
+    }
+
+    @Bean
+    public LocalValidatorFactoryBean validator(){
+        LocalValidatorFactoryBean l = new LocalValidatorFactoryBean();
+        l.setValidationMessageSource(messageSource());
+        return l;
     }
 }

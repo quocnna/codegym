@@ -12,7 +12,9 @@
 <body>
 <form action="/register" method="post" th:object="${user}">
     <div>
-    Last Name: <input th:field="*{lastName}">
+     <label> Last Name:
+        <input th:field="*{lastName}">
+    </label>
         <p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></p>
     </div>
     <div>
