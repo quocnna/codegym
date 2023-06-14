@@ -31,6 +31,7 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.resource.WebJarsResourceResolver;
 import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
@@ -125,7 +126,7 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
     public Properties additionalProperties() {
         Properties properties = new Properties();
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
-        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+        properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
         return properties;
     }
 
@@ -136,9 +137,11 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/user/**").addResourceLocations("classpath:/user/");
-        registry.addResourceHandler("/admin/**").addResourceLocations("classpath:/admin/");
-        registry.addResourceHandler("/webjars/**").addResourceLocations("/webjars/");
+        registry
+                .addResourceHandler("/webjars/**")
+                .addResourceLocations("/webjars/")
+                .resourceChain(true)
+                .addResolver(new WebJarsResourceResolver());;
     }
 
     @Override
