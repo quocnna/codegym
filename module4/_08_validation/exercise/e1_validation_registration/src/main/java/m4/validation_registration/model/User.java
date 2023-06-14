@@ -20,7 +20,7 @@ public class User implements Validator {
     @Size(min = 5, max = 45, message = "First Name have to length from 5 to 45")
     private String firstName;
 
-    @NotNull(message = "{age.notnull}")
+    @NotNull(message = "{user.age.notNull}")
     @Min(value =18, message = "Age is greater than 17")
     private Integer age;
 
@@ -82,7 +82,7 @@ public class User implements Validator {
         String phoneNumber = user.getPhoneNumber();
         String email = user.getEmail();
 
-        ValidationUtils.rejectIfEmpty(errors, "phoneNumber", "phoneNumber.notempty");
+        ValidationUtils.rejectIfEmpty(errors, "phoneNumber", "user.phoneNumber.notEmpty");
         if (phoneNumber.length() != 10){
             errors.rejectValue("phoneNumber", "300", "phone number have to 10 digits");
         }

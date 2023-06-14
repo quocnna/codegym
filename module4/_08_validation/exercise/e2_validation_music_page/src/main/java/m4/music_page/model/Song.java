@@ -4,6 +4,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -13,12 +14,23 @@ public class Song {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @NotEmpty(message = "Last Name is mandatory")
-    @Size(min = 5, max = 45, message = "Last Name have to length from 5 to 45")
+    @NotEmpty(message = "{song.name.notEmpty}")
+    @Size(min = 1, max = 800, message = "{song.name.length}")
+    @Pattern(regexp = "[^@;,.=+-]\\w*", message = "{song.name.notChars}")
     private String name;
+
+    @NotEmpty(message = "{song.artist.notEmpty}")
+    @Size(min = 1, max = 300, message = "{song.artist.length}")
+    @Pattern(regexp = "[^@;,.=+-]\\w*", message = "{song.artist.notChars}")
     private String artist;
+
+    @NotEmpty(message = "{song.kind.notEmpty}")
+    @Size(min = 1, max = 1000, message = "{song.kind.length}")
+    @Pattern(regexp = "[^@;.=+-]\\w*", message = "{song.kind.notChars}")
     private String kind;
+
     private String link;
+
     private String path;
 
     @Transient

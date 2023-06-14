@@ -12,15 +12,17 @@
     <div class="mb-3">
         <label class="form-label">Name</label>
         <input name="name" type="text" class="form-control" th:field="*{name}">
-        <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Kind</label>
-        <input name="kind" type="text" class="form-control" th:field="*{kind}">
+        <p class="text-danger" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
     </div>
     <div class="mb-3">
         <label class="form-label">Artist</label>
         <input name="artist" type="text" class="form-control" th:field="*{artist}">
+        <p class="text-danger" th:if="${#fields.hasErrors('artist')}" th:errors="*{artist}"></p>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Kind</label>
+        <input name="kind" type="text" class="form-control" th:field="*{kind}">
+        <p class="text-danger" th:if="${#fields.hasErrors('kind')}" th:errors="*{kind}"></p>
     </div>
     <div class="mb-3">
         <label class="form-label">Upload</label>
