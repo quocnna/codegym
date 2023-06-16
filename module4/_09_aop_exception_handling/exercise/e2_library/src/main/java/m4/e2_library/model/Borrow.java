@@ -25,19 +25,16 @@ public class Borrow {
 
     private LocalDateTime broughtDate;
 
-    private boolean status;
-
     public Borrow() {
     }
 
-    public Borrow(int id, String code, Book book, User user, LocalDateTime takenDate, LocalDateTime broughtDate, boolean status) {
+    public Borrow(int id, String code, Book book, User user, LocalDateTime takenDate, LocalDateTime broughtDate) {
         this.id = id;
         this.code = code;
         this.book = book;
         this.user = user;
         this.takenDate = takenDate;
         this.broughtDate = broughtDate;
-        this.status = status;
     }
 
     public int getId() {
@@ -86,13 +83,5 @@ public class Borrow {
 
     public void setBroughtDate(LocalDateTime broughtDate) {
         this.broughtDate = broughtDate;
-    }
-
-    public boolean isStatus() {
-        return status;
-    }
-
-    public void setStatus(boolean status) {
-        this.status = status;
     }
 }

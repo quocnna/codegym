@@ -12,11 +12,9 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
 import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -27,7 +25,6 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
-import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -38,13 +35,13 @@ import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 
 import javax.sql.DataSource;
-import java.util.List;
 import java.util.Properties;
 
 @Configuration
 @EnableWebMvc
 @EnableTransactionManagement
 @EnableSpringDataWebSupport
+@EnableAspectJAutoProxy
 @EnableJpaRepositories(basePackages = "m4.e2_library.repository")
 @ComponentScan("m4.e2_library")
 public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, WebApplicationInitializer {
@@ -118,6 +115,12 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
         return transactionManager;
     }
 
+    @Override
+    public void onStartup(ServletContext aServletContext)
+    {
+        registerHiddenFieldFilter(aServletContext);
+    }
+
     @Bean
     public PersistenceExceptionTranslationPostProcessor exceptionTranslation(){
         return new PersistenceExceptionTranslationPostProcessor();
@@ -130,11 +133,6 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
         return properties;
     }
 
-    @Bean
-    public LayoutDialect layoutDialect() {
-        return new LayoutDialect();
-    }
-
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry
@@ -144,21 +142,11 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
                 .addResolver(new WebJarsResourceResolver());;
     }
 
-    @Override
-    public void onStartup(ServletContext aServletContext)
-    {
-        registerHiddenFieldFilter(aServletContext);
-    }
-
-    @Override
-    public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
-        PageableHandlerMethodArgumentResolver resolver = new PageableHandlerMethodArgumentResolver();
-        resolver.setFallbackPageable(PageRequest.of(0, 2, Sort.by("date").descending()));
-        resolver.setOneIndexedParameters(true);
-        argumentResolvers.add(resolver);
-    }
-
     private void registerHiddenFieldFilter(ServletContext aContext) {
         aContext.addFilter("hiddenHttpMethodFilter", new HiddenHttpMethodFilter()).addMappingForUrlPatterns(null ,true, "/*");
     }
+/*    @Override
+    public void addFormatters(FormatterRegistry registry){
+        registry.addConverter(new StringToLocalDateConverter());
+    }*/
 }

@@ -98,10 +98,4 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         l.setValidationMessageSource(messageSource());
         return l;
     }
-
-//    @Bean
-//    public FilterRegistrationBean hiddenHttpMethodFilter(){
-//        FilterRegistrationBean filterResBean = new FilterRegistrationBean(new HiddenHttpMethodFilter());
-//        filterResBean.set
-//    }
 }
