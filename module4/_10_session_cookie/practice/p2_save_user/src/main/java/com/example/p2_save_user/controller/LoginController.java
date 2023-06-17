@@ -16,7 +16,8 @@ public class LoginController {
     }
 
     @RequestMapping("/login")
-    public String Index(@CookieValue(value = "setUser", defaultValue = "") String setUser, Model model) {
+    public String Index(@CookieValue(value = "setUser", defaultValue = "") String setUser, @ModelAttribute("user") User user, Model model) {
+        user.setEmail("");
         model.addAttribute("cookieValue", setUser);
         return "login";
     }
@@ -24,17 +25,24 @@ public class LoginController {
     @PostMapping("/dologin")
     public String doLogin(@ModelAttribute("user") User user, Model model, @CookieValue(value = "setUser", defaultValue = "") String setUser,
                           HttpServletResponse response) {
+        Cookie cookie = new Cookie("setUser", setUser);
+
         if (user.getEmail().equals("admin") && user.getPassword().equals("123")) {
             setUser = user.getEmail();
-            Cookie cookie = new Cookie("setUser", setUser);
+            cookie.setValue(setUser);
             cookie.setMaxAge(24 * 60 * 60);
-            response.addCookie(cookie);
 
             model.addAttribute("cookieValue", setUser);
             model.addAttribute("message", "Login success. Welcome ");
         } else {
+            cookie.setValue("");
+            cookie.setMaxAge(0);
+
             model.addAttribute("message", "Login failed. Try again.");
         }
+
+        response.addCookie(cookie);
+
         return "login";
     }
 }

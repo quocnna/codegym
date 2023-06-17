@@ -40,13 +40,13 @@ public class BookController {
     }
 
     @PostMapping("/{bookId}")
-    public String borrow(@PathVariable("bookId") Book book, User user, RedirectAttributes redirect) throws Exception {
+    public String borrow(@PathVariable("bookId") Book book, User user, RedirectAttributes redirect) {
         redirect.addFlashAttribute("msg", borrowService.borrow(book, user) ? MESSAGE_BORROW_SUCCESS: MESSAGE_BORROW_ERROR);
         return "redirect:/books";
     }
 
     @PutMapping
-    public String brought(@RequestParam String code, RedirectAttributes redirect){
+    public String brought(@RequestParam String code, RedirectAttributes redirect) throws Exception {
         redirect.addFlashAttribute("msg", borrowService.dueBack(code) ? MESSAGE_BROUGHT_SUCCESS: MESSAGE_BROUGHT_ERROR);
         return "redirect:/books";
     }

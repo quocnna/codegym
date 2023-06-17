@@ -1,5 +1,6 @@
 package m4.e2_library.service;
 
+import m4.e2_library.exeception.BookBorrowException;
 import m4.e2_library.model.Book;
 import m4.e2_library.model.Borrow;
 import m4.e2_library.model.User;
@@ -30,6 +31,10 @@ public class BorrowService {
 
     @Transactional(rollbackFor = Exception.class)
     public boolean borrow(Book book, User user) {
+        if (book.getQuantity() == 0) {
+            throw new BookBorrowException("Quantity book less than 0");
+        }
+
         try {
             User newUser = userRepository.save(user);
 
@@ -50,23 +55,22 @@ public class BorrowService {
         return false;
     }
 
-    @Transactional(rollbackFor = Exception.class)
-    public boolean dueBack(String code) {
+    @Transactional
+    public boolean dueBack(String code) throws Exception {
         Optional<Borrow> borrowOptional = borrowRepository.findFirstByCode(code);
-
-        try {
-            if (borrowOptional.isPresent()) {
-                Book book = borrowOptional.get().getBook();
-                book.setQuantity(book.getQuantity() + 1);
-                bookRepository.save(book);
-                borrowOptional.get().setBroughtDate(LocalDateTime.now());
-
-                return !borrowRepository.save(borrowOptional.get()).equals(borrowOptional.get());
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (borrowOptional.isEmpty()) {
+            throw new Exception("Code incorrect");
         }
 
-        return false;
+        if (borrowOptional.get().getBroughtDate() != null) {
+            throw new Exception("Code expired");
+        }
+
+        Book book = borrowOptional.get().getBook();
+        book.setQuantity(book.getQuantity() + 1);
+        bookRepository.save(book);
+        borrowOptional.get().setBroughtDate(LocalDateTime.now());
+
+        return !borrowRepository.save(borrowOptional.get()).equals(borrowOptional.get());
     }
 }

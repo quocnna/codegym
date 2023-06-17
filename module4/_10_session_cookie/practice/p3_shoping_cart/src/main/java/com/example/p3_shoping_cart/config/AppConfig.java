@@ -1,11 +1,9 @@
-package m4.e2_library.config;
+package com.example.p3_shoping_cart.config;
 
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.servlet.ServletContext;
-import m4.e2_library.handler.BookBorrowExceptionHandler;
-import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
@@ -42,9 +40,8 @@ import java.util.Properties;
 @EnableWebMvc
 @EnableTransactionManagement
 @EnableSpringDataWebSupport
-@EnableAspectJAutoProxy
-@EnableJpaRepositories(basePackages = "m4.e2_library.repository")
-@ComponentScan("m4.e2_library")
+@EnableJpaRepositories(basePackages = "com.example.p3_shoping_cart.repository")
+@ComponentScan("com.example")
 public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, WebApplicationInitializer {
 
     private ApplicationContext applicationContext;
@@ -69,7 +66,6 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
-        templateEngine.addDialect(new LayoutDialect());
         return templateEngine;
     }
 
@@ -91,7 +87,7 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan("m4.e2_library.model");
+        em.setPackagesToScan("com.example.p3_shoping_cart.model");
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
@@ -103,7 +99,7 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/library?createDatabaseIfNotExist=true");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/shopping_cart?createDatabaseIfNotExist=true");
         dataSource.setUsername("root");
         dataSource.setPassword("12345");
         return dataSource;
@@ -127,11 +123,6 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
         return new PersistenceExceptionTranslationPostProcessor();
     }
 
-    @Bean
-    public BookBorrowExceptionHandler bookBorrowExceptionHandler(){
-        return new BookBorrowExceptionHandler();
-    }
-
     public Properties additionalProperties() {
         Properties properties = new Properties();
         properties.setProperty("hibernate.hbm2ddl.auto", "update");
@@ -151,8 +142,4 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware, Web
     private void registerHiddenFieldFilter(ServletContext aContext) {
         aContext.addFilter("hiddenHttpMethodFilter", new HiddenHttpMethodFilter()).addMappingForUrlPatterns(null ,true, "/*");
     }
-/*    @Override
-    public void addFormatters(FormatterRegistry registry){
-        registry.addConverter(new StringToLocalDateConverter());
-    }*/
 }
