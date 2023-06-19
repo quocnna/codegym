@@ -28,17 +28,24 @@ public class ProductController {
         return modelAndView;
     }
 
-    @GetMapping("/add/{id}")
-    public String addToCart(@PathVariable Long id, @ModelAttribute Cart cart, @RequestParam("action") String action) {
-        Optional<Product> productOptional = productService.findById(id);
-        if (productOptional.isEmpty()) {
-            return "/error.404";
-        }
-        if (action.equals("show")) {
-            cart.addProduct(productOptional.get());
-            return "redirect:/shopping-cart";
-        }
-        cart.addProduct(productOptional.get());
-        return "redirect:/shop";
+//    @GetMapping("/add/{id}")
+//    public String addToCart(@PathVariable Long id, @ModelAttribute Cart cart, @RequestParam("action") String action) {
+//        Optional<Product> productOptional = productService.findById(id);
+//        if (productOptional.isEmpty()) {
+//            return "/error.404";
+//        }
+//        if (action.equals("show")) {
+//            cart.addProduct(productOptional.get());
+//            return "redirect:/shopping-cart";
+//        }
+//        cart.addProduct(productOptional.get());
+//        return "redirect:/shop";
+//    }
+
+    @GetMapping("/changeCart/{id}/{quantity}")
+    public ModelAndView changeQuantity(@PathVariable Long id, @PathVariable Integer quantity, @ModelAttribute Cart cart) {
+        cart.changeQuantity(productService.findById(id).get(), quantity);
+
+        return new ModelAndView("/cart", "cart",cart);
     }
 }

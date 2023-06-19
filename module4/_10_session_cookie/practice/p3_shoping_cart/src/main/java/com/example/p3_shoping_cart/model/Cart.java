@@ -64,4 +64,8 @@ public class Cart {
         }
         return payment;
     }
+
+    public Integer changeQuantity(Product product, int quantity){
+        return quantity < 1 ? products.remove(product) : products.put(product, quantity);
+    }
 }
