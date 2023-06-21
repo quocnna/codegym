@@ -21,6 +21,11 @@ public class BlogService implements BaseService<Blog>{
         return blogRepository.findAll();
     }
 
+    @Override
+    public Blog save(Blog blog) {
+        return blogRepository.save(blog);
+    }
+
     public Page<Blog> find(String q, Pageable pageable){
         if (q.isEmpty()) {
             return blogRepository.findAll(pageable);

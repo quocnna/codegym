@@ -11,7 +11,7 @@
 <div class="header">
     <div class="wrap">
         <div class="logo">
-            <a href="index.html"><img src="user/images/logo.png" title="logo"/></a>
+            <a href="/home"><img src="user/images/logo.png" title="logo"/></a>
         </div>
         <div class="clear"></div>
     </div>
@@ -19,7 +19,7 @@
 <div class="header-nav1">
     <div class="wrap">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
+            <li class="current"><a href="/home">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Support</a></li>
             <li><a href="#">Advertise</a></li>
@@ -114,35 +114,39 @@
 </div>
 
 <script>
+    let     pageNum     =   0;
+    let     pageSize    =   2;
+    let     pageTotal   =   0;
+
     function searchByTitle(){
         fetch(`${window.location.origin}/api/v1/blogs?q=${searchValue.value}`)
             .then(response => response.json())
             .then(data => {
-                document.querySelector('.bloder-content').innerHTML =buildTable(data);
-                paging.style.display = 'none';
+                document.querySelector('.bloder-content').innerHTML = buildTable(data);
+                showLoadMore(data);
             });
     }
 
-    function buildTable(data){
+    function buildTable(smartPhones){
         let res = '';
-        let pageSize= 2;
-        const pageTotal = Math.ceil(data.length/pageSize);
+        let totalRecord = pageNum*pageSize + pageSize;
 
-        if(data.length < pageSize){
-            pageSize= data.length;
+        if(smartPhones.length < totalRecord){
+            totalRecord= smartPhones.length;
         }
 
-        for (let i = 0; i < pageSize; i++) {
+        let i = pageNum * pageSize;
+        for (i; i < totalRecord; i++) {
             res += `<div class='bloger-grid'>
                 <div class='blog-img'>
-                    <img src='${data[i].imgUrl}'/>
+                    <img src='${smartPhones[i].imgUrl}'/>
                 </div>
                 <div class='bloger-content'>
-                    <h5><a href='detail.html'>${data[i].title}</a></h5>
-                    <p>${data[i].content}</p>
+                    <h5><a href='detail.html'>${smartPhones[i].title}</a></h5>
+                    <p>${smartPhones[i].content}</p>
                     <ul>
-                        <li>Created on: <a href='#'>${data[i].date}</a></li>
-                        <li><a href='/detail/${data[i].id}'><span>Readmore</span></a></li>
+                        <li>Created on: <a href='#'>${smartPhones[i].date}</a></li>
+                        <li><a href='/detail/${smartPhones[i].id}'><span>Readmore</span></a></li>
                     </ul>
                 </div>
                 <div class='clear'></div>
@@ -150,6 +154,24 @@
         }
 
         return res;
+    }
+
+    function loadMore(smartPhones){
+        pageNum++;
+        let divContent = document.querySelector('.bloder-content');
+        divContent.querySelector('.bloger-grid:last-child').scrollIntoView();
+        divContent.innerHTML += buildTable(smartPhones);
+        showLoadMore(smartPhones);
+    }
+
+    function showLoadMore(smartPhones){
+        pageTotal = Math.ceil(smartPhones.length/pageSize);
+        if(pageTotal > pageNum+1){
+            paging.innerHTML = `<div class='bloger-grid'><button onclick='loadMore(${JSON.stringify(smartPhones)})'>Load More</button></div>`;
+        }
+        else {
+            paging.style.display = 'none';
+        }
     }
 </script>
 
