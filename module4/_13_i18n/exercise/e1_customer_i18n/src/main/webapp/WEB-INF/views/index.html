@@ -3,8 +3,8 @@
 <head th:replace="/layout :: head">
 </head>
 <body>
-<h3>Customers</h3>
-<a href="/">English</a>
+<h3 th:text="#{customer.title}">Customers</h3>
+Language: <a href="?lang=en">English</a> | <a href="?lang=vi">VietNam</a>| <a href="?lang=de">Geman</a>
 <p>
     <a th:href="@{/customer/create}" th:text="#{customer.add_button}"></a>
 </p>
@@ -29,9 +29,9 @@
         <td th:text="${row.getName()}"></td>
         <td th:text="${row.getEmail()}"></td>
         <td th:text="${row.getAddress()}"></td>
-        <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <td><a th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>
-        <td><a th:href="@{/customer/{id}/view(id=${row.getId()})}">view</a></td>
+        <td><a th:text="#{customer.edit_button}" th:href="@{/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:text="#{customer.delete_button}" th:href="@{/customer/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:text="#{customer.view_button}" th:href="@{/customer/{id}/view(id=${row.getId()})}">view</a></td>
     </tr>
     </tbody>
 </table>
