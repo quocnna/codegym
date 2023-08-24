@@ -1,6 +1,6 @@
-package _14_sort_algorithm.practice.p3;
+package _14_sort_algorithm.practice;
 
-public class SelectionSort {
+public class P3_SelectionSort {
     static double[] list = {1, 9, 4.5, 6.6, 5.7, -4.5};
 
     public static void selectionSort(double[] list) {

@@ -1,4 +1,4 @@
-package _16_io_text_file.practice.p1;
+package _16_io_text_file.practice.p1_sum_number;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class SumNumberInFile {
-    private static final String PATH="src\\_16_io_text_file\\practice\\p1\\numbers.txt";
+    private static final String PATH="src\\_16_io_text_file\\practice\\p1_sum_number\\numbers.txt";
 
     public static void main(String[] args) {
         try{

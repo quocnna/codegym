@@ -1,11 +1,11 @@
-package _17_binary_file_serialization.practice.p1;
+package _17_binary_file_serialization.practice;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.Scanner;
 
-public class CopyFilesBigSize {
+public class P1_CopyFilesBigSize {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.printf("Enter source file:");

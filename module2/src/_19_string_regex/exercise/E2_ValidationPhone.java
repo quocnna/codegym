@@ -1,9 +1,9 @@
-package _19_string_regex.exercise.e2;
+package _19_string_regex.exercise;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ValidationPhone {
+public class E2_ValidationPhone {
     public static void main(String[] args) {
         // regex (xx)-(0xxxxxxxxx)
         String regex= "\\(\\d{2}\\)-\\(0\\d{9}\\)";

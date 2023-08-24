@@ -1,4 +1,4 @@
-package _17_binary_file_serialization.practice.p2;
+package _17_binary_file_serialization.practice.p2_read_write_list_student;
 
 import java.io.*;
 import java.util.List;

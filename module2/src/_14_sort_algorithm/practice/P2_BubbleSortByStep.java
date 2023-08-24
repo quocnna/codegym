@@ -1,8 +1,8 @@
-package _14_sort_algorithm.practice.p2;
+package _14_sort_algorithm.practice;
 
 import java.util.Scanner;
 
-public class BubbleSortByStep {
+public class P2_BubbleSortByStep {
     public static void bubbleSortByStep(int[] list) {
         boolean needNextPass = true;
         for (int k = 1; k < list.length && needNextPass; k++) {

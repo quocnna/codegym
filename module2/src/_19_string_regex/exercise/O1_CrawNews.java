@@ -1,4 +1,4 @@
-package _19_string_regex.exercise.o1;
+package _19_string_regex.exercise;
 
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class CrawNews {
+public class O1_CrawNews {
     public static void main(String[] args) {
         try {
             URL url= new URL("https://tuoitre.vn/the-gioi.htm");

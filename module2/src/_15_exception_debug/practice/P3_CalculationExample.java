@@ -1,15 +1,15 @@
-package _15_exception_debug.practice.p3;
+package _15_exception_debug.practice;
 
 import java.util.Scanner;
 
-public class CalculationExample {
+public class P3_CalculationExample {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Hãy nhập x: ");
         int x = scanner.nextInt();
         System.out.println("Hãy nhập y: ");
         int y = scanner.nextInt();
-        CalculationExample calc = new CalculationExample();
+        P3_CalculationExample calc = new P3_CalculationExample();
         calc.calculate(x, y);
 
     }

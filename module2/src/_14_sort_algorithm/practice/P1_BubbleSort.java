@@ -1,8 +1,8 @@
-package _14_sort_algorithm.practice.p1;
+package _14_sort_algorithm.practice;
 
 import java.util.Arrays;
 
-public class BubbleSort {
+public class P1_BubbleSort {
     static int[] list = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
 
     public static void bubbleSort(int[] list) {

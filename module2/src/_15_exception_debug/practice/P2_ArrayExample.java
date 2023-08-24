@@ -1,12 +1,12 @@
-package _15_exception_debug.practice.p2;
+package _15_exception_debug.practice;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class ArrayExample {
+public class P2_ArrayExample {
 
     public static void main(String[] args) {
-        ArrayExample arrExample = new ArrayExample();
+        P2_ArrayExample arrExample = new P2_ArrayExample();
         Integer[] arr = arrExample.createRandom();
 
         Scanner scaner = new Scanner(System.in);

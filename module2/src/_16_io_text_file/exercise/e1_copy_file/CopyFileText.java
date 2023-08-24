@@ -1,9 +1,9 @@
-package _16_io_text_file.exercise.e1;
+package _16_io_text_file.exercise.e1_copy_file;
 
 import java.io.*;
 
 public class CopyFileText {
-    static final String PATH= "src\\_16_io_text_file\\exercise\\e1";
+    static final String PATH= "src\\_16_io_text_file\\exercise\\e1_copy_file";
 
     public static void main(String[] args) {
         String source= PATH+ "\\test.txt";

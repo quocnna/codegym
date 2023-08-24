@@ -1,6 +1,6 @@
-package _14_sort_algorithm.exercise.e2;
+package _14_sort_algorithm.exercise;
 
-public class SortAlgorithm {
+public class E2_SortAlgorithm {
     public static void main(String[] args) {
         int[] arr = {32, 1, 59, 18, 12};
 

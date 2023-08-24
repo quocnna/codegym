@@ -1,6 +1,6 @@
-package _14_sort_algorithm.exercise.e1;
+package _14_sort_algorithm.exercise;
 
-public class InsertionSort {
+public class E1_InsertionSort {
     public static void main(String[] args) {
         int[] arr = {32, 1, 59, 18, 12};
         insertionSort(arr);

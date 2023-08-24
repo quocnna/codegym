@@ -1,4 +1,4 @@
-package _15_exception_debug.exercise.e1;
+package _15_exception_debug.exercise.e1_IllegalTriangle;
 
 public class Triangle {
     private double side1;

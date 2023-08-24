@@ -1,6 +1,4 @@
-package _15_exception_debug.exercise.e1;
-
-import java.util.Scanner;
+package _15_exception_debug.exercise.e1_IllegalTriangle;
 
 public class Test {
     public static void main(String[] args) {

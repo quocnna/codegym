@@ -1,12 +1,12 @@
-package _16_io_text_file.practice.p2;
+package _16_io_text_file.practice;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-public class MaxValueInFile {
-    private static final String PATH="src\\_16_io_text_file\\practice\\p1\\numbers.txt";
+public class P2_MaxValueInFile {
+    private static final String PATH="src\\_16_io_text_file\\practice\\p1_sum_number\\numbers.txt";
 
     public static void main(String[] args) {
         try{

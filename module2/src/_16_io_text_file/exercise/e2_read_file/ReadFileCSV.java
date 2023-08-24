@@ -1,11 +1,11 @@
-package _16_io_text_file.exercise.e2;
+package _16_io_text_file.exercise.e2_read_file;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class ReadFileCSV {
-    private static final String path="src\\_16_io_text_file\\exercise\\o\\test.csv";
+    private static final String path="src\\_16_io_text_file\\exercise\\e2_read_file\\test.csv";
     public static void main(String[] args) {
         try {
             readCSV(path);
