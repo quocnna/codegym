@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class ProductService {
-    private static final String path = "./src/_17_binary_file_serialization/exercise/e1/data.bin";
+    private static final String path = "./src/_17_binary_file_serialization/exercise/e1_product_manager/data.bin";
     private List<Product> data = new ArrayList<>();
 
     ProductService() {

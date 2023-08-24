@@ -1,4 +1,4 @@
-package _13_search_algorithm.practice.s1;
+package _13_search_algorithm.practice.s1_complexity_algorithm;
 
 import java.util.Comparator;
 import java.util.Map;

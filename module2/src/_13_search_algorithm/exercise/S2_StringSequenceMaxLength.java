@@ -1,9 +1,9 @@
-package _13_search_algorithm.exercise.s2;
+package _13_search_algorithm.exercise;
 
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class StringSequenceMaxLength {
+public class S2_StringSequenceMaxLength {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         LinkedList<Character> max = new LinkedList<>();

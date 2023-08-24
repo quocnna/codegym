@@ -1,6 +1,6 @@
-package _13_search_algorithm.practice.p1;
+package _13_search_algorithm.practice;
 
-public class SearchBinaryWithoutRecursive {
+public class P1_SearchBinaryWithoutRecursive {
     static int[] list = {2, 4, 7, 10, 11, 45, 50, 59, 60, 66, 69, 70, 79};
     static int binarySearch(int[] list, int key) {
         int low = 0;

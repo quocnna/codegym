@@ -1,6 +1,6 @@
-package _13_search_algorithm.exercise.s1;
+package _13_search_algorithm.exercise;
 
-public class SearchBinaryWithRecursive {
+public class S1_SearchBinaryWithRecursive {
     private static int binarySearch(int arr[], int low, int high, int value) {
         if (high >= low) {
             int mid =(high + low) / 2;

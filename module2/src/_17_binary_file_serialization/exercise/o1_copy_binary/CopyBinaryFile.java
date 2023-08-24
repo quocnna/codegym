@@ -1,4 +1,4 @@
-package _17_binary_file_serialization.exercise.o1_CopyBinary;
+package _17_binary_file_serialization.exercise.o1_copy_binary;
 
 import java.io.*;
 

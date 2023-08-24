@@ -5,23 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e1/HelloGreeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/E1_HelloGreeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2/NumberToWordAdvance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2_NumberToWord/NumberToWordAdvance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2/NumberToWordEnglish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2_NumberToWord/NumberToWordEnglish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2/NumberToWordVN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2_NumberToWord/NumberToWordVN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e3/ConvertCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/E3_ConvertCurrency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p1/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P1_SystemTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p2/DeclareUsingVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P2_DeclareUsingVariable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p3/UsingOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P3_UsingOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p4/EquationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P4_EquationResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p5/DayOfMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P5_DayOfMonth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p6/LeapYearChecking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P6_LeapYearChecking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p7/IBM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P7_IBM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/e1/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/E1_InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/e2/SortAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/E2_SortAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/p1/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/P1_BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/p2/BubbleSortByStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/P2_BubbleSortByStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/p3/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/P3_SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/IllegalTriangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1_IllegalTriangle/IllegalTriangleException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1_IllegalTriangle/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1_IllegalTriangle/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/practice/p2/ArrayExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/practice/P2_ArrayExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/practice/p3/CalculationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/practice/P3_CalculationExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1/CopyFileText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1_copy_file/CopyFileText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1_copy_file/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1/test_copy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1_copy_file/test_copy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2/ReadFileCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2_read_file/ReadFileCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2_read_file/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/practice/p1/SumNumberInFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/p1_sum_number/SumNumberInFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/practice/p1/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/p1_sum_number/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/practice/p2/MaxValueInFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/P2_MaxValueInFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p1/CopyFilesBigSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/P1_CopyFilesBigSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p2/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p2_read_write_list_student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p2_read_write_list_student/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/E1_ValidationClassName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/e2/ValidationPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/E2_ValidationPhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/O1_CrawNews.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,12 +110,12 @@
         <option name="nim.task.build.to.cache" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColumnTotalCalculate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_03_array_and_method.exercise.s1.ColumnTotalCalculate" />
+    <configuration name="HomeView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.HomeView" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_03_array_and_method.exercise.s1.*" />
+          <option name="PATTERN" value="view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.HomeView" />
+    <configuration name="S1_ColumnTotalCalculate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_03_array_and_method.exercise.S1_ColumnTotalCalculate" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="view.*" />
+          <option name="PATTERN" value="_03_array_and_method.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +150,11 @@
       </method>
     </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_17_binary_file_serialization.exercise.e1.Test" />
+      <option name="MAIN_CLASS_NAME" value="_17_binary_file_serialization.exercise.e1_product_manager.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_17_binary_file_serialization.exercise.e1.*" />
+          <option name="PATTERN" value="_17_binary_file_serialization.exercise.e1_product_manager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,7 +181,7 @@
         <item itemvalue="Application.m2_case_study.FuramaManager.view.HomeView" />
         <item itemvalue="Application.HomeView" />
         <item itemvalue="Application.StopWatch" />
-        <item itemvalue="Application.ColumnTotalCalculate" />
+        <item itemvalue="Application.S1_ColumnTotalCalculate" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +224,7 @@
       <workItem from="1672716793547" duration="376000" />
       <workItem from="1672717496811" duration="24275000" />
       <workItem from="1672797080299" duration="19178000" />
-      <workItem from="1692867747470" duration="4559000" />
+      <workItem from="1692867747470" duration="6190000" />
     </task>
     <servers />
   </component>
@@ -289,17 +296,17 @@
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java</url>
+          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1_product_manager/ProductService.java</url>
           <line>15</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java</url>
+          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1_product_manager/ProductService.java</url>
           <line>44</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java</url>
+          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1_product_manager/ProductService.java</url>
           <line>51</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>

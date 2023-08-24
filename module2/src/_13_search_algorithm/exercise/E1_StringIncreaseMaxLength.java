@@ -1,9 +1,9 @@
-package _13_search_algorithm.exercise.e1;
+package _13_search_algorithm.exercise;
 
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class StringIncreaseMaxLength {
+public class E1_StringIncreaseMaxLength {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
