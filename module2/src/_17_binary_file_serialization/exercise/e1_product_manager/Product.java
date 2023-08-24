@@ -1,4 +1,4 @@
-package _17_binary_file_serialization.exercise.e1;
+package _17_binary_file_serialization.exercise.e1_product_manager;
 
 import java.io.Serializable;
 

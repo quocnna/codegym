@@ -1,8 +1,8 @@
-package _01_introduction_java.practice.p7;
+package _01_introduction_java.practice;
 
 import java.util.Scanner;
 
-public class IBM {
+public class P7_IBM {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double weight, height, bmi;

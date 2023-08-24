@@ -1,6 +1,6 @@
-package _01_introduction_java.practice.p2;
+package _01_introduction_java.practice;
 
-public class DeclareUsingVariable {
+public class P2_DeclareUsingVariable {
     public static void main(String[] args) {
         int i = 10;
         float f = 20.5f;

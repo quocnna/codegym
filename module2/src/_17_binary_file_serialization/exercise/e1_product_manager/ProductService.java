@@ -1,4 +1,4 @@
-package _17_binary_file_serialization.exercise.e1;
+package _17_binary_file_serialization.exercise.e1_product_manager;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -8,9 +8,8 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class ProductService {
-    private static final String path = "/Users/quocgunner/Desktop/github/codegym/module2/src/_17_binary_file_serialization/exercise/e1/data.bin";
+    private static final String path = "./src/_17_binary_file_serialization/exercise/e1/data.bin";
     private List<Product> data = new ArrayList<>();
-    private ObjectOutputStream objectOutputStream;
 
     ProductService() {
         try {
@@ -20,13 +19,10 @@ public class ProductService {
                 file.createNewFile();
             }
 
-
             if (file.length() > 0) {
                 ObjectInputStream input = new ObjectInputStream(new FileInputStream(path));
-                data = (ArrayList) input.readObject();
+                data = (List<Product>) input.readObject();
             }
-
-            objectOutputStream = new ObjectOutputStream(new FileOutputStream(path));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -41,15 +37,15 @@ public class ProductService {
             product.setId(data.size() + 1);
             data.add(product);
         }
-        objectOutputStream.writeObject(data);
+
+        new ObjectOutputStream(new FileOutputStream(path)).writeObject(data);
     }
 
     void add(Product product) throws IOException {
         List<Product> products = getAll();
         product.setId(products.size() + 1);
         products.add(product);
-
-        objectOutputStream.writeObject(products);
+        new ObjectOutputStream(new FileOutputStream(path)).writeObject(products);
     }
 
     List<Product> getAll() {
@@ -83,7 +79,7 @@ public class ProductService {
 
     void deleteById(int id) throws IOException {
         data.removeIf(e -> e.getId() == id);
-        objectOutputStream.writeObject(data);
+        new ObjectOutputStream(new FileOutputStream(path)).writeObject(data);
     }
 
     void update(Product product) throws IOException {
@@ -99,7 +95,7 @@ public class ProductService {
         // use indexOf
         int index = data.indexOf(product);
         data.set(index, product);
-        objectOutputStream.writeObject(data);
+        new ObjectOutputStream(new FileOutputStream(path)).writeObject(data);
     }
 
     List<Product> sortByPrice() {

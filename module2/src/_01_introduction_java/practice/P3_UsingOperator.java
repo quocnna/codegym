@@ -1,8 +1,8 @@
-package _01_introduction_java.practice.p3;
+package _01_introduction_java.practice;
 
 import java.util.Scanner;
 
-public class UsingOperator {
+public class P3_UsingOperator {
     public static void main(String[] args) {
         float width;
         float height;

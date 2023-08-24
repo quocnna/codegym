@@ -1,12 +1,12 @@
-package _17_binary_file_serialization.exercise.e1;
+package _17_binary_file_serialization.exercise.e1_product_manager;
 
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.List;
 
 public class Test {
-    private static ProductService productService = new ProductService();
-    private static Scanner scanner = new Scanner(System.in);
+    private static final ProductService productService = new ProductService();
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         displayMenu();
@@ -82,8 +82,8 @@ public class Test {
         String des = scanner.nextLine();
 
         Product product = new Product(0, name, brand, price, des);
-//        productService.add(product);
-        productService.save(product);
+        productService.add(product);
+//        productService.save(product);
         System.out.printf("Add new product %s successful\n", name);
     }
 

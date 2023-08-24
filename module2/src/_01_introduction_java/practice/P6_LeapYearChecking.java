@@ -1,8 +1,8 @@
-package _01_introduction_java.practice.p6;
+package _01_introduction_java.practice;
 
 import java.util.Scanner;
 
-public class LeapYearChecking {
+public class P6_LeapYearChecking {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input the year:");

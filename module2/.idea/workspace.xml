@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/util/CommonUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/view/FacilityView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/m2_case_study/FuramaManager/view/FacilityView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e1/HelloGreeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/E1_HelloGreeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2/NumberToWordAdvance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2_NumberToWord/NumberToWordAdvance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2/NumberToWordEnglish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2_NumberToWord/NumberToWordEnglish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2/NumberToWordVN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e2_NumberToWord/NumberToWordVN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/exercise/e3/ConvertCurrency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/exercise/E3_ConvertCurrency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p1/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P1_SystemTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p2/DeclareUsingVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P2_DeclareUsingVariable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p3/UsingOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P3_UsingOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p4/EquationResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P4_EquationResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p5/DayOfMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P5_DayOfMonth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p6/LeapYearChecking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P6_LeapYearChecking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_01_introduction_java/practice/p7/IBM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_01_introduction_java/practice/P7_IBM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/data.bin" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,11 +36,14 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/m2_case_study" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="2AYbOIFjTF1XPBYnTNGNBSxADIB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,20 +51,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/quocnna.UNITEK/Desktop/test_demo/codegym/m2/vehicle_manager/VehicleManager_p3_improve&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3494253&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/quocnna.UNITEK/Desktop/codegym/module2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3494253",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quocnna.UNITEK\Desktop\codegym\module2\src\m2_case_study\FuramaManager\service" />
@@ -66,7 +84,7 @@
       <recent name="_12_java_collection_framework.exercise.e1.advance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.m2_case_study.FuramaManager.view.HomeView">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -91,19 +109,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="_03_array_and_method.exercise.s1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DimensionalArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_03_array_and_method.exercise.e4.DimensionalArray" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_03_array_and_method.exercise.e4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,6 +142,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_17_binary_file_serialization.exercise.e1.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_17_binary_file_serialization.exercise.e1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="m2_case_study.FuramaManager.view.HomeView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="m2_case_study.FuramaManager.view.HomeView" />
       <module name="module2" />
@@ -152,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.m2_case_study.FuramaManager.view.HomeView" />
         <item itemvalue="Application.HomeView" />
         <item itemvalue="Application.StopWatch" />
         <item itemvalue="Application.ColumnTotalCalculate" />
-        <item itemvalue="Application.DimensionalArray" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +217,7 @@
       <workItem from="1672716793547" duration="376000" />
       <workItem from="1672717496811" duration="24275000" />
       <workItem from="1672797080299" duration="19178000" />
+      <workItem from="1692867747470" duration="4559000" />
     </task>
     <servers />
   </component>
@@ -269,12 +288,28 @@
           <line>24</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1/ProductService.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="fieldArrays" />
         <watch expression="bookingService.findAll()" language="JAVA" />
+        <watch expression="(List&lt;Product)(new ObjectInputStream(new FileInputStream(path))).readObject()" language="JAVA" custom="_12_java_collection_framework.exercise.e1.Product" />
       </configuration>
     </watches-manager>
   </component>

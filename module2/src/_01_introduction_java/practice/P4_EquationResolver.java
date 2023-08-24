@@ -1,8 +1,8 @@
-package _01_introduction_java.practice.p4;
+package _01_introduction_java.practice;
 
 import java.util.Scanner;
 
-public class EquationResolver {
+public class P4_EquationResolver {
     public static void main(String[] args) {
         System.out.println("Linear Equation Resolver");
         System.out.println("Given a equation as 'a * x + b = c', please enter constants:");

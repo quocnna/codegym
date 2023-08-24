@@ -1,4 +1,4 @@
-package _01_introduction_java.exercise.e2;
+package _01_introduction_java.exercise.e2_NumberToWord;
 
 import java.util.Scanner;
 
