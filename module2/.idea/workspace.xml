@@ -5,30 +5,123 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03f6cc30-6fbd-4ffb-b2c0-3153faf0c585" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/e1/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/E1_InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/e2/SortAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/exercise/E2_SortAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/p1/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/P1_BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/p2/BubbleSortByStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/P2_BubbleSortByStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/p3/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_14_sort_algorithm/practice/P3_SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/IllegalTriangleException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1_IllegalTriangle/IllegalTriangleException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1_IllegalTriangle/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/exercise/e1_IllegalTriangle/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/practice/p2/ArrayExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/practice/P2_ArrayExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_15_exception_debug/practice/p3/CalculationExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_15_exception_debug/practice/P3_CalculationExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1/CopyFileText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1_copy_file/CopyFileText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1_copy_file/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1/test_copy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e1_copy_file/test_copy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2/ReadFileCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2_read_file/ReadFileCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/exercise/e2_read_file/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/practice/p1/SumNumberInFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/p1_sum_number/SumNumberInFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/practice/p1/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/p1_sum_number/numbers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_16_io_text_file/practice/p2/MaxValueInFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_16_io_text_file/practice/P2_MaxValueInFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p1/CopyFilesBigSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/P1_CopyFilesBigSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p2/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p2_read_write_list_student/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_17_binary_file_serialization/practice/p2_read_write_list_student/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/e1/ValidationClassName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/E1_ValidationClassName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/e2/ValidationPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/E2_ValidationPhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_19_string_regex/exercise/o1/CrawNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_19_string_regex/exercise/O1_CrawNews.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1_impl_stack_by_linkedlist/TestStackQueueBuiltin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_04_class_and_object/exercise/e1/QuadraticEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_04_class_and_object/exercise/E1_QuadraticEquation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_04_class_and_object/exercise/e2/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_04_class_and_object/exercise/E2_StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_04_class_and_object/exercise/e3/Fan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_04_class_and_object/exercise/e3_fan/Fan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_04_class_and_object/exercise/e3/Fan_UML.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_04_class_and_object/exercise/e3_fan/Fan_UML.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_04_class_and_object/practice/p1/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_04_class_and_object/practice/p1_rectangle/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_04_class_and_object/practice/p1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_04_class_and_object/practice/p1_rectangle/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_05_access_modifier_static/exercise/e1/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_05_access_modifier_static/exercise/e1_circle/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_05_access_modifier_static/exercise/e1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_05_access_modifier_static/exercise/e1_circle/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_05_access_modifier_static/exercise/e2/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_05_access_modifier_static/exercise/e2_student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_05_access_modifier_static/exercise/e2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_05_access_modifier_static/exercise/e2_student/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_05_access_modifier_static/practice/p1/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_05_access_modifier_static/practice/p1_student/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_05_access_modifier_static/practice/p1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_05_access_modifier_static/practice/p1_student/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_05_access_modifier_static/practice/p2/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_05_access_modifier_static/practice/p2_car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_05_access_modifier_static/practice/p2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_05_access_modifier_static/practice/p2_car/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e1/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e1_circle_cylinder/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e1/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e1_circle_cylinder/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e1_circle_cylinder/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e1/UML.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e1_circle_cylinder/UML.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e2/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e2_point2D_point3D/Point2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e2/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e2_point2D_point3D/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e2_point2D_point3D/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e3/MoveablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e3_point_moveablepoint/MoveablePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e3/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e3_point_moveablepoint/Point2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/e3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/e3_point_moveablepoint/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/s1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/s1_triangle/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/exerice/s1/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/exerice/s1_triangle/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/practice/p1/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/practice/p1_geometry/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/practice/p1/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/practice/p1_geometry/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/practice/p1/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/practice/p1_geometry/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/practice/p1/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/practice/p1_geometry/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/practice/p1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/practice/p1_geometry/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_06_inheritance/practice/p1/UML.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/_06_inheritance/practice/p1_geometry/UML.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1_impl_resizeable/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1_impl_resizeable/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1/Resizeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1_impl_resizeable/Resizeable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1_impl_resizeable/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1_impl_resizeable/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e1_impl_resizeable/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2_impl_colorable/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2/Colorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2_impl_colorable/Colorable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2_impl_colorable/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2_impl_colorable/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2_impl_colorable/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/exercise/e2_impl_colorable/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1_animal_class_edible_interface/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1_animal_class_edible_interface/Apple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1_animal_class_edible_interface/Chicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1/Edible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1_animal_class_edible_interface/Edible.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1_animal_class_edible_interface/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1_animal_class_edible_interface/Orange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1_animal_class_edible_interface/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p1_animal_class_edible_interface/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p2/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p2_impl_comparable/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p2/CircleComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p2_impl_comparable/CircleComparable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p2/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p2_impl_comparable/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p2_impl_comparable/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p3/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p3_impl_comparator/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p3/CircleComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p3_impl_comparator/CircleComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p3/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p3_impl_comparator/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_07_abstract_interface/practice/p3_impl_comparator/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/exericse/e1/TennisGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/exericse/e1_refactoring_tennis_game/TennisGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/exericse/e1/TennisGameRefactoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/exericse/e1_refactoring_tennis_game/TennisGameRefactoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/exericse/e1/TennisGameRefactoringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/exericse/e1_refactoring_tennis_game/TennisGameRefactoringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/exericse/e1/TennisGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/exericse/e1_refactoring_tennis_game/TennisGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p1/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p1_refactoring_change_variable_name_split_constant/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p1/CalculatorRefactoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p1_refactoring_change_variable_name_split_constant/CalculatorRefactoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p1/CalculatorRefactoringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p1_refactoring_change_variable_name_split_constant/CalculatorRefactoringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p2/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p2_split_variable/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p2/FizzBuzzRefactoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p2_split_variable/FizzBuzzRefactoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p2/FizzBuzzRefactoringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p2_split_variable/FizzBuzzRefactoringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3_split_method/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3/CylinderRefactoring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3_split_method/CylinderRefactoring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3/CylinderRefactoringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3_split_method/CylinderRefactoringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e1/CustomArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e1_impl_arraylist/CustomArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e1_impl_arraylist/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e2/CustomLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e2_impl_linkedlist/CustomLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_10_dsa_list/exercise/e2_impl_linkedlist/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_10_dsa_list/practice/p1/SimpleArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_10_dsa_list/practice/p1_simple_array_list/SimpleArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_10_dsa_list/practice/p1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_10_dsa_list/practice/p1_simple_array_list/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_10_dsa_list/practice/p2/SimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_10_dsa_list/practice/p2_simple_linkedlist/SimpleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_10_dsa_list/practice/p2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_10_dsa_list/practice/p2_simple_linkedlist/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e1/ReserveUsingStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e1/E1_ReserveUsingStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e2/CountCharInString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e2/E2_CountCharInString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/CircularQueueByLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3_circular_queue_by_linkedlist/CircularQueueByLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3_circular_queue_by_linkedlist/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/CircularQueueUsingLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3_circular_queue_by_linkedlist/old/CircularQueueUsingLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3_circular_queue_by_linkedlist/old/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3/old/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/e3_circular_queue_by_linkedlist/old/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s1/ConvertDecimalToBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s1/S1_ConvertDecimalToBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s2/PalindromeByStackQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s2/S2_PalindromeByStackQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s3/CheckBracketUseStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s3/S3_CheckBracketUseStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s4/DemergingByQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s4_demerging_by_queue/DemergingByQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s4/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/exercise/s4_demerging_by_queue/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/MyStackByLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1_impl_stack_by_linkedlist/MyStackByLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p1_impl_stack_by_linkedlist/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2_impl_queue_by_linkedlist/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2_impl_queue_by_linkedlist/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/p2_impl_queue_by_linkedlist/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/s1/MyQueueByArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/s1_impl_queue_by_array/MyQueueByArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/s1/QQueueByArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/s1_impl_queue_by_array/QQueueByArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/s1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/s1_impl_queue_by_array/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/s2/MyStackByArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/s2_impl_queue_by_array/MyStackByArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/s2/QStackByArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/s2_impl_queue_by_array/QStackByArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_11_stack_queue/practice/s2/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_11_stack_queue/practice/s2_impl_queue_by_array/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p1/TestMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p1_using_map/TestMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2_hashmap_hashset/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2/TestHashMapAndHashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p2_hashmap_hashset/TestHashMapAndHashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/AgeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3_comparable_comparator/AgeComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3_comparable_comparator/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/p3_comparable_comparator/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1/AbstractTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1_binary_tree/AbstractTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1_binary_tree/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1_binary_tree/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1_binary_tree/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_12_java_collection_framework/practice/s1_binary_tree/TreeNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +141,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2AYbOIFjTF1XPBYnTNGNBSxADIB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -58,21 +151,21 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/quocnna.UNITEK/Desktop/codegym/module2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.3494253",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/quocnna.UNITEK/Desktop/codegym/module2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3494253&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quocnna.UNITEK\Desktop\codegym\module2\src\m2_case_study\FuramaManager\service" />
@@ -91,7 +184,7 @@
       <recent name="_12_java_collection_framework.exercise.e1.advance" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.TestStackQueueBuiltin">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -110,51 +203,51 @@
         <option name="nim.task.build.to.cache" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.HomeView" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="S1_ColumnTotalCalculate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_03_array_and_method.exercise.S1_ColumnTotalCalculate" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_03_array_and_method.exercise.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StopWatch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_04_class_and_object.exercise.e2.StopWatch" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_04_class_and_object.exercise.e2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_17_binary_file_serialization.exercise.e1_product_manager.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="_17_binary_file_serialization.exercise.e1_product_manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_12_java_collection_framework.practice.p1_using_map.TestMap" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_12_java_collection_framework.practice.p1_using_map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStackQueueBuiltin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_11_stack_queue.practice.p1_impl_stack_by_linkedlist.TestStackQueueBuiltin" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_11_stack_queue.practice.p1_impl_stack_by_linkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_12_java_collection_framework.practice.p3_comparable_comparator.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_12_java_collection_framework.practice.p3_comparable_comparator.Test" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_12_java_collection_framework.practice.p3_comparable_comparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestStackQueueBuiltin" />
+        <item itemvalue="Application._12_java_collection_framework.practice.p3_comparable_comparator.Test" />
+        <item itemvalue="Application.TestMap" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.m2_case_study.FuramaManager.view.HomeView" />
-        <item itemvalue="Application.HomeView" />
-        <item itemvalue="Application.StopWatch" />
-        <item itemvalue="Application.S1_ColumnTotalCalculate" />
       </list>
     </recent_temporary>
   </component>
@@ -225,6 +318,10 @@
       <workItem from="1672717496811" duration="24275000" />
       <workItem from="1672797080299" duration="19178000" />
       <workItem from="1692867747470" duration="6190000" />
+      <workItem from="1692874292029" duration="284000" />
+      <workItem from="1693208323778" duration="45000" />
+      <workItem from="1693362860407" duration="1924000" />
+      <workItem from="1693364813920" duration="5001000" />
     </task>
     <servers />
   </component>
@@ -246,12 +343,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/s2/StringSequenceMaxLength.java</url>
+          <url>file://$PROJECT_DIR$/src/_13_search_algorithm/exercise/S2_StringSequenceMaxLength.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_10_dsa_list/exercise/e2/Test.java</url>
+          <url>file://$PROJECT_DIR$/src/_10_dsa_list/exercise/e2_impl_linkedlist/Test.java</url>
           <line>11</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -271,12 +368,12 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3/Cylinder.java</url>
+          <url>file://$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3_split_method/Cylinder.java</url>
           <line>7</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3/CylinderRefactoring.java</url>
+          <url>file://$PROJECT_DIR$/src/_08_clean_code_refactoring/practice/p3_split_method/CylinderRefactoring.java</url>
           <line>7</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -309,6 +406,16 @@
           <url>file://$PROJECT_DIR$/src/_17_binary_file_serialization/exercise/e1_product_manager/ProductService.java</url>
           <line>51</line>
           <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_12_java_collection_framework/practice/p1_using_map/TestMap.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_11_stack_queue/practice/p1_impl_stack_by_linkedlist/TestStackQueueBuiltin.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
