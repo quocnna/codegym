@@ -1,5 +1,5 @@
 {
-  "name": "p5_check_prime",
+  "name": "e3_fiboacci",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^18.7.18",
     "typescript": "^5.2.2"
   }
 }

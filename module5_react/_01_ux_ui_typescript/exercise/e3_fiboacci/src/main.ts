@@ -8,12 +8,11 @@ let rl = readline.createInterface({
 rl.question("Input quantity fibonacci you want to sum: ", function (answer) {
     numUserInput = answer;
     let result: number = 0;
-    for (let i = 0; i <= Number(numUserInput); i++) {
+
+    for (let i = 1; i <= Number(numUserInput); i++) {
         const tmp = fibonacci(i);
-        if (tmp > 0) {
-            console.log(tmp);
-            result += tmp;
-        }
+        console.log(tmp);
+        result += tmp;
     }
 
     console.log("Sum total: " + result);
